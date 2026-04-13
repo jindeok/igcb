@@ -1,29 +1,43 @@
 import { useState } from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, useColorScheme, ActivityIndicator, Alert, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, useColorScheme, ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Colors } from '../constants/Colors';
 import { useAuth } from '../context/AuthContext';
 import { Ionicons } from '@expo/vector-icons';
 
+function leaveLoginScreen(router: ReturnType<typeof useRouter>) {
+    if (router.canDismiss()) {
+        router.dismiss();
+    } else {
+        router.replace('/');
+    }
+}
+
 export default function LoginScreen() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [busy, setBusy] = useState(false);
+    const [formError, setFormError] = useState<string | null>(null);
     const { login, isLoading } = useAuth();
     const router = useRouter();
     const colorScheme = useColorScheme();
     const theme = Colors[colorScheme ?? 'light'];
 
     const handleLogin = async () => {
-        if (!email || !password) {
-            Alert.alert('Error', 'Please fill in all fields');
+        setFormError(null);
+        if (!email.trim() || !password) {
+            setFormError('이메일과 비밀번호를 입력해 주세요.');
             return;
         }
+        setBusy(true);
         try {
             await login(email, password);
-            router.dismiss();
+            leaveLoginScreen(router);
         } catch (e: unknown) {
             const message = e instanceof Error ? e.message : '다시 시도해 주세요.';
-            Alert.alert('로그인 실패', message);
+            setFormError(message);
+        } finally {
+            setBusy(false);
         }
     };
 
@@ -34,7 +48,7 @@ export default function LoginScreen() {
         >
             <ScrollView contentContainerStyle={styles.scrollContent}>
                 <View style={styles.headerContainer}>
-                    <TouchableOpacity onPress={() => router.dismiss()} style={styles.closeButton}>
+                    <TouchableOpacity onPress={() => leaveLoginScreen(router)} style={styles.closeButton}>
                         <Ionicons name="close" size={24} color={theme.icon} />
                     </TouchableOpacity>
                     <Text style={[styles.title, { color: theme.text }]}>Welcome Back</Text>
@@ -67,12 +81,16 @@ export default function LoginScreen() {
                         />
                     </View>
 
+                    {formError ? (
+                        <Text style={[styles.errorText, { color: theme.tint }]}>{formError}</Text>
+                    ) : null}
+
                     <TouchableOpacity
-                        style={[styles.button, { backgroundColor: theme.tint, opacity: isLoading ? 0.7 : 1 }]}
+                        style={[styles.button, { backgroundColor: theme.tint, opacity: busy || isLoading ? 0.7 : 1 }]}
                         onPress={handleLogin}
-                        disabled={isLoading}
+                        disabled={busy || isLoading}
                     >
-                        {isLoading ? (
+                        {busy || isLoading ? (
                             <ActivityIndicator color="#FFF" />
                         ) : (
                             <Text style={styles.buttonText}>Sign In</Text>
@@ -163,5 +181,11 @@ const styles = StyleSheet.create({
     },
     divider: {
         alignItems: 'center',
+    },
+    errorText: {
+        fontSize: 14,
+        marginBottom: 12,
+        textAlign: 'center',
+        fontWeight: '600',
     },
 });

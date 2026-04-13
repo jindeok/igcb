@@ -62,12 +62,21 @@ export default function HomeScreen() {
                         </Text>
                         <Text style={[styles.title, { color: theme.text }]}>Gelacream{'\n'}Recipe Master</Text>
                     </View>
-                    <TouchableOpacity
-                        style={[styles.profileButton, { backgroundColor: theme.cardBackground }]}
-                        onPress={() => user ? logout() : router.push('/login')}
-                    >
-                        <Text style={{ fontSize: 24 }}>{user ? '👤' : '🔑'}</Text>
-                    </TouchableOpacity>
+                    <View style={styles.accountArea}>
+                        <TouchableOpacity
+                            style={[styles.profileButton, { backgroundColor: theme.cardBackground }]}
+                            onPress={() => user ? logout() : router.push('/login')}
+                        >
+                            <Text style={{ fontSize: 24 }}>{user ? '👤' : '🔑'}</Text>
+                        </TouchableOpacity>
+                        {user ? (
+                            <View style={[styles.roleBadge, { borderColor: theme.border, backgroundColor: theme.cardBackground }]}>
+                                <Text style={[styles.roleBadgeText, { color: isAdmin ? theme.tint : theme.icon }]}>
+                                    {isAdmin ? 'ADMIN' : 'STAFF'}
+                                </Text>
+                            </View>
+                        ) : null}
+                    </View>
                 </View>
 
                 {/* Search Bar - Fancy & Floating Dropdown */}
@@ -198,6 +207,11 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
     },
+    accountArea: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 8,
+    },
     profileButton: {
         width: 50,
         height: 50,
@@ -209,6 +223,17 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.1,
         shadowRadius: 4,
         elevation: 2,
+    },
+    roleBadge: {
+        borderWidth: 1,
+        borderRadius: 10,
+        paddingHorizontal: 8,
+        paddingVertical: 4,
+    },
+    roleBadgeText: {
+        fontSize: 10,
+        fontWeight: '700',
+        letterSpacing: 0.6,
     },
     greeting: {
         fontSize: 16,
