@@ -1,0 +1,6 @@
+# Local / OS
+.DS_Store
+Thumbs.db
+
+# Netlify manual deploy artifact
+gelacream-master/gelacream-netlify.zip

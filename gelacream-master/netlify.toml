@@ -1,0 +1,15 @@
+# Netlify: Git 연동 시 저장소 루트를 `gelacream-master`로 설정하거나,
+# 상위에서 배포할 때 Base directory를 이 폴더로 지정하세요.
+
+[build]
+  command = "npm run build:web"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Expo Router(클라이언트 라우팅): /recipe/1 등 직접 접속 시 404 방지
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
