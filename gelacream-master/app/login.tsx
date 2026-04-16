@@ -68,9 +68,9 @@ export default function LoginScreen() {
                         <View style={[styles.brandPill, { borderColor: theme.border, backgroundColor: theme.background }]}>
                             <Text style={[styles.brandPillText, { color: theme.icon }]}>ICE GIRL CREAM BOY</Text>
                         </View>
-                        <Text style={[styles.brandTitle, { color: theme.text }]}>간결한 레시피 작업 공간으로 로그인</Text>
+                        <Text style={[styles.brandTitle, { color: theme.text }]}>ICE GIRL CREAM BOY</Text>
                         <Text style={[styles.subtitle, { color: theme.icon }]}>
-                            필요한 레시피를 빠르게 찾고, 관리자라면 같은 흐름에서 바로 수정까지 이어갈 수 있습니다.
+                            아이스걸 크림보이 메뉴와 레시피 관리 시스템입니다.
                         </Text>
                     </View>
 
@@ -124,7 +124,7 @@ export default function LoginScreen() {
 
                         <View style={styles.divider}>
                             <Text style={[styles.helperText, { color: theme.icon }]}>
-                                관리자는 Supabase `profiles` 테이블에서 계정 role을 `admin`으로 변경해 주세요.
+                                관리자는 관리자 페이지에서 계정 권한을 부여해 주세요.
                             </Text>
                             <Text style={[styles.contactText, { color: theme.icon }]}>문의 mail: joannadaye@naver.com</Text>
                         </View>
