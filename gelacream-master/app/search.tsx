@@ -1,9 +1,10 @@
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
-import { StyleSheet, Text, View, FlatList, TouchableOpacity, useColorScheme } from 'react-native';
+import { StyleSheet, Text, View, FlatList, TouchableOpacity, useColorScheme, ActivityIndicator } from 'react-native';
 import { Colors } from '../constants/Colors';
-import { RECIPES, Recipe } from '../constants/MockData';
+import { Recipe } from '../constants/MockData';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
+import { useRecipes } from '../lib/recipes';
 
 export default function SearchResultScreen() {
     const { query } = useLocalSearchParams<{ query: string }>();
@@ -11,11 +12,11 @@ export default function SearchResultScreen() {
     const colorScheme = useColorScheme();
     const theme = Colors[colorScheme ?? 'light'];
     const insets = useSafeAreaInsets();
+    const { recipes, isLoading } = useRecipes();
 
     const searchText = query ? (Array.isArray(query) ? query[0] : query).toLowerCase() : '';
 
-    // Filter logic
-    const filteredRecipes = RECIPES.filter(recipe =>
+    const filteredRecipes = recipes.filter(recipe =>
         recipe.title.toLowerCase().includes(searchText) ||
         recipe.ingredients.some(ing => ing.name.toLowerCase().includes(searchText))
     );
@@ -26,18 +27,18 @@ export default function SearchResultScreen() {
             onPress={() => router.push(`/recipe/${item.id}`)}
         >
             <View style={[styles.cardImagePlaceholder, { backgroundColor: item.imageColor }]}>
-                <Text style={{ fontSize: 40 }}>🍨</Text>
+                <Text style={styles.cardEmoji}>🍨</Text>
             </View>
             <View style={styles.cardContent}>
                 <View style={styles.tagRow}>
                     {item.tags.map((tag, index) => (
-                        <View key={index} style={styles.tag}>
-                            <Text style={styles.tagText}>{tag}</Text>
+                        <View key={index} style={[styles.tag, { backgroundColor: theme.background, borderColor: theme.border }]}>
+                            <Text style={[styles.tagText, { color: theme.icon }]}>{tag}</Text>
                         </View>
                     ))}
                 </View>
                 <Text style={[styles.cardTitle, { color: theme.text }]}>{item.title}</Text>
-                <Text style={[styles.cardSubtitle, { color: theme.icon }]}>{item.ingredients.length} Ingredients</Text>
+                <Text style={[styles.cardSubtitle, { color: theme.icon }]}>{item.ingredients.length} ingredients</Text>
             </View>
         </TouchableOpacity>
     );
@@ -53,21 +54,37 @@ export default function SearchResultScreen() {
                 }}
             />
 
-            <FlatList
-                data={filteredRecipes}
-                renderItem={renderItem}
-                keyExtractor={(item) => item.id}
-                contentContainerStyle={[styles.listContent, { paddingBottom: insets.bottom + 20 }]}
-                ListEmptyComponent={
-                    <View style={styles.emptyContainer}>
-                        <Ionicons name="search-outline" size={64} color={theme.icon} style={{ marginBottom: 16, opacity: 0.5 }} />
-                        <Text style={{ color: theme.icon, fontSize: 16 }}>No recipes found for "{query}".</Text>
-                        <TouchableOpacity onPress={() => router.back()} style={{ marginTop: 20 }}>
-                            <Text style={{ color: theme.tint, fontWeight: 'bold' }}>Go Back</Text>
-                        </TouchableOpacity>
-                    </View>
-                }
-            />
+            <View style={[styles.headerBand, { borderBottomColor: theme.border }]}>
+                <Text style={[styles.eyebrow, { color: theme.icon }]}>SEARCH RESULTS</Text>
+                <Text style={[styles.intro, { color: theme.text }]}>“{query}”에 대한 결과입니다.</Text>
+                <Text style={[styles.caption, { color: theme.icon }]}>
+                    제목과 재료명을 기준으로 일치하는 레시피만 간결하게 정리했습니다.
+                </Text>
+            </View>
+
+            {isLoading ? (
+                <View style={styles.emptyContainer}>
+                    <ActivityIndicator size="large" color={theme.tint} />
+                </View>
+            ) : (
+                <FlatList
+                    data={filteredRecipes}
+                    renderItem={renderItem}
+                    keyExtractor={(item) => item.id}
+                    contentContainerStyle={[styles.listContent, { paddingBottom: insets.bottom + 20 }]}
+                    ListEmptyComponent={
+                        <View style={styles.emptyContainer}>
+                            <Ionicons name="search-outline" size={64} color={theme.icon} style={{ marginBottom: 16, opacity: 0.5 }} />
+                            <Text style={{ color: theme.icon, fontSize: 16, textAlign: 'center' }}>
+                                "{query}"와 일치하는 레시피를 찾지 못했습니다.
+                            </Text>
+                            <TouchableOpacity onPress={() => router.back()} style={{ marginTop: 20 }}>
+                                <Text style={{ color: theme.tint, fontWeight: '600' }}>이전 화면으로 돌아가기</Text>
+                            </TouchableOpacity>
+                        </View>
+                    }
+                />
+            )}
         </View>
     );
 }
@@ -76,25 +93,45 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
+    headerBand: {
+        paddingHorizontal: 20,
+        paddingTop: 6,
+        paddingBottom: 16,
+        borderBottomWidth: 1,
+    },
+    eyebrow: {
+        fontSize: 11,
+        fontWeight: '700',
+        letterSpacing: 1.4,
+        marginBottom: 6,
+    },
+    intro: {
+        fontSize: 24,
+        fontWeight: '700',
+        letterSpacing: -0.6,
+    },
+    caption: {
+        marginTop: 8,
+        fontSize: 14,
+        lineHeight: 20,
+    },
     listContent: {
         padding: 20,
     },
     card: {
         flexDirection: 'row',
         marginBottom: 16,
-        borderRadius: 16,
+        borderRadius: 18,
         borderWidth: 1,
         overflow: 'hidden',
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.05,
-        shadowRadius: 4,
-        elevation: 2,
     },
     cardImagePlaceholder: {
         width: 100,
         justifyContent: 'center',
         alignItems: 'center',
+    },
+    cardEmoji: {
+        fontSize: 32,
     },
     cardContent: {
         flex: 1,
@@ -102,7 +139,7 @@ const styles = StyleSheet.create({
     },
     cardTitle: {
         fontSize: 18,
-        fontWeight: 'bold',
+        fontWeight: '700',
         marginBottom: 4,
     },
     cardSubtitle: {
@@ -114,16 +151,15 @@ const styles = StyleSheet.create({
         marginBottom: 8,
     },
     tag: {
-        backgroundColor: '#F5F5F5',
+        borderWidth: 1,
         paddingHorizontal: 8,
-        paddingVertical: 2,
-        borderRadius: 4,
+        paddingVertical: 4,
+        borderRadius: 999,
         marginRight: 6,
         marginBottom: 4,
     },
     tagText: {
-        fontSize: 10,
-        color: '#666',
+        fontSize: 11,
         fontWeight: '600',
     },
     emptyContainer: {

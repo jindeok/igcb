@@ -10,45 +10,83 @@ import {
     KeyboardAvoidingView,
     Platform,
     ScrollView,
+    Alert,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Colors } from '../constants/Colors';
 import { useAuth } from '../context/AuthContext';
+import { supabase, isSupabaseConfigured } from '../lib/supabase';
 
-function leaveLoginScreen(router: ReturnType<typeof useRouter>) {
+function leaveSignupScreen(router: ReturnType<typeof useRouter>) {
     if (router.canDismiss()) {
         router.dismiss();
     } else {
-        router.replace('/');
+        router.replace('/login');
     }
 }
 
-export default function LoginScreen() {
-    const [email, setEmail] = useState('');
+export default function SignupScreen() {
+    const [id, setId] = useState('');
     const [password, setPassword] = useState('');
+    const [name, setName] = useState('');
     const [busy, setBusy] = useState(false);
     const [formError, setFormError] = useState<string | null>(null);
-    const { login, isLoading, user } = useAuth();
+    const { user } = useAuth();
     const router = useRouter();
     const colorScheme = useColorScheme();
     const theme = Colors[colorScheme ?? 'light'];
 
     useEffect(() => {
         if (user) {
-            leaveLoginScreen(router);
+            router.replace('/');
         }
     }, [user, router]);
 
-    const handleLogin = async () => {
+    const handleSignup = async () => {
         setFormError(null);
-        if (!email.trim() || !password) {
-            setFormError('이메일과 비밀번호를 입력해 주세요.');
+
+        if (!id.trim() || !password || !name.trim()) {
+            setFormError('아이디, 비밀번호, 사용자 이름을 모두 입력해 주세요.');
             return;
         }
+
+        if (!isSupabaseConfigured) {
+            setFormError('Supabase 설정이 되어 있지 않습니다. .env에 Supabase 정보를 먼저 넣어주세요.');
+            return;
+        }
+
         setBusy(true);
         try {
-            await login(email, password);
-            leaveLoginScreen(router);
+            const { data, error } = await supabase.auth.signUp({
+                email: id.trim(),
+                password,
+                options: {
+                    data: {
+                        full_name: name.trim(),
+                    },
+                },
+            });
+
+            if (error) {
+                const message = error.message || '회원가입 중 오류가 발생했습니다.';
+                if (message.toLowerCase().includes('already') || message.toLowerCase().includes('exists')) {
+                    setFormError('이미 존재하는 아이디입니다. 다른 아이디를 사용해 주세요.');
+                } else {
+                    setFormError(message);
+                }
+                return;
+            }
+
+            if (!data.user) {
+                Alert.alert('회원가입 완료', '가입이 완료되었습니다. 이메일 인증 후 다시 로그인해 주세요.', [
+                    { text: '확인', onPress: () => leaveSignupScreen(router) },
+                ]);
+                return;
+            }
+
+            Alert.alert('회원가입 완료', '가입이 완료되었습니다. 이제 로그인할 수 있습니다.', [
+                { text: '로그인 하러가기', onPress: () => leaveSignupScreen(router) },
+            ]);
         } catch (e: unknown) {
             const message = e instanceof Error ? e.message : '다시 시도해 주세요.';
             setFormError(message);
@@ -68,35 +106,46 @@ export default function LoginScreen() {
                         <View style={[styles.brandPill, { borderColor: theme.border, backgroundColor: theme.background }]}>
                             <Text style={[styles.brandPillText, { color: theme.icon }]}>ICE GIRL CREAM BOY</Text>
                         </View>
-                        <Text style={[styles.brandTitle, { color: theme.text }]}>간결한 레시피 작업 공간으로 로그인</Text>
+                        <Text style={[styles.title, { color: theme.text }]}>간단한 정보로 계정 만들기</Text>
                         <Text style={[styles.subtitle, { color: theme.icon }]}>
-                            필요한 레시피를 빠르게 찾고, 관리자라면 같은 흐름에서 바로 수정까지 이어갈 수 있습니다.
+                            꼭 필요한 입력만 남겨서 빠르게 가입하고, 팀 레시피 아카이브에 바로 접근할 수 있도록 구성했습니다.
                         </Text>
                     </View>
 
                     <View style={styles.formContainer}>
                         <View style={styles.inputGroup}>
-                            <Text style={[styles.label, { color: theme.text }]}>Email</Text>
+                            <Text style={[styles.label, { color: theme.text }]}>아이디 (이메일)</Text>
                             <TextInput
                                 style={[styles.input, { color: theme.text, backgroundColor: theme.background, borderColor: theme.border }]}
-                                placeholder="staff@gelacream.com"
+                                placeholder="you@example.com"
                                 placeholderTextColor={theme.icon}
-                                value={email}
-                                onChangeText={setEmail}
+                                value={id}
+                                onChangeText={setId}
                                 autoCapitalize="none"
                                 keyboardType="email-address"
                             />
                         </View>
 
                         <View style={styles.inputGroup}>
-                            <Text style={[styles.label, { color: theme.text }]}>Password</Text>
+                            <Text style={[styles.label, { color: theme.text }]}>비밀번호</Text>
                             <TextInput
                                 style={[styles.input, { color: theme.text, backgroundColor: theme.background, borderColor: theme.border }]}
-                                placeholder="비밀번호를 입력하세요"
+                                placeholder="8자 이상 입력해 주세요"
                                 placeholderTextColor={theme.icon}
                                 value={password}
                                 onChangeText={setPassword}
                                 secureTextEntry
+                            />
+                        </View>
+
+                        <View style={styles.inputGroup}>
+                            <Text style={[styles.label, { color: theme.text }]}>사용자 이름</Text>
+                            <TextInput
+                                style={[styles.input, { color: theme.text, backgroundColor: theme.background, borderColor: theme.border }]}
+                                placeholder="예: Gelato Master"
+                                placeholderTextColor={theme.icon}
+                                value={name}
+                                onChangeText={setName}
                             />
                         </View>
 
@@ -107,24 +156,24 @@ export default function LoginScreen() {
                         ) : null}
 
                         <TouchableOpacity
-                            style={[styles.button, { backgroundColor: theme.tint, opacity: busy || isLoading ? 0.7 : 1 }]}
-                            onPress={handleLogin}
-                            disabled={busy || isLoading}
+                            style={[styles.button, { backgroundColor: theme.tint, opacity: busy ? 0.7 : 1 }]}
+                            onPress={handleSignup}
+                            disabled={busy}
                         >
-                            {busy || isLoading ? <ActivityIndicator color="#FFF" /> : <Text style={styles.buttonText}>로그인</Text>}
+                            {busy ? <ActivityIndicator color="#FFF" /> : <Text style={styles.buttonText}>회원가입</Text>}
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             style={[styles.secondaryButton, { borderColor: theme.border, backgroundColor: theme.background }]}
-                            onPress={() => router.push('/signup')}
-                            disabled={busy || isLoading}
+                            onPress={() => router.replace('/login')}
+                            disabled={busy}
                         >
-                            <Text style={[styles.secondaryButtonText, { color: theme.text }]}>회원가입</Text>
+                            <Text style={[styles.secondaryButtonText, { color: theme.text }]}>로그인 화면으로 이동</Text>
                         </TouchableOpacity>
 
                         <View style={styles.divider}>
                             <Text style={[styles.helperText, { color: theme.icon }]}>
-                                관리자는 Supabase `profiles` 테이블에서 계정 role을 `admin`으로 변경해 주세요.
+                                가입 후 권한이 필요하면 관리자에게 role 설정을 요청해 주세요.
                             </Text>
                             <Text style={[styles.contactText, { color: theme.icon }]}>문의 mail: joannadaye@naver.com</Text>
                         </View>
@@ -169,7 +218,7 @@ const styles = StyleSheet.create({
         fontWeight: '600',
         letterSpacing: 1.2,
     },
-    brandTitle: {
+    title: {
         fontSize: 32,
         fontWeight: '700',
         lineHeight: 40,
@@ -240,3 +289,4 @@ const styles = StyleSheet.create({
         fontSize: 12,
     },
 });
+
