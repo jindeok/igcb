@@ -1,11 +1,12 @@
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
-import { StyleSheet, Text, View, ScrollView, TouchableOpacity, useColorScheme, Linking, Alert, ActivityIndicator } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Pressable, useColorScheme, Linking, Alert, ActivityIndicator, Platform } from 'react-native';
 import { Colors } from '../../constants/Colors';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
-import { useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { useRecipe } from '../../lib/recipes';
+import { isSupabaseConfigured, supabase } from '../../lib/supabase';
 
 export default function RecipeDetailScreen() {
     const { id } = useLocalSearchParams();
@@ -13,9 +14,44 @@ export default function RecipeDetailScreen() {
     const colorScheme = useColorScheme();
     const theme = Colors[colorScheme ?? 'light'];
     const insets = useSafeAreaInsets();
-    const { isAdmin } = useAuth();
+    const { isAdmin, user } = useAuth();
     const { recipe, isLoading } = useRecipe(id);
     const [checkedIngredients, setCheckedIngredients] = useState<Set<number>>(new Set());
+    const [ipAddress, setIpAddress] = useState('IP 확인중');
+    const [accessedAt] = useState(() => new Date());
+
+    useEffect(() => {
+        let mounted = true;
+
+        const loadIpAddress = async () => {
+            try {
+                const response = await fetch('https://api.ipify.org?format=json');
+                const data: { ip?: string } = await response.json();
+                if (mounted) {
+                    setIpAddress(data.ip ?? 'IP 미확인');
+                }
+            } catch {
+                if (mounted) {
+                    setIpAddress('IP 미확인');
+                }
+            }
+        };
+
+        void loadIpAddress();
+
+        return () => {
+            mounted = false;
+        };
+    }, []);
+
+    const watermarkText = useMemo(() => {
+        const userName = user?.name?.trim() || '이름 미확인';
+        const userId = user?.email || user?.id || 'ID 미확인';
+        const accessTime = accessedAt.toLocaleString('ko-KR');
+        return `${userName} (${userId}) | ${ipAddress} | ${accessTime}`;
+    }, [user, ipAddress, accessedAt]);
+
+    const watermarkRows = useMemo(() => Array.from({ length: 24 }, (_, idx) => `${watermarkText}   `), [watermarkText]);
 
     if (isLoading) {
         return (
@@ -52,28 +88,118 @@ export default function RecipeDetailScreen() {
         }
     };
 
+    const performDeleteRecipe = async () => {
+        if (!isSupabaseConfigured) {
+            if (Platform.OS === 'web') {
+                window.alert('Supabase 설정이 필요합니다.');
+            } else {
+                Alert.alert('오류', 'Supabase 설정이 필요합니다.');
+            }
+            return;
+        }
+
+        try {
+            const { data, error } = await supabase.from('recipes').delete().eq('id', recipe.id).select('id');
+            if (error) {
+                throw error;
+            }
+            if (!data || data.length === 0) {
+                const message = '삭제 권한이 없거나 이미 삭제된 레시피입니다.';
+                if (Platform.OS === 'web') {
+                    window.alert(message);
+                } else {
+                    Alert.alert('오류', message);
+                }
+                return;
+            }
+
+            if (Platform.OS === 'web') {
+                window.alert('레시피가 삭제되었습니다.');
+                router.replace('/category/all');
+            } else {
+                Alert.alert('완료', '레시피가 삭제되었습니다.', [
+                    { text: '확인', onPress: () => router.replace('/category/all') },
+                ]);
+            }
+        } catch (e: unknown) {
+            const message = e instanceof Error ? e.message : '삭제 중 오류가 발생했습니다.';
+            if (Platform.OS === 'web') {
+                window.alert(message);
+            } else {
+                Alert.alert('오류', message);
+            }
+        }
+    };
+
+    const handleDeleteRecipe = () => {
+        if (Platform.OS === 'web') {
+            const ok = window.confirm('레시피를 삭제하시겠습까?');
+            if (ok) {
+                void performDeleteRecipe();
+            }
+            return;
+        }
+
+        Alert.alert('레시피 삭제', '레시피를 삭제하시겠습까?', [
+            { text: '취소', style: 'cancel' },
+            {
+                text: '삭제',
+                style: 'destructive',
+                onPress: () => {
+                    void performDeleteRecipe();
+                },
+            },
+        ]);
+    };
+
     return (
         <View style={[styles.container, { backgroundColor: theme.background }]}>
+            <View pointerEvents="none" style={styles.watermarkOverlay}>
+                {watermarkRows.map((row, idx) => (
+                    <Text key={idx} style={styles.watermarkText}>
+                        {row.repeat(3)}
+                    </Text>
+                ))}
+            </View>
             <Stack.Screen
                 options={{
                     title: '', // Hide title for clean look
                     headerTransparent: true,
                     headerTintColor: theme.text,
                     headerRight: () => isAdmin ? (
-                        <TouchableOpacity
-                            onPress={() => router.push({ pathname: '/admin/edit-recipe', params: { id: recipe.id } })}
-                            style={{
-                                marginRight: 12,
-                                paddingHorizontal: 14,
-                                paddingVertical: 8,
-                                borderRadius: 999,
-                                borderWidth: 1,
-                                borderColor: theme.border,
-                                backgroundColor: theme.cardBackground,
-                            }}
-                        >
-                            <Text style={{ color: theme.tint, fontWeight: '700', fontSize: 14 }}>Edit</Text>
-                        </TouchableOpacity>
+                        <View style={{ flexDirection: 'row', marginRight: 8 }}>
+                            <Pressable
+                                onPress={() => router.push({ pathname: '/admin/edit-recipe', params: { id: recipe.id } })}
+                                hitSlop={10}
+                                style={({ pressed }) => ({
+                                    paddingHorizontal: 14,
+                                    paddingVertical: 8,
+                                    borderRadius: 999,
+                                    borderWidth: 1,
+                                    borderColor: theme.border,
+                                    backgroundColor: theme.cardBackground,
+                                    marginRight: 8,
+                                    opacity: pressed ? 0.75 : 1,
+                                })}
+                            >
+                                <Text style={{ color: theme.tint, fontWeight: '700', fontSize: 14 }}>Edit</Text>
+                            </Pressable>
+                            <Pressable
+                                onPress={handleDeleteRecipe}
+                                hitSlop={10}
+                                style={({ pressed }) => ({
+                                    paddingHorizontal: 14,
+                                    paddingVertical: 8,
+                                    borderRadius: 999,
+                                    borderWidth: 1,
+                                    borderColor: '#EF4444',
+                                    backgroundColor: theme.cardBackground,
+                                    opacity: pressed ? 0.75 : 1,
+                                })}
+                            >
+                                <Text style={{ color: '#EF4444', fontWeight: '700', fontSize: 14 }}>Delete</Text>
+                            </Pressable>
+                        </View>
                     ) : null,
                 }}
             />
@@ -99,6 +225,22 @@ export default function RecipeDetailScreen() {
                         <Text style={[styles.description, { color: theme.icon }]}>
                             정리된 재료와 순서를 따라 바로 작업할 수 있는 실무용 레시피 카드입니다.
                         </Text>
+                        {isAdmin ? (
+                            <Pressable
+                                onPress={handleDeleteRecipe}
+                                style={({ pressed }) => [
+                                    styles.bodyDeleteButton,
+                                    {
+                                        borderColor: '#EF4444',
+                                        backgroundColor: theme.cardBackground,
+                                        opacity: pressed ? 0.75 : 1,
+                                    },
+                                ]}
+                            >
+                                <Ionicons name="trash-outline" size={16} color="#EF4444" />
+                                <Text style={styles.bodyDeleteButtonText}>Delete Recipe</Text>
+                            </Pressable>
+                        ) : null}
                     </View>
 
                     {/* Ingredients Section */}
@@ -237,6 +379,22 @@ const styles = StyleSheet.create({
         fontSize: 14,
         lineHeight: 22,
     },
+    bodyDeleteButton: {
+        marginTop: 14,
+        alignSelf: 'flex-start',
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 8,
+        borderWidth: 1,
+        borderRadius: 999,
+        paddingHorizontal: 14,
+        paddingVertical: 8,
+    },
+    bodyDeleteButtonText: {
+        color: '#EF4444',
+        fontSize: 14,
+        fontWeight: '700',
+    },
     section: {
         marginBottom: 30,
     },
@@ -311,5 +469,21 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         fontSize: 16,
         fontWeight: '500',
+    },
+    watermarkOverlay: {
+        ...StyleSheet.absoluteFillObject,
+        justifyContent: 'center',
+        overflow: 'hidden',
+        zIndex: 10,
+    },
+    watermarkText: {
+        color: '#000',
+        opacity: 0.08,
+        fontSize: 15,
+        fontWeight: '600',
+        transform: [{ rotate: '-24deg' }],
+        marginVertical: 10,
+        marginLeft: -90,
+        includeFontPadding: false,
     },
 });

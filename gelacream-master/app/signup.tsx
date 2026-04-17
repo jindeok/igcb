@@ -16,6 +16,7 @@ import { useRouter } from 'expo-router';
 import { Colors } from '../constants/Colors';
 import { useAuth } from '../context/AuthContext';
 import { supabase, isSupabaseConfigured } from '../lib/supabase';
+import { Ionicons } from '@expo/vector-icons';
 
 function leaveSignupScreen(router: ReturnType<typeof useRouter>) {
     if (router.canDismiss()) {
@@ -29,6 +30,7 @@ export default function SignupScreen() {
     const [id, setId] = useState('');
     const [password, setPassword] = useState('');
     const [name, setName] = useState('');
+    const [agreedToCopyrightTerms, setAgreedToCopyrightTerms] = useState(false);
     const [busy, setBusy] = useState(false);
     const [formError, setFormError] = useState<string | null>(null);
     const { user } = useAuth();
@@ -47,6 +49,11 @@ export default function SignupScreen() {
 
         if (!id.trim() || !password || !name.trim()) {
             setFormError('아이디, 비밀번호, 사용자 이름을 모두 입력해 주세요.');
+            return;
+        }
+
+        if (!agreedToCopyrightTerms) {
+            setFormError('회원가입을 위해 콘텐츠 유출 손해배상 책임 약관에 동의해 주세요.');
             return;
         }
 
@@ -106,10 +113,7 @@ export default function SignupScreen() {
                         <View style={[styles.brandPill, { borderColor: theme.border, backgroundColor: theme.background }]}>
                             <Text style={[styles.brandPillText, { color: theme.icon }]}>ICE GIRL CREAM BOY</Text>
                         </View>
-                        <Text style={[styles.title, { color: theme.text }]}>간단한 정보로 계정 만들기</Text>
-                        <Text style={[styles.subtitle, { color: theme.icon }]}>
-                            꼭 필요한 입력만 남겨서 빠르게 가입하고, 팀 레시피 아카이브에 바로 접근할 수 있도록 구성했습니다.
-                        </Text>
+                        <Text style={[styles.title, { color: theme.text }]}>계정 만들기</Text>
                     </View>
 
                     <View style={styles.formContainer}>
@@ -139,14 +143,35 @@ export default function SignupScreen() {
                         </View>
 
                         <View style={styles.inputGroup}>
-                            <Text style={[styles.label, { color: theme.text }]}>사용자 이름</Text>
+                            <Text style={[styles.label, { color: theme.text }]}>사용자 이름 (실명)</Text>
                             <TextInput
                                 style={[styles.input, { color: theme.text, backgroundColor: theme.background, borderColor: theme.border }]}
-                                placeholder="예: Gelato Master"
+                                placeholder="예: 홍길동"
                                 placeholderTextColor={theme.icon}
                                 value={name}
                                 onChangeText={setName}
                             />
+                        </View>
+
+                        <View style={[styles.termsCard, { backgroundColor: theme.background, borderColor: theme.border }]}>
+                            <Text style={[styles.termsTitle, { color: theme.text }]}>무단 도용 및 유포 금지 안내</Text>
+                            <Text style={[styles.termsBody, { color: theme.icon }]}>
+                                본 페이지에 게시된 모든 레시피, 사진, 영상 및 편집물에 대한 저작권은 (주)로미요에 있습니다. 저작권법 제103조 및 관련 법률에 따라 보호받고 있으며, 사전 승인 없는 무단 복제, 배포, 상업적 이용 및 제2차 저작물 작성을 금합니다. 이를 위반할 경우 민·형사상의 법적 책임을 물을 수 있습니다.
+                            </Text>
+                            <TouchableOpacity
+                                style={styles.checkboxRow}
+                                onPress={() => setAgreedToCopyrightTerms((prev) => !prev)}
+                                activeOpacity={0.8}
+                            >
+                                <Ionicons
+                                    name={agreedToCopyrightTerms ? 'checkbox' : 'square-outline'}
+                                    size={22}
+                                    color={agreedToCopyrightTerms ? theme.tint : theme.icon}
+                                />
+                                <Text style={[styles.checkboxLabel, { color: theme.text }]}>
+                                    확인했습니다.
+                                </Text>
+                            </TouchableOpacity>
                         </View>
 
                         {formError ? (
@@ -233,6 +258,32 @@ const styles = StyleSheet.create({
     },
     inputGroup: {
         gap: 8,
+    },
+    termsCard: {
+        borderWidth: 1,
+        borderRadius: 16,
+        paddingHorizontal: 14,
+        paddingVertical: 14,
+        gap: 10,
+    },
+    termsTitle: {
+        fontSize: 15,
+        fontWeight: '700',
+    },
+    termsBody: {
+        fontSize: 13,
+        lineHeight: 20,
+    },
+    checkboxRow: {
+        flexDirection: 'row',
+        gap: 10,
+        alignItems: 'flex-start',
+    },
+    checkboxLabel: {
+        flex: 1,
+        fontSize: 13,
+        lineHeight: 20,
+        fontWeight: '600',
     },
     label: {
         fontSize: 14,

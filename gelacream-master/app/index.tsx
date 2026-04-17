@@ -58,7 +58,8 @@ export default function HomeScreen() {
         router.push(`/search?query=${encodeURIComponent(searchQuery.trim())}`);
     };
 
-    const featuredRecipes = recipes.slice(0, 4);
+    const featuredRecipes = recipes.filter((recipe) => recipe.tags.includes('추천')).slice(0, 4);
+    const featuredList = featuredRecipes.length > 0 ? featuredRecipes : recipes.slice(0, 4);
 
     return (
         <SafeAreaView style={[styles.container, { backgroundColor: theme.background }]}>
@@ -71,7 +72,7 @@ export default function HomeScreen() {
                 <View style={styles.topBar}>
                     <View style={styles.brandBlock}>
                         <Text style={[styles.kicker, { color: theme.icon }]}>ICE GIRL CREAM BOY</Text>
-                        <Text style={[styles.pageTitle, { color: theme.text }]}>Recipe archive</Text>
+                        <Text style={[styles.pageTitle, { color: theme.text }]}>Recipe</Text>
                     </View>
                     <TouchableOpacity
                         accessibilityLabel="로그아웃"
@@ -98,18 +99,14 @@ export default function HomeScreen() {
                             </Text>
                         </View>
                     </View>
-                    <Text style={[styles.heroTitle, { color: theme.text }]}>간결하게 찾고, 바로 확인하는 젤라또 레시피 보드</Text>
-                    <Text style={[styles.heroBody, { color: theme.icon }]}>
-                        필요한 레시피를 빠르게 검색하고, 카테고리별로 정리된 화면에서 재료와 작업 순서를 바로 확인할 수 있습니다.
-                    </Text>
                     <View style={styles.heroStatsRow}>
                         <View style={[styles.statCard, { backgroundColor: theme.background, borderColor: theme.border }]}>
                             <Text style={[styles.statValue, { color: theme.text }]}>{recipes.length}</Text>
-                            <Text style={[styles.statLabel, { color: theme.icon }]}>Total recipes</Text>
+                            <Text style={[styles.statLabel, { color: theme.icon }]}>총 레시피 수</Text>
                         </View>
                         <View style={[styles.statCard, { backgroundColor: theme.background, borderColor: theme.border }]}>
                             <Text style={[styles.statValue, { color: theme.text }]}>{CATEGORIES.length}</Text>
-                            <Text style={[styles.statLabel, { color: theme.icon }]}>Categories</Text>
+                            <Text style={[styles.statLabel, { color: theme.icon }]}>총 카테고리 수</Text>
                         </View>
                     </View>
                 </View>
@@ -170,7 +167,7 @@ export default function HomeScreen() {
                             <Text style={[styles.sectionEyebrow, { color: theme.icon }]}>OVERVIEW</Text>
                             <Text style={[styles.sectionTitle, { color: theme.text }]}>추천 레시피</Text>
                         </View>
-                        <TouchableOpacity onPress={() => router.push('/category/milk')}>
+                        <TouchableOpacity onPress={() => router.push('/category/all')}>
                             <Text style={[styles.sectionLink, { color: theme.tint }]}>전체 보기</Text>
                         </TouchableOpacity>
                     </View>
@@ -181,7 +178,7 @@ export default function HomeScreen() {
                         </View>
                     ) : (
                         <View style={styles.featuredList}>
-                            {featuredRecipes.map((item) => (
+                            {featuredList.map((item) => (
                                 <TouchableOpacity
                                     key={item.id}
                                     style={[styles.featuredCard, { backgroundColor: theme.cardBackground, borderColor: theme.border }]}

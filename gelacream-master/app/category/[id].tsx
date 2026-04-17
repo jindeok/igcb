@@ -16,11 +16,12 @@ export default function CategoryScreen() {
     const { isAdmin } = useAuth();
     const { recipes, isLoading } = useRecipes();
 
-    const filteredRecipes = recipes.filter((r) => r.category === id);
+    const filteredRecipes = id === 'all' ? recipes : recipes.filter((r) => r.category === id);
 
     // Get category display name and color
     const getCategoryInfo = (catId: string | string[]) => {
         switch (catId) {
+            case 'all': return { name: 'All Recipes', color: '#FFFFFF' };
             case 'milk': return { name: 'Milk Base', color: '#FFF8E1' };
             case 'sorbet': return { name: 'Sorbet & Fruit', color: '#E1F5FE' };
             case 'vegan': return { name: 'Vegan', color: '#E8F5E9' };

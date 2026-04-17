@@ -29,6 +29,7 @@ export default function EditRecipeScreen() {
 
     const [title, setTitle] = useState('');
     const [category, setCategory] = useState<'milk' | 'sorbet' | 'vegan' | 'alcohol'>('milk');
+    const [isFeatured, setIsFeatured] = useState(false);
     const [ingredients, setIngredients] = useState<Ingredient[]>([{ name: '', amount: '' }]);
     const [steps, setSteps] = useState<string[]>(['']);
 
@@ -36,6 +37,7 @@ export default function EditRecipeScreen() {
         if (!existingRecipe) return;
         setTitle(existingRecipe.title);
         setCategory(existingRecipe.category);
+        setIsFeatured(existingRecipe.tags.includes('추천'));
         setIngredients(existingRecipe.ingredients.length > 0 ? existingRecipe.ingredients : [{ name: '', amount: '' }]);
         setSteps(existingRecipe.steps.length > 0 ? existingRecipe.steps : ['']);
     }, [existingRecipe]);
@@ -64,11 +66,13 @@ export default function EditRecipeScreen() {
         }
 
         try {
+            const baseTags = (existingRecipe?.tags ?? []).filter((tag) => tag !== '추천');
+            const nextTags = isFeatured ? [...baseTags, '추천'] : baseTags;
             const payload = {
                 id: existingRecipe?.id ?? buildRecipeId(),
                 title,
                 category,
-                tags: existingRecipe?.tags ?? [],
+                tags: nextTags,
                 ingredients: ingredients.filter((item) => item.name.trim()),
                 steps: steps.map((step) => step.trim()).filter(Boolean),
                 purchase_links: existingRecipe?.purchaseLinks ?? [],
@@ -160,6 +164,11 @@ export default function EditRecipeScreen() {
                             onChangeText={(text) => setCategory(text as any)}
                             placeholderTextColor={theme.icon}
                         />
+
+                        <TouchableOpacity style={styles.featuredRow} onPress={() => setIsFeatured((prev) => !prev)}>
+                            <Ionicons name={isFeatured ? 'checkbox' : 'square-outline'} size={22} color={isFeatured ? theme.tint : theme.icon} />
+                            <Text style={[styles.featuredLabel, { color: theme.text }]}>추천 레시피로 노출</Text>
+                        </TouchableOpacity>
                     </View>
 
                     <View style={styles.section}>
@@ -285,5 +294,15 @@ const styles = StyleSheet.create({
     stepIndex: {
         marginRight: 8,
         width: 20,
+    },
+    featuredRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 8,
+        marginTop: 8,
+    },
+    featuredLabel: {
+        fontSize: 14,
+        fontWeight: '600',
     },
 });

@@ -66,7 +66,7 @@ export default function LoginScreen() {
                 <View style={[styles.frame, { backgroundColor: theme.cardBackground, borderColor: theme.border }]}>
                     <View style={styles.headerContainer}>
                         <View style={[styles.brandPill, { borderColor: theme.border, backgroundColor: theme.background }]}>
-                            <Text style={[styles.brandPillText, { color: theme.icon }]}>ICE GIRL CREAM BOY</Text>
+                            <Text style={[styles.brandPillText, { color: theme.icon }]}>(주)로미요</Text>
                         </View>
                         <Text style={[styles.brandTitle, { color: theme.text }]}>ICE GIRL CREAM BOY</Text>
                         <Text style={[styles.subtitle, { color: theme.icon }]}>
@@ -124,7 +124,7 @@ export default function LoginScreen() {
 
                         <View style={styles.divider}>
                             <Text style={[styles.helperText, { color: theme.icon }]}>
-                                관리자는 관리자 페이지에서 계정 권한을 부여해 주세요.
+                                 
                             </Text>
                             <Text style={[styles.contactText, { color: theme.icon }]}>문의 mail: joannadaye@naver.com</Text>
                         </View>
