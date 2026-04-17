@@ -225,22 +225,6 @@ export default function RecipeDetailScreen() {
                         <Text style={[styles.description, { color: theme.icon }]}>
                             정리된 재료와 순서를 따라 바로 작업할 수 있는 실무용 레시피 카드입니다.
                         </Text>
-                        {isAdmin ? (
-                            <Pressable
-                                onPress={handleDeleteRecipe}
-                                style={({ pressed }) => [
-                                    styles.bodyDeleteButton,
-                                    {
-                                        borderColor: '#EF4444',
-                                        backgroundColor: theme.cardBackground,
-                                        opacity: pressed ? 0.75 : 1,
-                                    },
-                                ]}
-                            >
-                                <Ionicons name="trash-outline" size={16} color="#EF4444" />
-                                <Text style={styles.bodyDeleteButtonText}>Delete Recipe</Text>
-                            </Pressable>
-                        ) : null}
                     </View>
 
                     {/* Ingredients Section */}
@@ -378,22 +362,6 @@ const styles = StyleSheet.create({
         marginTop: 10,
         fontSize: 14,
         lineHeight: 22,
-    },
-    bodyDeleteButton: {
-        marginTop: 14,
-        alignSelf: 'flex-start',
-        flexDirection: 'row',
-        alignItems: 'center',
-        gap: 8,
-        borderWidth: 1,
-        borderRadius: 999,
-        paddingHorizontal: 14,
-        paddingVertical: 8,
-    },
-    bodyDeleteButtonText: {
-        color: '#EF4444',
-        fontSize: 14,
-        fontWeight: '700',
     },
     section: {
         marginBottom: 30,

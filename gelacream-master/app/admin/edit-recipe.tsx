@@ -138,8 +138,19 @@ export default function EditRecipeScreen() {
                 options={{
                     title: isEditing ? 'Edit Recipe' : 'New Recipe',
                     headerRight: () => (
-                        <TouchableOpacity onPress={handleSave}>
-                            <Text style={{ color: theme.tint, fontWeight: 'bold', fontSize: 16 }}>Save</Text>
+                        <TouchableOpacity
+                            onPress={handleSave}
+                            style={{
+                                marginRight: 10,
+                                paddingHorizontal: 14,
+                                paddingVertical: 8,
+                                borderRadius: 999,
+                                borderWidth: 1,
+                                borderColor: theme.border,
+                                backgroundColor: theme.cardBackground,
+                            }}
+                        >
+                            <Text style={{ color: theme.tint, fontWeight: '700', fontSize: 14 }}>Save</Text>
                         </TouchableOpacity>
                     ),
                 }}
