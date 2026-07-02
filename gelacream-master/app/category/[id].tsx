@@ -49,7 +49,7 @@ export default function CategoryScreen() {
                     ))}
                 </View>
                 <Text style={[styles.cardTitle, { color: theme.text }]}>{item.title}</Text>
-                <Text style={[styles.cardSubtitle, { color: theme.icon }]}>{item.ingredients.length} ingredients</Text>
+                <Text style={[styles.cardSubtitle, { color: theme.icon }]}>{item.hardness != null ? `경도 ${item.hardness} · ` : ''}재료 {item.ingredients.length}개</Text>
             </View>
         </TouchableOpacity>
     );

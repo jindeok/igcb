@@ -1,0 +1,8 @@
+{
+  "name": "igcb-scripts",
+  "private": true,
+  "description": "로컬 운영 스크립트 전용(앱 번들과 무관)",
+  "dependencies": {
+    "pg": "^8.22.0"
+  }
+}

@@ -59,7 +59,23 @@ export default function HomeScreen() {
     };
 
     const featuredRecipes = recipes.filter((recipe) => recipe.tags.includes('추천')).slice(0, 4);
-    const featuredList = featuredRecipes.length > 0 ? featuredRecipes : recipes.slice(0, 4);
+    const categoryRepresentatives = CATEGORIES.map((category) =>
+        recipes.find((recipe) => recipe.category === category.id),
+    ).filter((recipe): recipe is Recipe => Boolean(recipe));
+    const featuredList =
+        featuredRecipes.length > 0
+            ? featuredRecipes
+            : categoryRepresentatives.length > 0
+              ? categoryRepresentatives
+              : recipes.slice(0, 4);
+
+    const recipeSummary = (recipe: Recipe) => {
+        const parts: string[] = [];
+        if (recipe.hardness != null) parts.push(`경도 ${recipe.hardness}`);
+        parts.push(`재료 ${recipe.ingredients.length}개`);
+        if (recipe.steps.length > 0) parts.push(`스텝 ${recipe.steps.length}개`);
+        return parts.join(' · ');
+    };
 
     return (
         <SafeAreaView style={[styles.container, { backgroundColor: theme.background }]}>
@@ -146,7 +162,7 @@ export default function HomeScreen() {
                                         <View style={styles.searchResultContent}>
                                             <Text style={[styles.resultTitle, { color: theme.text }]}>{item.title}</Text>
                                             <Text style={[styles.resultSubtitle, { color: theme.icon }]}>
-                                                {item.category.toUpperCase()} · {item.ingredients.length} ingredients
+                                                {item.category.toUpperCase()} · 재료 {item.ingredients.length}개
                                             </Text>
                                         </View>
                                         <Ionicons name="chevron-forward" size={16} color={theme.icon} />
@@ -193,7 +209,7 @@ export default function HomeScreen() {
                                     </View>
                                     <Text style={[styles.featuredTitle, { color: theme.text }]}>{item.title}</Text>
                                     <Text style={[styles.featuredDescription, { color: theme.icon }]} numberOfLines={2}>
-                                        {item.description ?? '재료 구성과 작업 순서를 빠르게 확인할 수 있는 대표 레시피입니다.'}
+                                        {item.description ?? recipeSummary(item)}
                                     </Text>
                                 </TouchableOpacity>
                             ))}

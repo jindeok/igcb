@@ -27,6 +27,17 @@ const AuthContext = createContext<AuthContextType>({
     logout: async () => {},
 });
 
+// Supabase 미설정 상태의 로컬 개발 프리뷰용 계정 (프로덕션 번들에서는 활성화되지 않음).
+// 관리자 화면까지 로컬에서 확인할 수 있도록 admin 으로 둔다. Supabase 연동 시에는
+// 실제 profiles.role 을 따르므로 배포 환경에는 영향이 없다.
+const isDevPreview = !isSupabaseConfigured && typeof __DEV__ !== 'undefined' && __DEV__;
+const PREVIEW_USER: User = {
+    id: 'local-preview',
+    email: 'preview@local.dev',
+    name: '로컬 미리보기',
+    role: 'admin',
+};
+
 async function userFromSession(session: Session): Promise<User> {
     const u = session.user;
     const email = u.email ?? '';
@@ -60,7 +71,7 @@ export function AuthProvider({ children }: PropsWithChildren) {
 
     useEffect(() => {
         if (!isSupabaseConfigured) {
-            setUser(null);
+            setUser(isDevPreview ? PREVIEW_USER : null);
             setIsLoading(false);
             return;
         }
@@ -106,6 +117,10 @@ export function AuthProvider({ children }: PropsWithChildren) {
 
     const login = async (email: string, password: string) => {
         if (!isSupabaseConfigured) {
+            if (isDevPreview) {
+                setUser(PREVIEW_USER);
+                return;
+            }
             throw new Error(
                 'Supabase가 설정되지 않았습니다. 프로젝트 루트에 .env를 만들고 EXPO_PUBLIC_SUPABASE_URL, EXPO_PUBLIC_SUPABASE_ANON_KEY를 넣어 주세요.',
             );

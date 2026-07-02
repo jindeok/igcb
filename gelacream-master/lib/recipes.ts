@@ -1,15 +1,30 @@
 import { useEffect, useMemo, useState } from 'react';
-import { RECIPES, type Ingredient, type PurchaseLink, type Recipe } from '../constants/MockData';
+import {
+    RECIPES,
+    type Ingredient,
+    type IngredientGroup,
+    type PurchaseLink,
+    type Recipe,
+    type RecipeImage,
+    type StepGroup,
+} from '../constants/MockData';
 import { isSupabaseConfigured, supabase } from './supabase';
+
+const RECIPE_COLUMNS =
+    'id, title, category, description, hardness, tags, ingredient_groups, step_groups, notes, images, instruction_images, purchase_links, image_color, sort_order';
 
 type RecipeRow = {
     id: string;
     title: string;
     category: Recipe['category'];
     description?: string | null;
+    hardness?: number | null;
     tags?: unknown;
-    ingredients?: unknown;
-    steps?: unknown;
+    ingredient_groups?: unknown;
+    step_groups?: unknown;
+    notes?: unknown;
+    images?: unknown;
+    instruction_images?: unknown;
     purchase_links?: unknown;
     image_color?: string | null;
 };
@@ -24,10 +39,49 @@ function asIngredients(value: unknown): Ingredient[] {
         .filter((item): item is Record<string, unknown> => !!item && typeof item === 'object')
         .map((item) => ({
             name: typeof item.name === 'string' ? item.name : '',
-            amount: typeof item.amount === 'string' ? item.amount : '',
+            amount: typeof item.amount === 'string' ? item.amount : undefined,
+            amounts: asStringArray(item.amounts),
             note: typeof item.note === 'string' ? item.note : undefined,
         }))
+        .map((item) => ({
+            ...item,
+            amounts: item.amounts && item.amounts.length > 0 ? item.amounts : undefined,
+        }))
         .filter((item) => item.name);
+}
+
+function asIngredientGroups(value: unknown): IngredientGroup[] {
+    if (!Array.isArray(value)) return [];
+    return value
+        .filter((item): item is Record<string, unknown> => !!item && typeof item === 'object')
+        .map((item) => ({
+            title: typeof item.title === 'string' && item.title ? item.title : undefined,
+            columns: asStringArray(item.columns).length > 0 ? asStringArray(item.columns) : undefined,
+            ingredients: asIngredients(item.ingredients),
+        }))
+        .filter((group) => group.ingredients.length > 0);
+}
+
+function asStepGroups(value: unknown): StepGroup[] {
+    if (!Array.isArray(value)) return [];
+    return value
+        .filter((item): item is Record<string, unknown> => !!item && typeof item === 'object')
+        .map((item) => ({
+            title: typeof item.title === 'string' && item.title ? item.title : undefined,
+            steps: asStringArray(item.steps),
+        }))
+        .filter((group) => group.steps.length > 0);
+}
+
+function asImages(value: unknown): RecipeImage[] {
+    if (!Array.isArray(value)) return [];
+    return value
+        .filter((item): item is Record<string, unknown> => !!item && typeof item === 'object')
+        .map((item) => ({
+            src: typeof item.src === 'string' ? item.src : '',
+            caption: typeof item.caption === 'string' && item.caption ? item.caption : undefined,
+        }))
+        .filter((item) => item.src);
 }
 
 function asPurchaseLinks(value: unknown): PurchaseLink[] {
@@ -42,14 +96,22 @@ function asPurchaseLinks(value: unknown): PurchaseLink[] {
 }
 
 function normalizeRecipe(row: RecipeRow): Recipe {
+    const ingredientGroups = asIngredientGroups(row.ingredient_groups);
+    const stepGroups = asStepGroups(row.step_groups);
     return {
         id: row.id,
         title: row.title,
         category: row.category,
         description: row.description ?? undefined,
+        hardness: typeof row.hardness === 'number' ? row.hardness : undefined,
         tags: asStringArray(row.tags),
-        ingredients: asIngredients(row.ingredients),
-        steps: asStringArray(row.steps),
+        ingredientGroups,
+        ingredients: ingredientGroups.flatMap((group) => group.ingredients),
+        stepGroups,
+        steps: stepGroups.flatMap((group) => group.steps),
+        notes: asStringArray(row.notes),
+        images: asImages(row.images),
+        instructionImages: asImages(row.instruction_images),
         purchaseLinks: asPurchaseLinks(row.purchase_links),
         imageColor: row.image_color || '#FFE7DE',
     };
@@ -62,8 +124,8 @@ export async function fetchRecipes(): Promise<Recipe[]> {
 
     const { data, error } = await supabase
         .from('recipes')
-        .select('id, title, category, description, tags, ingredients, steps, purchase_links, image_color')
-        .order('updated_at', { ascending: false });
+        .select(RECIPE_COLUMNS)
+        .order('sort_order', { ascending: true });
 
     if (error) {
         throw error;
@@ -83,7 +145,7 @@ export async function fetchRecipeById(id: string): Promise<Recipe | null> {
 
     const { data, error } = await supabase
         .from('recipes')
-        .select('id, title, category, description, tags, ingredients, steps, purchase_links, image_color')
+        .select(RECIPE_COLUMNS)
         .eq('id', id)
         .maybeSingle();
 

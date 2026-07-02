@@ -1,12 +1,12 @@
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
-import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Pressable, useColorScheme, Linking, Alert, ActivityIndicator, Platform } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Pressable, useColorScheme, Linking, Alert, ActivityIndicator, Platform, Image } from 'react-native';
 import { Colors } from '../../constants/Colors';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useMemo, useState, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { useRecipe } from '../../lib/recipes';
-import { isSupabaseConfigured, supabase } from '../../lib/supabase';
+import { isSupabaseConfigured, resolveImageSrc, supabase } from '../../lib/supabase';
 
 export default function RecipeDetailScreen() {
     const { id } = useLocalSearchParams();
@@ -16,7 +16,7 @@ export default function RecipeDetailScreen() {
     const insets = useSafeAreaInsets();
     const { isAdmin, user } = useAuth();
     const { recipe, isLoading } = useRecipe(id);
-    const [checkedIngredients, setCheckedIngredients] = useState<Set<number>>(new Set());
+    const [checkedIngredients, setCheckedIngredients] = useState<Set<string>>(new Set());
     const [ipAddress, setIpAddress] = useState('IP 확인중');
     const [accessedAt] = useState(() => new Date());
 
@@ -69,15 +69,26 @@ export default function RecipeDetailScreen() {
         );
     }
 
-    const toggleIngredient = (index: number) => {
+    const toggleIngredient = (key: string) => {
         const next = new Set(checkedIngredients);
-        if (next.has(index)) {
-            next.delete(index);
+        if (next.has(key)) {
+            next.delete(key);
         } else {
-            next.add(index);
+            next.add(key);
         }
         setCheckedIngredients(next);
     };
+
+    const ingredientGroups =
+        recipe.ingredientGroups && recipe.ingredientGroups.length > 0
+            ? recipe.ingredientGroups
+            : [{ ingredients: recipe.ingredients }];
+    const stepGroups =
+        recipe.stepGroups && recipe.stepGroups.length > 0
+            ? recipe.stepGroups
+            : recipe.steps.length > 0
+              ? [{ steps: recipe.steps }]
+              : [];
 
     const openLink = async (url: string) => {
         const supported = await Linking.canOpenURL(url);
@@ -99,6 +110,14 @@ export default function RecipeDetailScreen() {
         }
 
         try {
+            // Storage 이미지 정리 (버킷에 올라간 것만 대상; 정적/외부 경로는 제외)
+            const storagePaths = [...(recipe.images ?? []), ...(recipe.instructionImages ?? [])]
+                .map((img) => img.src)
+                .filter((src) => src && !src.startsWith('http') && !src.startsWith('/'));
+            if (storagePaths.length > 0) {
+                await supabase.storage.from('recipe-images').remove(storagePaths);
+            }
+
             const { data, error } = await supabase.from('recipes').delete().eq('id', recipe.id).select('id');
             if (error) {
                 throw error;
@@ -222,69 +241,198 @@ export default function RecipeDetailScreen() {
                             ))}
                         </View>
                         <Text style={[styles.title, { color: theme.text }]}>{recipe.title}</Text>
-                        <Text style={[styles.description, { color: theme.icon }]}>
-                            정리된 재료와 순서를 따라 바로 작업할 수 있는 실무용 레시피 카드입니다.
-                        </Text>
+                        {recipe.description ? (
+                            <Text style={[styles.description, { color: theme.icon }]}>{recipe.description}</Text>
+                        ) : null}
+                        {recipe.hardness != null && (
+                            <View style={styles.infoChipRow}>
+                                <View style={[styles.infoChip, { backgroundColor: theme.cardBackground, borderColor: theme.border }]}>
+                                    <Ionicons name="speedometer-outline" size={16} color={theme.tint} />
+                                    <Text style={[styles.infoChipLabel, { color: theme.icon }]}>머신 경도값</Text>
+                                    <Text style={[styles.infoChipValue, { color: theme.text }]}>{recipe.hardness}</Text>
+                                </View>
+                            </View>
+                        )}
                     </View>
 
                     {/* Ingredients Section */}
                     <View style={styles.section}>
-                        <Text style={[styles.sectionTitle, { color: theme.text }]}>Ingredients</Text>
-                        <View style={[styles.card, { backgroundColor: theme.cardBackground, borderColor: theme.border }]}>
-                            {recipe.ingredients.map((ing, index) => (
-                                <TouchableOpacity
-                                    key={index}
-                                    style={[styles.ingredientRow]}
-                                    onPress={() => toggleIngredient(index)}
-                                    activeOpacity={0.7}
-                                >
-                                    <Ionicons
-                                        name={checkedIngredients.has(index) ? "checkbox" : "square-outline"}
-                                        size={24}
-                                        color={checkedIngredients.has(index) ? theme.tint : theme.icon}
-                                    />
-                                    <View style={styles.ingredientInfo}>
-                                        <Text style={[
-                                            styles.ingredientName,
-                                            { color: theme.text, textDecorationLine: checkedIngredients.has(index) ? 'line-through' : 'none', opacity: checkedIngredients.has(index) ? 0.5 : 1 }
-                                        ]}>
-                                            {ing.name}
-                                        </Text>
-                                        {ing.note && <Text style={[styles.ingredientNote, { color: theme.icon }]}>{ing.note}</Text>}
+                        <Text style={[styles.sectionEyebrow, { color: theme.icon }]}>INGREDIENTS</Text>
+                        <Text style={[styles.sectionTitle, { color: theme.text }]}>배합</Text>
+                        {ingredientGroups.map((group, groupIndex) => {
+                            const amountColCount = Math.max(
+                                group.columns?.length ?? 0,
+                                ...group.ingredients.map((ing) => ing.amounts?.length ?? 0),
+                            );
+                            const isWide = amountColCount >= 3;
+                            const rows = (
+                                <View style={isWide ? { minWidth: 132 + amountColCount * 92 + 36 } : undefined}>
+                                    {group.columns && group.columns.length > 0 ? (
+                                        <View style={[styles.columnHeaderRow, { borderBottomColor: theme.border }]}>
+                                            <View style={styles.columnHeaderSpacer} />
+                                            {group.columns.map((col, colIndex) => (
+                                                <Text
+                                                    key={colIndex}
+                                                    style={[styles.columnHeaderText, { color: theme.icon }]}
+                                                    numberOfLines={2}
+                                                >
+                                                    {col}
+                                                </Text>
+                                            ))}
+                                        </View>
+                                    ) : null}
+                                    {group.ingredients.map((ing, index) => {
+                                        const key = `${groupIndex}-${index}`;
+                                        const checked = checkedIngredients.has(key);
+                                        return (
+                                            <TouchableOpacity
+                                                key={key}
+                                                style={[styles.ingredientRow]}
+                                                onPress={() => toggleIngredient(key)}
+                                                activeOpacity={0.7}
+                                            >
+                                                <Ionicons
+                                                    name={checked ? "checkbox" : "square-outline"}
+                                                    size={24}
+                                                    color={checked ? theme.tint : theme.icon}
+                                                />
+                                                <View style={styles.ingredientInfo}>
+                                                    <Text style={[
+                                                        styles.ingredientName,
+                                                        { color: theme.text, textDecorationLine: checked ? 'line-through' : 'none', opacity: checked ? 0.5 : 1 }
+                                                    ]}>
+                                                        {ing.name}
+                                                    </Text>
+                                                    {ing.note && <Text style={[styles.ingredientNote, { color: theme.icon }]}>{ing.note}</Text>}
+                                                </View>
+                                                {ing.amounts && ing.amounts.length > 0 ? (
+                                                    ing.amounts.map((amount, amountIndex) => (
+                                                        <Text
+                                                            key={amountIndex}
+                                                            style={[styles.ingredientAmountCol, { color: theme.text }]}
+                                                        >
+                                                            {amount}
+                                                        </Text>
+                                                    ))
+                                                ) : (
+                                                    <Text style={[styles.ingredientAmount, { color: theme.text }]}>{ing.amount}</Text>
+                                                )}
+                                            </TouchableOpacity>
+                                        );
+                                    })}
+                                </View>
+                            );
+                            return (
+                                <View key={groupIndex} style={styles.groupBlock}>
+                                    {group.title ? (
+                                        <Text style={[styles.groupTitle, { color: theme.text }]}>{group.title}</Text>
+                                    ) : null}
+                                    {isWide ? (
+                                        <View style={styles.swipeHintRow}>
+                                            <Ionicons name="swap-horizontal" size={13} color={theme.icon} />
+                                            <Text style={[styles.swipeHintText, { color: theme.icon }]}>
+                                                좌우로 밀어 배합량을 비교하세요
+                                            </Text>
+                                        </View>
+                                    ) : null}
+                                    <View style={[styles.card, { backgroundColor: theme.cardBackground, borderColor: theme.border }]}>
+                                        {isWide ? (
+                                            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                                                {rows}
+                                            </ScrollView>
+                                        ) : (
+                                            rows
+                                        )}
                                     </View>
-                                    <Text style={[styles.ingredientAmount, { color: theme.text }]}>{ing.amount}</Text>
-                                </TouchableOpacity>
-                            ))}
-                        </View>
+                                </View>
+                            );
+                        })}
                     </View>
 
                     {/* Steps Section */}
-                    <View style={styles.section}>
-                        <Text style={[styles.sectionTitle, { color: theme.text }]}>Instructions</Text>
-                        <View style={styles.stepList}>
-                            {recipe.steps.map((step, index) => (
-                                <View key={index} style={styles.stepRow}>
-                                    <View style={[styles.stepNumber, { backgroundColor: theme.background, borderColor: theme.border }]}>
-                                        <Text style={[styles.stepNumberText, { color: theme.tint }]}>{index + 1}</Text>
+                    {(stepGroups.length > 0 || (recipe.instructionImages?.length ?? 0) > 0) && (
+                        <View style={styles.section}>
+                            <Text style={[styles.sectionEyebrow, { color: theme.icon }]}>INSTRUCTIONS</Text>
+                            <Text style={[styles.sectionTitle, { color: theme.text }]}>만드는 순서</Text>
+                            {stepGroups.map((group, groupIndex) => (
+                                <View key={groupIndex} style={styles.groupBlock}>
+                                    {group.title ? (
+                                        <Text style={[styles.groupTitle, { color: theme.text }]}>{group.title}</Text>
+                                    ) : null}
+                                    <View style={styles.stepList}>
+                                        {group.steps.map((step, index) => (
+                                            <View key={index} style={styles.stepRow}>
+                                                <View style={[styles.stepNumber, { backgroundColor: theme.background, borderColor: theme.border }]}>
+                                                    <Text style={[styles.stepNumberText, { color: theme.tint }]}>{index + 1}</Text>
+                                                </View>
+                                                <Text style={[styles.stepText, { color: theme.text }]}>{step}</Text>
+                                            </View>
+                                        ))}
                                     </View>
-                                    <Text style={[styles.stepText, { color: theme.text }]}>{step}</Text>
+                                </View>
+                            ))}
+                            {recipe.instructionImages?.map((image, index) => (
+                                <View key={index} style={[styles.diagramCard, { backgroundColor: '#FFFFFF', borderColor: theme.border }]}>
+                                    <Image source={{ uri: resolveImageSrc(image.src) }} style={styles.diagramImage} resizeMode="contain" />
+                                    {image.caption ? (
+                                        <Text style={[styles.imageCaption, { color: theme.icon }]}>{image.caption}</Text>
+                                    ) : null}
                                 </View>
                             ))}
                         </View>
-                    </View>
+                    )}
 
-                    {/* Purchase Links */}
-                    {recipe.purchaseLinks && recipe.purchaseLinks.length > 0 && (
+                    {/* Notes Section */}
+                    {recipe.notes && recipe.notes.length > 0 && (
                         <View style={styles.section}>
-                            <Text style={[styles.sectionTitle, { color: theme.text }]}>Shop Ingredients</Text>
-                            {recipe.purchaseLinks.map((link, index) => (
+                            <Text style={[styles.sectionEyebrow, { color: theme.icon }]}>NOTES</Text>
+                            <Text style={[styles.sectionTitle, { color: theme.text }]}>참고 사항</Text>
+                            <View style={[styles.card, { backgroundColor: theme.cardBackground, borderColor: theme.border }]}>
+                                {recipe.notes.map((note, index) => {
+                                    const isWarning = /^[‼※⚠!]/.test(note);
+                                    return (
+                                        <View key={index} style={[styles.noteRow, index > 0 && { borderTopColor: theme.border, borderTopWidth: StyleSheet.hairlineWidth }]}>
+                                            <Ionicons
+                                                name={isWarning ? 'alert-circle' : 'information-circle-outline'}
+                                                size={18}
+                                                color={isWarning ? '#F59E0B' : theme.icon}
+                                                style={styles.noteIcon}
+                                            />
+                                            <Text style={[styles.noteText, { color: isWarning ? '#B45309' : theme.text }]}>{note}</Text>
+                                        </View>
+                                    );
+                                })}
+                            </View>
+                        </View>
+                    )}
+
+                    {/* Purchase reference images & links */}
+                    {((recipe.images && recipe.images.length > 0) || (recipe.purchaseLinks && recipe.purchaseLinks.length > 0)) && (
+                        <View style={styles.section}>
+                            <Text style={[styles.sectionEyebrow, { color: theme.icon }]}>SHOPPING</Text>
+                            <Text style={[styles.sectionTitle, { color: theme.text }]}>재료 구매 참고</Text>
+                            {recipe.images && recipe.images.length > 0 && (
+                                <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.imageRow}>
+                                    {recipe.images.map((image, index) => (
+                                        <View key={index} style={[styles.imageCard, { backgroundColor: theme.cardBackground, borderColor: theme.border }]}>
+                                            <Image source={{ uri: resolveImageSrc(image.src) }} style={styles.referenceImage} resizeMode="cover" />
+                                            {image.caption ? (
+                                                <Text style={[styles.imageCaption, { color: theme.icon }]} numberOfLines={2}>
+                                                    {image.caption}
+                                                </Text>
+                                            ) : null}
+                                        </View>
+                                    ))}
+                                </ScrollView>
+                            )}
+                            {recipe.purchaseLinks?.map((link, index) => (
                                 <TouchableOpacity
                                     key={index}
                                     style={[styles.linkButton, { backgroundColor: theme.cardBackground, borderColor: theme.border }]}
                                     onPress={() => openLink(link.url)}
                                 >
                                     <Ionicons name="cart-outline" size={20} color={theme.text} />
-                                    <Text style={[styles.linkText, { color: theme.text }]}>Buy {link.item}</Text>
+                                    <Text style={[styles.linkText, { color: theme.text }]}>{link.item}</Text>
                                     <Ionicons name="chevron-forward" size={16} color={theme.icon} />
                                 </TouchableOpacity>
                             ))}
@@ -366,11 +514,129 @@ const styles = StyleSheet.create({
     section: {
         marginBottom: 30,
     },
+    sectionEyebrow: {
+        fontSize: 12,
+        fontWeight: '600',
+        letterSpacing: 1,
+        marginBottom: 4,
+    },
     sectionTitle: {
         fontSize: 24,
         fontWeight: '700',
         marginBottom: 16,
         letterSpacing: -0.6,
+    },
+    infoChipRow: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        gap: 8,
+        marginTop: 14,
+    },
+    infoChip: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 6,
+        borderWidth: 1,
+        borderRadius: 999,
+        paddingHorizontal: 12,
+        paddingVertical: 7,
+    },
+    infoChipLabel: {
+        fontSize: 13,
+    },
+    infoChipValue: {
+        fontSize: 15,
+        fontWeight: '700',
+    },
+    groupBlock: {
+        marginBottom: 14,
+    },
+    groupTitle: {
+        fontSize: 16,
+        fontWeight: '700',
+        marginBottom: 8,
+    },
+    swipeHintRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 4,
+        marginBottom: 6,
+    },
+    swipeHintText: {
+        fontSize: 12,
+    },
+    columnHeaderRow: {
+        flexDirection: 'row',
+        alignItems: 'flex-end',
+        paddingBottom: 8,
+        marginBottom: 10,
+        borderBottomWidth: StyleSheet.hairlineWidth,
+    },
+    columnHeaderSpacer: {
+        flex: 1,
+        marginLeft: 36,
+    },
+    columnHeaderText: {
+        width: 92,
+        fontSize: 12,
+        fontWeight: '600',
+        textAlign: 'right',
+    },
+    ingredientAmountCol: {
+        width: 92,
+        fontSize: 15,
+        fontWeight: '600',
+        textAlign: 'right',
+    },
+    noteRow: {
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+        paddingVertical: 8,
+    },
+    noteIcon: {
+        marginTop: 2,
+        marginRight: 10,
+    },
+    noteText: {
+        flex: 1,
+        fontSize: 15,
+        lineHeight: 22,
+    },
+    diagramCard: {
+        marginTop: 8,
+        borderWidth: 1,
+        borderRadius: 16,
+        padding: 10,
+        gap: 8,
+    },
+    diagramImage: {
+        width: '100%',
+        height: 260,
+        borderRadius: 10,
+    },
+    imageRow: {
+        gap: 12,
+        paddingBottom: 4,
+        marginBottom: 10,
+    },
+    imageCard: {
+        width: 168,
+        borderWidth: 1,
+        borderRadius: 16,
+        padding: 8,
+        gap: 8,
+    },
+    referenceImage: {
+        width: '100%',
+        height: 150,
+        borderRadius: 10,
+        backgroundColor: '#F1F5F9',
+    },
+    imageCaption: {
+        fontSize: 12,
+        lineHeight: 16,
+        paddingHorizontal: 2,
+        paddingBottom: 2,
     },
     card: {
         borderRadius: 18,
