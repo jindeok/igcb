@@ -87,8 +87,8 @@ export default function RecipeDetailScreen() {
         recipe.stepGroups && recipe.stepGroups.length > 0
             ? recipe.stepGroups
             : recipe.steps.length > 0
-              ? [{ steps: recipe.steps }]
-              : [];
+                ? [{ steps: recipe.steps }]
+                : [];
 
     const openLink = async (url: string) => {
         const supported = await Linking.canOpenURL(url);
@@ -234,11 +234,6 @@ export default function RecipeDetailScreen() {
                             <View style={[styles.categoryTag, { backgroundColor: theme.tint }]}>
                                 <Text style={styles.categoryTagText}>{recipe.category.toUpperCase()}</Text>
                             </View>
-                            {recipe.tags.map((tag, idx) => (
-                                <View key={idx} style={[styles.tag, { borderColor: theme.border, backgroundColor: theme.cardBackground }]}>
-                                    <Text style={[styles.tagText, { color: theme.icon }]}>{tag}</Text>
-                                </View>
-                            ))}
                         </View>
                         <Text style={[styles.title, { color: theme.text }]}>{recipe.title}</Text>
                         {recipe.description ? (
@@ -269,11 +264,11 @@ export default function RecipeDetailScreen() {
                                 <View style={isWide ? { minWidth: 132 + amountColCount * 92 + 36 } : undefined}>
                                     {group.columns && group.columns.length > 0 ? (
                                         <View style={[styles.columnHeaderRow, { borderBottomColor: theme.border }]}>
-                                            <View style={styles.columnHeaderSpacer} />
+                                            <View style={[styles.columnHeaderSpacer, { borderRightColor: theme.border, borderRightWidth: StyleSheet.hairlineWidth }]} />
                                             {group.columns.map((col, colIndex) => (
                                                 <Text
                                                     key={colIndex}
-                                                    style={[styles.columnHeaderText, { color: theme.icon }]}
+                                                    style={[styles.columnHeaderText, { color: theme.icon, borderRightColor: theme.border, borderRightWidth: colIndex < group.columns!.length - 1 ? StyleSheet.hairlineWidth : 0 }]}
                                                     numberOfLines={2}
                                                 >
                                                     {col}
@@ -287,29 +282,31 @@ export default function RecipeDetailScreen() {
                                         return (
                                             <TouchableOpacity
                                                 key={key}
-                                                style={[styles.ingredientRow]}
+                                                style={[styles.ingredientRow, { borderBottomColor: theme.border, borderBottomWidth: index < group.ingredients.length - 1 ? StyleSheet.hairlineWidth : 0 }]}
                                                 onPress={() => toggleIngredient(key)}
                                                 activeOpacity={0.7}
                                             >
-                                                <Ionicons
-                                                    name={checked ? "checkbox" : "square-outline"}
-                                                    size={24}
-                                                    color={checked ? theme.tint : theme.icon}
-                                                />
-                                                <View style={styles.ingredientInfo}>
-                                                    <Text style={[
-                                                        styles.ingredientName,
-                                                        { color: theme.text, textDecorationLine: checked ? 'line-through' : 'none', opacity: checked ? 0.5 : 1 }
-                                                    ]}>
-                                                        {ing.name}
-                                                    </Text>
-                                                    {ing.note && <Text style={[styles.ingredientNote, { color: theme.icon }]}>{ing.note}</Text>}
+                                                <View style={[styles.ingredientNameCell, { borderRightColor: theme.border, borderRightWidth: StyleSheet.hairlineWidth }]}>
+                                                    <Ionicons
+                                                        name={checked ? "checkbox" : "square-outline"}
+                                                        size={24}
+                                                        color={checked ? theme.tint : theme.icon}
+                                                    />
+                                                    <View style={styles.ingredientInfo}>
+                                                        <Text style={[
+                                                            styles.ingredientName,
+                                                            { color: theme.text, textDecorationLine: checked ? 'line-through' : 'none', opacity: checked ? 0.5 : 1 }
+                                                        ]}>
+                                                            {ing.name}
+                                                        </Text>
+                                                        {ing.note && <Text style={[styles.ingredientNote, { color: theme.icon }]}>{ing.note}</Text>}
+                                                    </View>
                                                 </View>
                                                 {ing.amounts && ing.amounts.length > 0 ? (
                                                     ing.amounts.map((amount, amountIndex) => (
                                                         <Text
                                                             key={amountIndex}
-                                                            style={[styles.ingredientAmountCol, { color: theme.text }]}
+                                                            style={[styles.ingredientAmountCol, { color: theme.text, borderRightColor: theme.border, borderRightWidth: amountIndex < ing.amounts!.length - 1 ? StyleSheet.hairlineWidth : 0 }]}
                                                         >
                                                             {amount}
                                                         </Text>
@@ -567,26 +564,30 @@ const styles = StyleSheet.create({
     },
     columnHeaderRow: {
         flexDirection: 'row',
-        alignItems: 'flex-end',
-        paddingBottom: 8,
-        marginBottom: 10,
+        alignItems: 'stretch',
         borderBottomWidth: StyleSheet.hairlineWidth,
     },
     columnHeaderSpacer: {
         flex: 1,
-        marginLeft: 36,
+        paddingVertical: 12,
+        paddingLeft: 18,
+        paddingRight: 12,
     },
     columnHeaderText: {
-        width: 92,
+        width: 104,
         fontSize: 12,
         fontWeight: '600',
-        textAlign: 'right',
+        textAlign: 'center',
+        paddingVertical: 12,
+        paddingHorizontal: 8,
     },
     ingredientAmountCol: {
-        width: 92,
+        width: 104,
         fontSize: 15,
         fontWeight: '600',
-        textAlign: 'right',
+        textAlign: 'center',
+        paddingVertical: 12,
+        paddingHorizontal: 8,
     },
     noteRow: {
         flexDirection: 'row',
@@ -641,12 +642,19 @@ const styles = StyleSheet.create({
     card: {
         borderRadius: 18,
         borderWidth: 1,
-        padding: 18,
+        overflow: 'hidden',
     },
     ingredientRow: {
         flexDirection: 'row',
+        alignItems: 'stretch',
+    },
+    ingredientNameCell: {
+        flex: 1,
+        flexDirection: 'row',
         alignItems: 'center',
-        marginBottom: 12,
+        paddingVertical: 12,
+        paddingLeft: 18,
+        paddingRight: 12,
     },
     ingredientInfo: {
         flex: 1,
@@ -663,6 +671,10 @@ const styles = StyleSheet.create({
     ingredientAmount: {
         fontSize: 16,
         fontWeight: '600',
+        paddingVertical: 12,
+        paddingRight: 18,
+        paddingLeft: 12,
+        justifyContent: 'center',
     },
     stepList: {
         gap: 16,

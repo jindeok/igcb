@@ -1,0 +1,2273 @@
+{
+  "id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4",
+  "title": "Gelacream RECIPE 최신  ",
+  "path": [
+    "Gelacream RECIPE 최신  "
+  ],
+  "page": {
+    "object": "page",
+    "id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4",
+    "created_time": "2025-11-11T02:27:00.000Z",
+    "last_edited_time": "2026-06-30T15:02:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "cover": {
+      "type": "external",
+      "external": {
+        "url": "https://app.notion.com/images/page-cover/solid_beige.png"
+      }
+    },
+    "icon": {
+      "type": "emoji",
+      "emoji": "🍨"
+    },
+    "parent": {
+      "type": "database_id",
+      "database_id": "2a81a39e-eba3-81bd-b501-d81d90f283f6"
+    },
+    "in_trash": false,
+    "is_archived": false,
+    "is_locked": false,
+    "properties": {
+      "파일과 미디어 1": {
+        "id": "NJNM",
+        "type": "files",
+        "files": []
+      },
+      "상태": {
+        "id": "QJuV",
+        "type": "status",
+        "status": {
+          "id": "8ffa4f38-3286-4c7e-8f14-0b52242512ba",
+          "name": "레시피",
+          "color": "blue"
+        }
+      },
+      "담당자": {
+        "id": "bzk%7C",
+        "type": "people",
+        "people": []
+      },
+      "이름": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Gelacream RECIPE 최신  ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Gelacream RECIPE 최신  ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://app.notion.com/p/Gelacream-RECIPE-2a81a39eeba381da86e8d6cf118dd5e4",
+    "public_url": null,
+    "archived": false,
+    "request_id": "244aa56c-c698-46bc-b4f7-cbb18db2d4b9",
+    "local_cover": {
+      "owner_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4",
+      "label": "page_cover",
+      "source_url": "https://app.notion.com/images/page-cover/solid_beige.png",
+      "local_path": "assets/2a81a39e-eba3-81da-86e8-d6cf118dd5e4_solid_beige.png",
+      "content_type": "image/png"
+    }
+  },
+  "blocks": [
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8142-abce-c63955c45234",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-14T06:12:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "믹싱볼에 담는 순서 :\n재료 하나 넣을때 마다 저어주세요",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "믹싱볼에 담는 순서 :\n재료 하나 넣을때 마다 저어주세요",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81c5-b681-f9d246fb0f96",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-14T06:21:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "재료 → 시럽 → 가루 → 생크림 → 우유",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "재료 → 시럽 → 가루 → 생크림 → 우유",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8116-b80b-de8b582044d1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-14T06:04:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "재료 → 시럽 → 소금, 콩검(뉴트랄린) → 레몬즙 → 정수",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "재료 → 시럽 → 소금, 콩검(뉴트랄린) → 레몬즙 → 정수",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-818e-876b-db50650ca127",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-14T06:04:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "‼️ 파우더 종류는 채반(채망)에 걸러 믹싱볼에 담아야 믹싱 시 뭉치지 않음",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "‼️ 파우더 종류는 채반(채망)에 걸러 믹싱볼에 담아야 믹싱 시 뭉치지 않음",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81ed-bb49-c43cd3a9a6cc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8154-bc9e-eb99882d8ea0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-14T06:04:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "✅️ 제철 생과일 사용시 ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "✅️ 제철 생과일 사용시 ",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8109-8948-e7eff66094ec",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-14T06:04:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "과일 자체가 맛있고 당도가 높아서",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "과일 자체가 맛있고 당도가 높아서",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-816a-85ed-eb0c47823f8e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-14T06:04:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "시럽 양 조절 잘 해주셔야합니다!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "시럽 양 조절 잘 해주셔야합니다!",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8170-9409-c593d352c6c5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-14T06:04:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "만들기 전에 과일 맛 보시고 상태에 따라 ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "만들기 전에 과일 맛 보시고 상태에 따라 ",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81ce-9198-fa1bba74a71d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-14T06:04:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "레시피보다 시럽 덜 넣으셔도 됩니다😉",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "레시피보다 시럽 덜 넣으셔도 됩니다😉",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-819d-9c77-e40adaa9bc2a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81e0-a863-d43851ea2f2d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "< 우유 베이스 >",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "< 우유 베이스 >",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81a9-9931-e2fe8d8f63f9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "우유 베이스",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "우유 베이스",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false,
+      "children": [
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81e4-8c70-dbae299cb75c",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-81a9-9931-e2fe8d8f63f9"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2026-06-18T15:32:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "a5edb9e4-86d8-4ed7-886c-a832e8a6d18b"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "child_database",
+          "child_database": {
+            "title": "우유베잇"
+          },
+          "archived": false,
+          "exported_database": {
+            "id": "2a81a39e-eba3-81e4-8c70-dbae299cb75c",
+            "title": "우유베잇",
+            "pages": [
+              {
+                "id": "3831a39e-eba3-80f1-9c8a-c451035d2534",
+                "title": "📍코코넛우베라떼",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "📍코코넛우베라떼"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-818e-8731-c63b295472b4",
+                "title": "코코넛",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "코코넛"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81b2-9e9c-ee92de0a0077",
+                "title": "체리청밀크",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "체리청밀크"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81b6-8a78-c42894f64f54",
+                "title": "초당옥수수",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "초당옥수수"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8121-bdfd-f99f464eae63",
+                "title": "애플시나몬",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "애플시나몬"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8185-9c37-ddc2c77c0a49",
+                "title": "다크초코 / 두바이초콜릿",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "다크초코 / 두바이초콜릿"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8122-a213-d85c1880ccfe",
+                "title": "유기농 보성 녹차, 올티스말차",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "유기농 보성 녹차, 올티스말차"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81a2-9e14-df16d9bd9bf3",
+                "title": "연유커피",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "연유커피"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8144-afab-df52c2512623",
+                "title": "로즈마리허니",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "로즈마리허니"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-818b-86ae-c0efe0dfda54",
+                "title": "민트초코칩",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "민트초코칩"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81df-8080-e512dfb2b844",
+                "title": "햇감자",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "햇감자"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-810e-b912-d48c017aa6c7",
+                "title": "마가렛트",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "마가렛트"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8196-b848-c4e836487b3a",
+                "title": "우리땅 붉은팥",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "우리땅 붉은팥"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81b0-a125-c66849389b9a",
+                "title": "호지차",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "호지차"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8119-ae91-d28825e4e256",
+                "title": "두바이 초콜릿",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "두바이 초콜릿"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-815e-b6f5-f3a308ebe0da",
+                "title": "피넛버터초코",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "피넛버터초코"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-817d-8345-ec145d5edcc9",
+                "title": "밀크티",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "밀크티"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8106-9fd5-f147036ec7d0",
+                "title": "소금커피",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "소금커피"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8126-a0be-cfcf56bb7a6e",
+                "title": "유기농 쌀밥 (리조)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "유기농 쌀밥 (리조)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8134-8d2a-d4fd8ee5cdee",
+                "title": "인절미",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "인절미"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-815c-b4de-f7605bd295ba",
+                "title": "아보카도",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "아보카도"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-817f-9280-f4c5c11792e7",
+                "title": "메이플 월넛",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "메이플 월넛"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81b0-b168-d74c206c72c7",
+                "title": "어린 쑥",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "어린 쑥"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8138-a644-df13d22b37ba",
+                "title": "치즈크래커(뽀또)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "치즈크래커(뽀또)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-814b-b84a-dd45cd3c9ae3",
+                "title": "라임고수 ",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "라임고수 "
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8101-9cf3-c427758281ce",
+                "title": "생바질밀크",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "생바질밀크"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8113-912b-e13c6d1e2b12",
+                "title": "우리땅 검정깨",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "우리땅 검정깨"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8122-948b-f302dfcc2031",
+                "title": "한살림 약과",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "한살림 약과"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8193-8973-c11e8ec21159",
+                "title": "구운 피스타치오",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "구운 피스타치오"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8107-8564-f4de2aac3433",
+                "title": "헤이즐넛",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "헤이즐넛"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-814c-a3db-e6c1d6297c26",
+                "title": "단호박",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "단호박"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8158-8c5f-c8ff8042a0a5",
+                "title": "누텔라초코",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "누텔라초코"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-817d-85b7-cf2bd251dc38",
+                "title": "커피쿠키 (로투스비스켓)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "커피쿠키 (로투스비스켓)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81c2-85a4-d247c7e4b085",
+                "title": "크림치즈",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "크림치즈"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81e6-80f9-d80fc45abe2a",
+                "title": "에스프레소크림치즈 ",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "에스프레소크림치즈 "
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8128-9865-ddb841515b94",
+                "title": "트리플치즈 (고르곤졸라,체다,스위스치즈)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "트리플치즈 (고르곤졸라,체다,스위스치즈)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8150-8344-efbd28a36317",
+                "title": "라즈베리 마스카포네",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "라즈베리 마스카포네"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c",
+                "title": "무화과크림치즈",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "무화과크림치즈"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8111-b033-fa103949baf6",
+                "title": "고소한볶음땅콩",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "고소한볶음땅콩"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-813a-8119-d76790f5bc0c",
+                "title": "고추장초콜릿 ",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "고추장초콜릿 "
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8175-91bd-e3b8588008c9",
+                "title": "잣(파인너츠)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "잣(파인너츠)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81c0-ae23-dd5ca2949723",
+                "title": "솔티드카라멜",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "솔티드카라멜"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8104-9498-e6483d3ce37e",
+                "title": "솔티크래커",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "솔티크래커"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-812e-aaf4-cd2bb8c5e411",
+                "title": "메이플 시나몬",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "메이플 시나몬"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8166-ab0b-cc6769da618f",
+                "title": "가마솥에 누룽지",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "가마솥에 누룽지"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-810f-acba-dc052dbd9655",
+                "title": "유기농 밤",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "유기농 밤"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8190-90ad-ff00f98c77f1",
+                "title": "화이트베이스(스트라치아뗄라, 순수벌꿀, 피칸프랄린)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "화이트베이스(스트라치아뗄라, 순수벌꿀, 피칸프랄린)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-819b-8795-c6a10c446138",
+                "title": "캠벨포도",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "캠벨포도"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8105-b67d-e081b3658de2",
+                "title": "와사비",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "와사비"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8135-aa2e-f7ec9307b73a",
+                "title": "찐 바닐라",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "찐 바닐라"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-814d-9997-f11c7e2a5fbd",
+                "title": "달고나밀크",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "달고나밀크"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-816b-8f06-e2e8109d15c9",
+                "title": "군고구마",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "군고구마"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-810e-bf3a-d675ef079ee7",
+                "title": "초코케이크(오예스)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "초코케이크(오예스)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8166-bcb4-f77746ee034a",
+                "title": "이스파한(리치,장미,라즈베리)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "이스파한(리치,장미,라즈베리)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81e3-ba59-fbb0dd40987b",
+                "title": "라벤더레몬크림 ",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "라벤더레몬크림 "
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8135-9a48-f0f525ce529b",
+                "title": "유기농 흑미밥 (리조 네로)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "유기농 흑미밥 (리조 네로)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8140-8ba4-ca6a14fdd45f",
+                "title": "티라미수 / 밤티라미수",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "티라미수 / 밤티라미수"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81a0-b373-dfb17eb7f92b",
+                "title": "한살림 미숫가루",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "한살림 미숫가루"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81a4-8cd5-dd43aac51085",
+                "title": "유기농 그릭요거트",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "유기농 그릭요거트"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81dc-a14e-dfaa682a71cf",
+                "title": "살얼음 식혜",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "살얼음 식혜"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-814a-8de5-ef7239aeb050",
+                "title": "녹차크림치즈",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "녹차크림치즈"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8150-9edb-feab9240211e",
+                "title": "쿠크다스 (화이트토르테)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "쿠크다스 (화이트토르테)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-815a-a822-ce4244510661",
+                "title": "레몬크림크럼블",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "레몬크림크럼블"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81df-8d0c-e699bffb2ce1",
+                "title": "유기농 우유 (오레오밀크, 팥빙수)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇",
+                  "유기농 우유 (오레오밀크, 팥빙수)"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81a4-b9bd-e3bdc3906451",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "< 소르베&과일 >",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "< 소르베&과일 >",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81cd-a660-fa475583ac2c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "소르베 & 과일",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "소르베 & 과일",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false,
+      "children": [
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81a3-9484-e70833e4b397",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-81cd-a660-fa475583ac2c"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "child_database",
+          "child_database": {
+            "title": "우유베잇 (1)"
+          },
+          "archived": false,
+          "exported_database": {
+            "id": "2a81a39e-eba3-81a3-9484-e70833e4b397",
+            "title": "우유베잇 (1)",
+            "pages": [
+              {
+                "id": "2a81a39e-eba3-8118-ad35-da3eb1654797",
+                "title": "체리요거트",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "체리요거트"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-816c-8ffa-e12118f7517a",
+                "title": "토마토바질소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "토마토바질소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81a5-8b4e-d6213f2da00d",
+                "title": "블루베리소르베(냉동)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "블루베리소르베(냉동)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81de-b0a4-f243c59e5343",
+                "title": "라즈베리",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "라즈베리"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81f7-b0ad-c920ee890f40",
+                "title": "토마토소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "토마토소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-811c-94f0-ffcf6fbf3435",
+                "title": "멜론소르베 / 메론",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "멜론소르베 / 메론"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8130-8d8d-ec20888fee72",
+                "title": "귤 소르베, 청귤 (오렌지, 한라봉, 천혜향 등)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "귤 소르베, 청귤 (오렌지, 한라봉, 천혜향 등)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8141-9b44-f39aa0448c1f",
+                "title": "배소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "배소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8173-9269-d354920a246c",
+                "title": "트리플베리",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "트리플베리"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81bd-9ad6-fd6c042aeb12",
+                "title": "딸기우유",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "딸기우유"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81bf-a3d1-c3404569c135",
+                "title": "키위바나나소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "키위바나나소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81da-b644-ebdb731d20d7",
+                "title": "다크 체리",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "다크 체리"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8113-a845-d2da190d0840",
+                "title": "아보카도바나나소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "아보카도바나나소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-812c-b59a-e409b35bb2fc",
+                "title": "무화과소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "무화과소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-812e-8367-fa1f445be7d9",
+                "title": "깔라만시소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "깔라만시소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-815a-a93e-d29a8dae7744",
+                "title": "딸기소르베(냉동)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "딸기소르베(냉동)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-818b-a490-dc08680c1d5a",
+                "title": "복숭아소르베 (천도,백도,황도)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "복숭아소르베 (천도,백도,황도)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-819e-b249-ec4311d0c510",
+                "title": "홍시소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "홍시소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81e4-baee-d1228cc97b2f",
+                "title": "적포도 / 청포도 소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "적포도 / 청포도 소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81e8-a4e7-d686f292ed60",
+                "title": "레몬소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "레몬소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81f9-b5c1-c92ecc1ef2a7",
+                "title": "캐모마일리치소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "캐모마일리치소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8106-b1bc-eab5215f2e27",
+                "title": "(유기농) 참외",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "(유기농) 참외"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-814b-8a53-d622a6d9941b",
+                "title": "블루베리요거트",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "블루베리요거트"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8191-8edb-c5da4e3fd0de",
+                "title": "생바나나우유 / 생바나나초코칩",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "생바나나우유 / 생바나나초코칩"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8197-b352-f48ca700d7d9",
+                "title": "산딸기",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "산딸기"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-819a-a2f7-c8664888c9b8",
+                "title": "단감소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "단감소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81c6-8401-ea24e06def47",
+                "title": "자두소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "자두소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81ee-98dd-c085d5973eb6",
+                "title": "파인애플레몬바질소르베(파레바)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "파인애플레몬바질소르베(파레바)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81fa-a986-c37aa76aa12f",
+                "title": "참다래소르베 (키위소르베)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "참다래소르베 (키위소르베)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-811a-85ff-f8d1c051ddd8",
+                "title": "자몽소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "자몽소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8125-bd62-e6bc1a2e0652",
+                "title": "생파인애플소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "생파인애플소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8135-ac9d-e5645a34ae5a",
+                "title": "레몬요거트",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "레몬요거트"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8185-80e4-fdd7d9dbd078",
+                "title": "망고바나나소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "망고바나나소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81d0-9a44-dd99d0cfcddc",
+                "title": "망고패션후르츠 소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "망고패션후르츠 소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81f1-a750-c43c607c83ac",
+                "title": "아몬드바나나",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "아몬드바나나"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81fa-9be4-fef6c6aba0c8",
+                "title": "딸기바나나소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "딸기바나나소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8157-bda1-e35cc16bc75f",
+                "title": "생딸기소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "생딸기소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-818a-aedb-dcf05e87f6e5",
+                "title": "수박소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "수박소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-819a-a531-c41b1d37154d",
+                "title": "샤인머스캣소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "샤인머스캣소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81a0-adb9-d3327950839f",
+                "title": "초록사과",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "초록사과"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81da-bb09-e6a5cb0e0af5",
+                "title": "살구소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "살구소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81f4-a723-d8380fbca6d8",
+                "title": "생딸기크림",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "생딸기크림"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-811f-8921-d987ded72f0a",
+                "title": "라즈베리요거트",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "라즈베리요거트"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8120-ac5f-fa41f415f517",
+                "title": "바나나소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "바나나소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-818d-9f2a-d0e179482da1",
+                "title": "패션후르츠소르베(냉동)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "패션후르츠소르베(냉동)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81f3-b858-d742f60bade5",
+                "title": "산딸기요거트",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "산딸기요거트"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8127-a0c7-fb89c73fd541",
+                "title": "애플망고소르베(냉동)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "애플망고소르베(냉동)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81d2-9a09-c68c199a2f57",
+                "title": "사과소르베 (노란사과,초록사과)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (1)",
+                  "사과소르베 (노란사과,초록사과)"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81b0-9cc3-f5e63b332d75",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "< 비건 >",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "< 비건 >",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8167-b6cf-d7d9f61c071c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "비건",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "비건",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false,
+      "children": [
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8131-8321-d0b1fb4aba79",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8167-b6cf-d7d9f61c071c"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "child_database",
+          "child_database": {
+            "title": "우유베잇 (2)"
+          },
+          "archived": false,
+          "exported_database": {
+            "id": "2a81a39e-eba3-8131-8321-d0b1fb4aba79",
+            "title": "우유베잇 (2)",
+            "pages": [
+              {
+                "id": "2a81a39e-eba3-81f3-a31c-e6bd65b9b3d6",
+                "title": "아몬드 초코",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (2)",
+                  "아몬드 초코"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-812a-abb6-fa905b711225",
+                "title": "피냐콜라다(비건)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (2)",
+                  "피냐콜라다(비건)"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81a6-b288-e2d0af96839d",
+                "title": "오트 커피",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (2)",
+                  "오트 커피"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81f6-928f-cfec3900cae7",
+                "title": "코코넛 말차",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (2)",
+                  "코코넛 말차"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8160-9898-fe2cf841370d",
+                "title": "트로피칼 브리즈",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (2)",
+                  "트로피칼 브리즈"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81fb-a92c-ebb90fd8883f",
+                "title": "코코넛커피",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (2)",
+                  "코코넛커피"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81b8-8320-d1da86dd73b1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "< 알코올 >",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "< 알코올 >",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8153-8aa8-c562b28c8acc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "알코올",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "알코올",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false,
+      "children": [
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8124-b531-d14b582abb23",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8153-8aa8-c562b28c8acc"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "child_database",
+          "child_database": {
+            "title": "우유베잇 (3)"
+          },
+          "archived": false,
+          "exported_database": {
+            "id": "2a81a39e-eba3-8124-b531-d14b582abb23",
+            "title": "우유베잇 (3)",
+            "pages": [
+              {
+                "id": "2a81a39e-eba3-8125-85e0-e0129891283a",
+                "title": "느린마을 막걸리",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (3)",
+                  "느린마을 막걸리"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8132-b95e-d9ca0bb97528",
+                "title": "깔루아밀크",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (3)",
+                  "깔루아밀크"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8139-81e9-fc5aa9d5c79f",
+                "title": "샹그리아",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (3)",
+                  "샹그리아"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-8167-b92c-c906426d65c6",
+                "title": "기네스 흑맥주",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (3)",
+                  "기네스 흑맥주"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81a7-8e24-d160af91000c",
+                "title": "레드와인",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (3)",
+                  "레드와인"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81b0-9557-c379adf5b5fa",
+                "title": "샤인화이트와인소르베",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (3)",
+                  "샤인화이트와인소르베"
+                ]
+              },
+              {
+                "id": "2a81a39e-eba3-81d3-9b64-e83ff7637e1d",
+                "title": "피냐콜라다(알코올)",
+                "path": [
+                  "Gelacream RECIPE 최신  ",
+                  "우유베잇 (3)",
+                  "피냐콜라다(알코올)"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8186-8e4f-fd5d8f4fa0df",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-816d-abd2-d61d7ed33ae6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-819b-a3c5-e545f7374d3a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-811c-b34a-d0d68c0663b8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81da-86e8-d6cf118dd5e4"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ]
+}

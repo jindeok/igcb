@@ -1,0 +1,516 @@
+{
+  "id": "2a81a39e-eba3-81fb-a92c-ebb90fd8883f",
+  "title": "코코넛커피",
+  "path": [
+    "Gelacream RECIPE 최신  ",
+    "우유베잇 (2)",
+    "코코넛커피"
+  ],
+  "page": {
+    "object": "page",
+    "id": "2a81a39e-eba3-81fb-a92c-ebb90fd8883f",
+    "created_time": "2025-11-11T02:27:00.000Z",
+    "last_edited_time": "2025-11-11T02:27:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "2a81a39e-eba3-8131-8321-d0b1fb4aba79"
+    },
+    "in_trash": false,
+    "is_archived": false,
+    "is_locked": false,
+    "properties": {
+      "파일과 미디어": {
+        "id": "atoQ",
+        "type": "files",
+        "files": [
+          {
+            "name": "스크린샷 2025-08-21 164310.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/cfe6dbd5-aeb1-4ed9-a1f9-2e6f0c2e33de/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-08-21_164310.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UIBKNXDD%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T152147Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIBQ4nF51SekJT7FKIo177AagRBz6oaf8OtqCmc%2BX9uVDAiEAyLUEm7OTOuVEHI1ZEzIq9bNAjZc1Q18aLX0S13YKjtwqiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDPVtM0NjpN9Cb8YGcyrcAwzEiVeZZUJE3dMskAQ10Ma5pFjGBuOsFx2p8UKueHJrNIQUBENg0tDMdOSWXBBCmCASjQZ3iqHwaUUvz8mQh67tHf%2F3vfJxiB1ImZ5l5W41nY5xSS66ScDLyiLP0qY6TkXQXNJV69YO%2B9l%2FmbLtCaf%2BVGRX6oWYPe7zpyk8wVeYfco6nCONNuVKLOQ6ckz5bzMbQ57Icr3SsAyyDEsSpEWKIIPkZC8TwhKigd%2FCdCJcXIAUkDW2T%2BnQShjq7HC3eBd%2BzouHTlHcTtjNt53jUg3vOKj%2Bn7JqbrHEaYhtkqQ5RIFFntMTGwlkoI1azuP4FEC2C%2B5LTXjPTN391xIjk0xfYpO8i066eLA6IR3kQGbL%2BTTaO2nMrSQyY28uVXAvMK9j1ea4Oj6WD%2Fdqsq3xs2InEu1kmBtmgeHgoH%2FGuY0vM%2BOUl7JnKKYGz1Rw2OGSSt460IA1utzzvNJUSTVp9drRBb3vbrNgdTannfas3CzZMfKUHyLsW5oMfN3hzpFmFL%2FIJdyVyZLjCmbuRPUQ45MufF0YbqJpw0%2F1qahxj6DBifuxiiFkcr23WwuoqYz7APfyvBXCMIFLv3DfWFa3NfQaSy2D5nEfZRPGLgGUCHdsM%2FMXRe1im3wRPrsNMIa2jtIGOqUB1njS74HvFiTFeYb3IFCtS9UlQcFwiS5wdDKSp2OoXWF7ENZJ%2Beqf20V2rtGDba2n206JB3%2BfNXerS2F4qgMmRMrk%2BYHb24ANQGh5z7nYMl1i5HjEtFUrsnC66YWZPFy44g%2BLueVUEsamFov2xKj5NHeURaU7HzXke%2BwkElemYuBYwP8cjQU8kaVUGx7YfDWWjV7cdO8xqJ%2BjY%2FEJYacVNAyC66WM&X-Amz-Signature=e14a4dd8fabf21b44de55927213e0183cf37e2fa5b2f644d9cdf201166595f6b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-06-30T16:21:47.072Z"
+            },
+            "local_asset": {
+              "owner_id": "2a81a39e-eba3-81fb-a92c-ebb90fd8883f",
+              "label": "property_파일과 미디어",
+              "source_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/cfe6dbd5-aeb1-4ed9-a1f9-2e6f0c2e33de/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-08-21_164310.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UIBKNXDD%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T152147Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIBQ4nF51SekJT7FKIo177AagRBz6oaf8OtqCmc%2BX9uVDAiEAyLUEm7OTOuVEHI1ZEzIq9bNAjZc1Q18aLX0S13YKjtwqiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDPVtM0NjpN9Cb8YGcyrcAwzEiVeZZUJE3dMskAQ10Ma5pFjGBuOsFx2p8UKueHJrNIQUBENg0tDMdOSWXBBCmCASjQZ3iqHwaUUvz8mQh67tHf%2F3vfJxiB1ImZ5l5W41nY5xSS66ScDLyiLP0qY6TkXQXNJV69YO%2B9l%2FmbLtCaf%2BVGRX6oWYPe7zpyk8wVeYfco6nCONNuVKLOQ6ckz5bzMbQ57Icr3SsAyyDEsSpEWKIIPkZC8TwhKigd%2FCdCJcXIAUkDW2T%2BnQShjq7HC3eBd%2BzouHTlHcTtjNt53jUg3vOKj%2Bn7JqbrHEaYhtkqQ5RIFFntMTGwlkoI1azuP4FEC2C%2B5LTXjPTN391xIjk0xfYpO8i066eLA6IR3kQGbL%2BTTaO2nMrSQyY28uVXAvMK9j1ea4Oj6WD%2Fdqsq3xs2InEu1kmBtmgeHgoH%2FGuY0vM%2BOUl7JnKKYGz1Rw2OGSSt460IA1utzzvNJUSTVp9drRBb3vbrNgdTannfas3CzZMfKUHyLsW5oMfN3hzpFmFL%2FIJdyVyZLjCmbuRPUQ45MufF0YbqJpw0%2F1qahxj6DBifuxiiFkcr23WwuoqYz7APfyvBXCMIFLv3DfWFa3NfQaSy2D5nEfZRPGLgGUCHdsM%2FMXRe1im3wRPrsNMIa2jtIGOqUB1njS74HvFiTFeYb3IFCtS9UlQcFwiS5wdDKSp2OoXWF7ENZJ%2Beqf20V2rtGDba2n206JB3%2BfNXerS2F4qgMmRMrk%2BYHb24ANQGh5z7nYMl1i5HjEtFUrsnC66YWZPFy44g%2BLueVUEsamFov2xKj5NHeURaU7HzXke%2BwkElemYuBYwP8cjQU8kaVUGx7YfDWWjV7cdO8xqJ%2BjY%2FEJYacVNAyC66WM&X-Amz-Signature=e14a4dd8fabf21b44de55927213e0183cf37e2fa5b2f644d9cdf201166595f6b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "local_path": "assets/2a81a39e-eba3-81fb-a92c-ebb90fd8883f_%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-08-21_164310.png",
+              "content_type": "image/png"
+            }
+          }
+        ]
+      },
+      "태그": {
+        "id": "qP%7Dw",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "23ec155f-d100-4a87-bbb0-efccd98a06e0",
+            "name": "비건",
+            "color": "blue"
+          }
+        ]
+      },
+      "이름": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "코코넛커피",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "코코넛커피",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://app.notion.com/p/2a81a39eeba381fba92cebb90fd8883f",
+    "public_url": null,
+    "archived": false,
+    "request_id": "1f599800-302b-4af1-a67f-234a2c5cf052"
+  },
+  "blocks": [
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8164-a001-c0b8944b8873",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81fb-a92c-ebb90fd8883f"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "머신 경도값: 26",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "머신 경도값: 26",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8157-8867-d4498b306d29",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81fb-a92c-ebb90fd8883f"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "table",
+      "table": {
+        "table_width": 2,
+        "has_column_header": false,
+        "has_row_header": false
+      },
+      "archived": false,
+      "children": [
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8190-9095-f534416fa2a1",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8157-8867-d4498b306d29"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "커피가루 40 + 뜨거운물 100",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "커피가루 40 + 뜨거운물 100",
+                  "href": null
+                }
+              ],
+              []
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8179-a539-eebf75199a92",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8157-8867-d4498b306d29"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "정수",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "정수",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "400",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "400",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-814d-96d1-f09fff342bd1",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8157-8867-d4498b306d29"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "시럽",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "시럽",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,300",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,300",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81c1-9e68-e72f2eebb479",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8157-8867-d4498b306d29"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "코코넛가루",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "코코넛가루",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "20",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "20",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8116-af1a-c66ce578d46c",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8157-8867-d4498b306d29"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "코코넛 밀크",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "코코넛 밀크",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "3통 (3,000)",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "3통 (3,000)",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8113-ad9d-f08bf22115b5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-81fb-a92c-ebb90fd8883f"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "커피가루 + 정수 대신 에스프레소 500 으로 대체 가능",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "커피가루 + 정수 대신 에스프레소 500 으로 대체 가능",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ]
+}

@@ -1,0 +1,1937 @@
+{
+  "id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c",
+  "title": "무화과크림치즈",
+  "path": [
+    "Gelacream RECIPE 최신  ",
+    "우유베잇",
+    "무화과크림치즈"
+  ],
+  "page": {
+    "object": "page",
+    "id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c",
+    "created_time": "2025-11-11T02:27:00.000Z",
+    "last_edited_time": "2025-11-11T02:27:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "2a81a39e-eba3-81e4-8c70-dbae299cb75c"
+    },
+    "in_trash": false,
+    "is_archived": false,
+    "is_locked": false,
+    "properties": {
+      "파일과 미디어 (1)": {
+        "id": "IgR%5D",
+        "type": "files",
+        "files": []
+      },
+      "태그": {
+        "id": "qP%7Dw",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "78ef0864-9a4f-48af-b4b6-863b4478d19a",
+            "name": "믹서",
+            "color": "green"
+          }
+        ]
+      },
+      "우베 100% 파우더": {
+        "id": "qrp%5C",
+        "type": "files",
+        "files": [
+          {
+            "name": "코스트코_라스카스크림치즈.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/bfc681bb-04f4-4f3e-b8c4-1f61d23e5966/%EC%BD%94%EC%8A%A4%ED%8A%B8%EC%BD%94_%EB%9D%BC%EC%8A%A4%EC%B9%B4%EC%8A%A4%ED%81%AC%EB%A6%BC%EC%B9%98%EC%A6%88.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZZNVHWCN%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151931Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFG22DZYYF8M%2BpFKdVMyy0WlZ%2F7Jb8b%2FA0EYCYsILS7NAiEA%2F5hdO5DjZO5vvl%2BzS7cLAA1n7KEsB%2FBIuZ2qokRjpk8qiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDBW8Dm81wHX2eHNymircA2t55jhel%2Fqf4IZphweksh4DIMCbgvNNfQpYXd9ZS8zR0j6QlqoXjMMTzdX7dtqKIDZof8H%2FyHyW406rUS4CcPyvdDKqrGDxHsU6GvzK2H0XTqzIioPx6IJECTB8p57Wtmr6ZHyStIMw7yxlbpRmupS2dvCRLF28JsQ08NAS2w2pRnFVOiOCNZsbxfn%2FPriOo5ng9Dmq8r8gL7PqmyYSDzXFykZ8hT3k%2FMvBdtmE5h%2BKm8eODTI8TcT55SfNBCJQRgdcJa6hAG8UMp9Ec1TX9OzaoRkUJoG8DXdeu2rduH6xmqwt2Xa3v%2Bu3BRUACslRj3wYNInCEaiwau1shjI5SD0GDmjp2it6xAAa2nGOOIrWiIOm%2FxzYseV0VMikmvRMqHD5sh0KOrqn39NVMsOf1%2FHirui2srmFkmoyi2kk43f03m%2FQOlelRBOhfa9frOYxZvzdWQ3csjPGLBkzQbfiA71je82MwOLK8gfWOHTlugIkoiTWoOtHSQJWumdKkGD6iFDCAJZGtYygEaLFz8kigk5kLurOo6xd9om1t%2BdeFlZ1CWivX3wexEEptmQRR16OaH8tZ9xzurFepjsHvlkkY%2BOppyrhLdOPbTd0DIp0R0k1sbU8YgV%2BHtvDmEtrMIe2jtIGOqUBcIZFOXZsjSCXFPKvho1ylqnW3rgEVhW4v7QLT2szryPGBdd1mORkEo5uZ3vYwS1le8xZ2aNPkKG4xazVNI48W4EgBnzENgb0bGXyawkZE5Oo%2F2oPFEZyx7my%2FmIrMCPBnM6qpsdhtFwUJm4pA3xP37OpXTvqQDvH42FxAb9JTWtevRs6GuHvfig9B8waSVwKuyZ9N%2Bl0azMpCBGQohD760HXHark&X-Amz-Signature=ba9e5c33d8e80d470dcb6685db4134c4678b3355799fefa62f4b53143fbc7894&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-06-30T16:19:31.658Z"
+            },
+            "local_asset": {
+              "owner_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c",
+              "label": "property_우베 100% 파우더",
+              "source_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/bfc681bb-04f4-4f3e-b8c4-1f61d23e5966/%EC%BD%94%EC%8A%A4%ED%8A%B8%EC%BD%94_%EB%9D%BC%EC%8A%A4%EC%B9%B4%EC%8A%A4%ED%81%AC%EB%A6%BC%EC%B9%98%EC%A6%88.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZZNVHWCN%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151931Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFG22DZYYF8M%2BpFKdVMyy0WlZ%2F7Jb8b%2FA0EYCYsILS7NAiEA%2F5hdO5DjZO5vvl%2BzS7cLAA1n7KEsB%2FBIuZ2qokRjpk8qiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDBW8Dm81wHX2eHNymircA2t55jhel%2Fqf4IZphweksh4DIMCbgvNNfQpYXd9ZS8zR0j6QlqoXjMMTzdX7dtqKIDZof8H%2FyHyW406rUS4CcPyvdDKqrGDxHsU6GvzK2H0XTqzIioPx6IJECTB8p57Wtmr6ZHyStIMw7yxlbpRmupS2dvCRLF28JsQ08NAS2w2pRnFVOiOCNZsbxfn%2FPriOo5ng9Dmq8r8gL7PqmyYSDzXFykZ8hT3k%2FMvBdtmE5h%2BKm8eODTI8TcT55SfNBCJQRgdcJa6hAG8UMp9Ec1TX9OzaoRkUJoG8DXdeu2rduH6xmqwt2Xa3v%2Bu3BRUACslRj3wYNInCEaiwau1shjI5SD0GDmjp2it6xAAa2nGOOIrWiIOm%2FxzYseV0VMikmvRMqHD5sh0KOrqn39NVMsOf1%2FHirui2srmFkmoyi2kk43f03m%2FQOlelRBOhfa9frOYxZvzdWQ3csjPGLBkzQbfiA71je82MwOLK8gfWOHTlugIkoiTWoOtHSQJWumdKkGD6iFDCAJZGtYygEaLFz8kigk5kLurOo6xd9om1t%2BdeFlZ1CWivX3wexEEptmQRR16OaH8tZ9xzurFepjsHvlkkY%2BOppyrhLdOPbTd0DIp0R0k1sbU8YgV%2BHtvDmEtrMIe2jtIGOqUBcIZFOXZsjSCXFPKvho1ylqnW3rgEVhW4v7QLT2szryPGBdd1mORkEo5uZ3vYwS1le8xZ2aNPkKG4xazVNI48W4EgBnzENgb0bGXyawkZE5Oo%2F2oPFEZyx7my%2FmIrMCPBnM6qpsdhtFwUJm4pA3xP37OpXTvqQDvH42FxAb9JTWtevRs6GuHvfig9B8waSVwKuyZ9N%2Bl0azMpCBGQohD760HXHark&X-Amz-Signature=ba9e5c33d8e80d470dcb6685db4134c4678b3355799fefa62f4b53143fbc7894&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "local_path": "assets/2a81a39e-eba3-8158-aafe-e0e537a5e87c_%EC%BD%94%EC%8A%A4%ED%8A%B8%EC%BD%94_%EB%9D%BC%EC%8A%A4%EC%B9%B4%EC%8A%A4%ED%81%AC%.png",
+              "content_type": "image/png"
+            }
+          },
+          {
+            "name": "스크린샷 2025-04-12 191025.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/61609601-6728-446a-8db0-d99feefda37d/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-04-12_191025.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZZNVHWCN%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151931Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFG22DZYYF8M%2BpFKdVMyy0WlZ%2F7Jb8b%2FA0EYCYsILS7NAiEA%2F5hdO5DjZO5vvl%2BzS7cLAA1n7KEsB%2FBIuZ2qokRjpk8qiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDBW8Dm81wHX2eHNymircA2t55jhel%2Fqf4IZphweksh4DIMCbgvNNfQpYXd9ZS8zR0j6QlqoXjMMTzdX7dtqKIDZof8H%2FyHyW406rUS4CcPyvdDKqrGDxHsU6GvzK2H0XTqzIioPx6IJECTB8p57Wtmr6ZHyStIMw7yxlbpRmupS2dvCRLF28JsQ08NAS2w2pRnFVOiOCNZsbxfn%2FPriOo5ng9Dmq8r8gL7PqmyYSDzXFykZ8hT3k%2FMvBdtmE5h%2BKm8eODTI8TcT55SfNBCJQRgdcJa6hAG8UMp9Ec1TX9OzaoRkUJoG8DXdeu2rduH6xmqwt2Xa3v%2Bu3BRUACslRj3wYNInCEaiwau1shjI5SD0GDmjp2it6xAAa2nGOOIrWiIOm%2FxzYseV0VMikmvRMqHD5sh0KOrqn39NVMsOf1%2FHirui2srmFkmoyi2kk43f03m%2FQOlelRBOhfa9frOYxZvzdWQ3csjPGLBkzQbfiA71je82MwOLK8gfWOHTlugIkoiTWoOtHSQJWumdKkGD6iFDCAJZGtYygEaLFz8kigk5kLurOo6xd9om1t%2BdeFlZ1CWivX3wexEEptmQRR16OaH8tZ9xzurFepjsHvlkkY%2BOppyrhLdOPbTd0DIp0R0k1sbU8YgV%2BHtvDmEtrMIe2jtIGOqUBcIZFOXZsjSCXFPKvho1ylqnW3rgEVhW4v7QLT2szryPGBdd1mORkEo5uZ3vYwS1le8xZ2aNPkKG4xazVNI48W4EgBnzENgb0bGXyawkZE5Oo%2F2oPFEZyx7my%2FmIrMCPBnM6qpsdhtFwUJm4pA3xP37OpXTvqQDvH42FxAb9JTWtevRs6GuHvfig9B8waSVwKuyZ9N%2Bl0azMpCBGQohD760HXHark&X-Amz-Signature=a618d411a0fdd2c5219bb53f4cf359838c67591a02784e500843eb53a38657f8&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-06-30T16:19:31.668Z"
+            },
+            "local_asset": {
+              "owner_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c",
+              "label": "property_우베 100% 파우더",
+              "source_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/61609601-6728-446a-8db0-d99feefda37d/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-04-12_191025.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZZNVHWCN%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151931Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFG22DZYYF8M%2BpFKdVMyy0WlZ%2F7Jb8b%2FA0EYCYsILS7NAiEA%2F5hdO5DjZO5vvl%2BzS7cLAA1n7KEsB%2FBIuZ2qokRjpk8qiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDBW8Dm81wHX2eHNymircA2t55jhel%2Fqf4IZphweksh4DIMCbgvNNfQpYXd9ZS8zR0j6QlqoXjMMTzdX7dtqKIDZof8H%2FyHyW406rUS4CcPyvdDKqrGDxHsU6GvzK2H0XTqzIioPx6IJECTB8p57Wtmr6ZHyStIMw7yxlbpRmupS2dvCRLF28JsQ08NAS2w2pRnFVOiOCNZsbxfn%2FPriOo5ng9Dmq8r8gL7PqmyYSDzXFykZ8hT3k%2FMvBdtmE5h%2BKm8eODTI8TcT55SfNBCJQRgdcJa6hAG8UMp9Ec1TX9OzaoRkUJoG8DXdeu2rduH6xmqwt2Xa3v%2Bu3BRUACslRj3wYNInCEaiwau1shjI5SD0GDmjp2it6xAAa2nGOOIrWiIOm%2FxzYseV0VMikmvRMqHD5sh0KOrqn39NVMsOf1%2FHirui2srmFkmoyi2kk43f03m%2FQOlelRBOhfa9frOYxZvzdWQ3csjPGLBkzQbfiA71je82MwOLK8gfWOHTlugIkoiTWoOtHSQJWumdKkGD6iFDCAJZGtYygEaLFz8kigk5kLurOo6xd9om1t%2BdeFlZ1CWivX3wexEEptmQRR16OaH8tZ9xzurFepjsHvlkkY%2BOppyrhLdOPbTd0DIp0R0k1sbU8YgV%2BHtvDmEtrMIe2jtIGOqUBcIZFOXZsjSCXFPKvho1ylqnW3rgEVhW4v7QLT2szryPGBdd1mORkEo5uZ3vYwS1le8xZ2aNPkKG4xazVNI48W4EgBnzENgb0bGXyawkZE5Oo%2F2oPFEZyx7my%2FmIrMCPBnM6qpsdhtFwUJm4pA3xP37OpXTvqQDvH42FxAb9JTWtevRs6GuHvfig9B8waSVwKuyZ9N%2Bl0azMpCBGQohD760HXHark&X-Amz-Signature=a618d411a0fdd2c5219bb53f4cf359838c67591a02784e500843eb53a38657f8&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "local_path": "assets/2a81a39e-eba3-8158-aafe-e0e537a5e87c_%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-04-12_191025.png",
+              "content_type": "image/png"
+            }
+          },
+          {
+            "name": "https://www.coupang.com/vp/products/8419658923?isAddedCart=",
+            "type": "external",
+            "external": {
+              "url": "https://www.coupang.com/vp/products/8419658923?isAddedCart="
+            },
+            "local_asset": {
+              "owner_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c",
+              "label": "property_우베 100% 파우더",
+              "source_url": "https://www.coupang.com/vp/products/8419658923?isAddedCart=",
+              "error": "HTTP Error 403: Forbidden"
+            }
+          }
+        ]
+      },
+      "코코넛 분말": {
+        "id": "%7Crtk",
+        "type": "files",
+        "files": []
+      },
+      "이름": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "무화과크림치즈",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "무화과크림치즈",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://app.notion.com/p/2a81a39eeba38158aafee0e537a5e87c",
+    "public_url": null,
+    "archived": false,
+    "request_id": "f5706b25-b3a8-4ac8-9571-95b25879dc45"
+  },
+  "blocks": [
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81c2-8601-fd584c859ab1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "머신 경도값: 26",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "머신 경도값: 26",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8121-802d-d998ccf101d2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "table",
+      "table": {
+        "table_width": 2,
+        "has_column_header": false,
+        "has_row_header": false
+      },
+      "archived": false,
+      "children": [
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81ec-935a-ef43c150a2e5",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8121-802d-d998ccf101d2"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "건 무화과 / 졸인 무화과",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "건 무화과 / 졸인 무화과",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "300",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "300",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-816b-80c1-dec86317004e",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8121-802d-d998ccf101d2"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "크림치즈",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "크림치즈",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "400",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "400",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8191-803f-cfd441f8d198",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8121-802d-d998ccf101d2"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "시럽",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "시럽",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,200",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,200",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8158-8dc5-fdfdc2663f06",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8121-802d-d998ccf101d2"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "우유",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "우유",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "3팩 (2,700)",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "3팩 (2,700)",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8145-8a6d-d0b57a574a2c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "‼전날 미리 건무화과를 시럽에 담궈서 불려둔후 건져서 사용!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "‼전날 미리 건무화과를 시럽에 담궈서 불려둔후 건져서 사용!",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81b7-9643-fa5b142a002a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "블렌더에 무화과 + 크림치즈 +  시럽을 넣고 곱게 갈아준다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "블렌더에 무화과 + 크림치즈 +  시럽을 넣고 곱게 갈아준다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81a6-8fd9-db0a0951a6b6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "우유를 넣고 섞어준다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "우유를 넣고 섞어준다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8163-a223-cc1820c59c14",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81ad-a17c-e92a966d5720",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "<졸인무화과 사용시>",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": true,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "<졸인무화과 사용시>",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81a6-b07f-e1be1be4f0c1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "블렌더에 졸인무화과 + 시럽 600g 넣고 약하게 갈아준다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "블렌더에 졸인무화과 + 시럽 600g 넣고 약하게 갈아준다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8144-8316-dedf70ef4bb4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "블렌더에 크림치즈 + 시럽 600g 넣고 곱게(세게) 갈아준다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "블렌더에 크림치즈 + 시럽 600g 넣고 곱게(세게) 갈아준다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8180-a1bd-fb071c855f92",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "우유를 넣고 섞어준다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "우유를 넣고 섞어준다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-814b-a0bc-cec20200150b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8127-8037-f0027d1ac0d9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "참고 : ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "참고 : ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://naver.me/x10YVxLN",
+              "link": {
+                "url": "https://naver.me/x10YVxLN"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://naver.me/x10YVxLN",
+            "href": "https://naver.me/x10YVxLN"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81f5-8129-e4a8cc4c234d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "📍큰냄비 사용 (많이 튀어요!)",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "📍큰냄비 사용 (많이 튀어요!)",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-811e-8e5d-eb1426a631dc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": ">달지않게 흑설탕 제외, 머스코바도(흑당)으로만!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ">달지않게 흑설탕 제외, 머스코바도(흑당)으로만!",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8108-8b43-e9d2989fa6cc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "table",
+      "table": {
+        "table_width": 2,
+        "has_column_header": false,
+        "has_row_header": false
+      },
+      "archived": false,
+      "children": [
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8151-aab9-c5bf2cf32ea5",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8108-8b43-e9d2989fa6cc"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "무화과 졸이는 방법",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": true,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "red_background"
+                  },
+                  "plain_text": "무화과 졸이는 방법",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " (3번 만들 양)",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": " (3번 만들 양)",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-813a-9a61-c5308f09593b",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8108-8b43-e9d2989fa6cc"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "반 건조 무화과",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "반 건조 무화과",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,000",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,000",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8129-adf5-c249d2631962",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8108-8b43-e9d2989fa6cc"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "레드 와인",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "레드 와인",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,000",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,000",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8151-8d82-c82073ec6c1f",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8108-8b43-e9d2989fa6cc"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "머스코바도 (흑당)",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "머스코바도 (흑당)",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "300",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "300",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-816d-a14f-f2e8af6c179a",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8108-8b43-e9d2989fa6cc"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "시나몬가루",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "시나몬가루",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "2",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "2",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8119-b576-f7cd06104b5d",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8108-8b43-e9d2989fa6cc"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "레몬즙",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "레몬즙",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "15",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "15",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8101-8d94-d534826e3c24",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "반건조 무화과를 뜨거운 정수기 물에 10분 정도 불려준다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "반건조 무화과를 뜨거운 정수기 물에 10분 정도 불려준다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8176-912f-c70855c63bd5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "불린 무화과를 정수기 물로 3번 헹군 후 채에 걸러 물기를 빼준다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "불린 무화과를 정수기 물로 3번 헹군 후 채에 걸러 물기를 빼준다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8174-a993-cede24a3a0f9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "무화과 꼭지 부분이 있으면 가위로 잘라준다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "무화과 꼭지 부분이 있으면 가위로 잘라준다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81cc-8be5-c3ff3f0bc06d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "불린 무화과를 반으로 잘라준다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "불린 무화과를 반으로 잘라준다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8105-9728-c0200a16ff77",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "큰 냄비에 무화과, 와인, 머스코바도를 넣고 ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "큰 냄비에 무화과, 와인, 머스코바도를 넣고 ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "중불",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": true,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "중불",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "에 저어가며 졸여준다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "에 저어가며 졸여준다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8135-819d-e7dfb4e918e8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "와인이 끓어 오르고 ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "와인이 끓어 오르고 ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "10분",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "10분",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "정도 더 저어가며 졸여준다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "정도 더 저어가며 졸여준다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81af-9689-f0ff12ebcf73",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "10분이 지난 후 레몬즙, 시나몬가루를 넣고 ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "10분이 지난 후 레몬즙, 시나몬가루를 넣고 ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "약불에 5분",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": true,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "약불에 5분",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "정도 저어가며 졸여준다 (와인이 거의 안보일 때 까지)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "정도 저어가며 졸여준다 (와인이 거의 안보일 때 까지)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-818e-b979-f38e8b0b0f79",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "식혀서 밀폐용기에 보관한다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "식혀서 밀폐용기에 보관한다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-818e-a77b-f022264db574",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "‼ 졸인 무화과로 만들 때는 믹서에 약하게 갈아준다!",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": true,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "‼ 졸인 무화과로 만들 때는 믹서에 약하게 갈아준다!",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8193-bee9-f6546da87a2f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8158-aafe-e0e537a5e87c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ]
+}

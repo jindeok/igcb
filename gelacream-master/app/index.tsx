@@ -59,15 +59,7 @@ export default function HomeScreen() {
     };
 
     const featuredRecipes = recipes.filter((recipe) => recipe.tags.includes('추천')).slice(0, 4);
-    const categoryRepresentatives = CATEGORIES.map((category) =>
-        recipes.find((recipe) => recipe.category === category.id),
-    ).filter((recipe): recipe is Recipe => Boolean(recipe));
-    const featuredList =
-        featuredRecipes.length > 0
-            ? featuredRecipes
-            : categoryRepresentatives.length > 0
-                ? categoryRepresentatives
-                : recipes.slice(0, 4);
+    const featuredList = featuredRecipes;
 
     const recipeSummary = (recipe: Recipe) => {
         const parts: string[] = [];
@@ -238,9 +230,6 @@ export default function HomeScreen() {
                                 >
                                     <View style={[styles.featuredAccent, { backgroundColor: item.imageColor }]} />
                                     <View style={styles.featuredTopRow}>
-                                        <View style={[styles.featuredTag, { backgroundColor: theme.background, borderColor: theme.border }]}>
-                                            <Text style={[styles.featuredTagText, { color: theme.icon }]}>{item.tags[0] ?? 'Featured'}</Text>
-                                        </View>
                                         <Text style={[styles.featuredMeta, { color: theme.icon }]}>{item.category.toUpperCase()}</Text>
                                     </View>
                                     <Text style={[styles.featuredTitle, { color: theme.text }]}>{item.title}</Text>

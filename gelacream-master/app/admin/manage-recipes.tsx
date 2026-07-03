@@ -9,16 +9,20 @@ import {
     ActivityIndicator,
     Platform,
     Alert,
+    Modal,
+    TextInput,
 } from 'react-native';
 import { Stack, useRouter } from 'expo-router';
 import { Colors } from '../../constants/Colors';
 import { type Recipe } from '../../constants/MockData';
 import { Ionicons } from '@expo/vector-icons';
 import { useAuth } from '../../context/AuthContext';
-import { fetchRecipes, updateRecipeSortOrders, updateRecipeFeatured } from '../../lib/recipes';
+import { fetchRecipes, updateRecipesBatch } from '../../lib/recipes';
+import { supabase, isSupabaseConfigured } from '../../lib/supabase';
 
 const CATEGORIES = [
     { id: 'all', label: '전체' },
+    { id: 'featured', label: '추천' },
     { id: 'milk', label: '우유' },
     { id: 'sorbet', label: '소르베' },
     { id: 'vegan', label: '비건' },
@@ -44,6 +48,9 @@ export default function ManageRecipesScreen() {
     const [saving, setSaving] = useState(false);
     const [selectedCategory, setSelectedCategory] = useState<string>('all');
     const [dirty, setDirty] = useState(false);
+    const [deletedRecipes, setDeletedRecipes] = useState<Recipe[]>([]);
+    const [searchModalVisible, setSearchModalVisible] = useState(false);
+    const [searchQuery, setSearchQuery] = useState('');
 
     useEffect(() => {
         if (authLoading) return;
@@ -72,7 +79,15 @@ export default function ManageRecipesScreen() {
     const filtered =
         selectedCategory === 'all'
             ? recipes
-            : recipes.filter((r) => r.category === selectedCategory);
+            : selectedCategory === 'featured'
+                ? recipes.filter((r) => r.tags.includes('추천'))
+                : recipes.filter((r) => r.category === selectedCategory);
+
+    const searchResults = searchQuery.trim()
+        ? recipes
+            .filter((r) => r.title.toLowerCase().includes(searchQuery.trim().toLowerCase()) && !r.tags.includes('추천'))
+            .slice(0, 5)
+        : [];
 
     const moveRecipe = (index: number, direction: -1 | 1) => {
         const targetIndex = index + direction;
@@ -93,36 +108,68 @@ export default function ManageRecipesScreen() {
         setDirty(true);
     };
 
-    const toggleFeatured = async (recipe: Recipe) => {
+    const toggleFeatured = (recipe: Recipe) => {
         const isFeatured = recipe.tags.includes('추천');
-        try {
-            await updateRecipeFeatured(recipe.id, !isFeatured, recipe.tags);
-            setRecipes((prev) =>
-                prev.map((r) =>
-                    r.id === recipe.id
-                        ? {
-                            ...r,
-                            tags: isFeatured
-                                ? r.tags.filter((t) => t !== '추천')
-                                : [...r.tags, '추천'],
-                        }
-                        : r,
-                ),
-            );
-        } catch {
-            notify('오류', '추천 상태를 변경하지 못했습니다.');
-        }
+        setRecipes((prev) =>
+            prev.map((r) =>
+                r.id === recipe.id
+                    ? {
+                        ...r,
+                        tags: isFeatured
+                            ? r.tags.filter((t) => t !== '추천')
+                            : [...r.tags, '추천'],
+                    }
+                    : r,
+            ),
+        );
+        setDirty(true);
     };
 
-    const handleSaveOrder = async () => {
+    const handleDeleteRecipe = async (recipe: Recipe) => {
+        if (!isSupabaseConfigured) {
+            notify('오류', 'Supabase 설정이 필요합니다.');
+            return;
+        }
+
+        const proceed = Platform.OS === 'web'
+            ? window.confirm(`"${recipe.title}" 레시피를 삭제 대기열에 추가하시겠습니까? (저장 시 영구 삭제)`)
+            : await new Promise<boolean>((resolve) => {
+                Alert.alert('삭제 확인', `"${recipe.title}" 레시피를 삭제 대기열에 추가하시겠습니까? (저장 시 영구 삭제)`, [
+                    { text: '취소', onPress: () => resolve(false), style: 'cancel' },
+                    { text: '삭제', onPress: () => resolve(true), style: 'destructive' },
+                ]);
+            });
+
+        if (!proceed) return;
+
+        setDeletedRecipes(prev => [...prev, recipe]);
+        setRecipes((prev) => prev.filter((r) => r.id !== recipe.id));
+        setDirty(true);
+    };
+
+    const handleSaveAll = async () => {
         setSaving(true);
         try {
-            const items = recipes.map((r, i) => ({ id: r.id, sort_order: i }));
-            await updateRecipeSortOrders(items);
+            for (const r of deletedRecipes) {
+                const storagePaths = [...(r.images ?? []), ...(r.instructionImages ?? [])]
+                    .map((img) => img.src)
+                    .filter((src) => src && !src.startsWith('http') && !src.startsWith('/'));
+                if (storagePaths.length > 0) {
+                    await supabase.storage.from('recipe-images').remove(storagePaths);
+                }
+                const { error } = await supabase.from('recipes').delete().eq('id', r.id);
+                if (error) throw error;
+            }
+
+            const items = recipes.map((r, i) => ({ id: r.id, sort_order: i, tags: r.tags }));
+            await updateRecipesBatch(items);
+
+            setDeletedRecipes([]);
             setDirty(false);
-            notify('완료', '레시피 순서가 저장되었습니다.');
-        } catch {
-            notify('오류', '순서 저장 중 오류가 발생했습니다.');
+            notify('완료', '모든 변경사항이 저장되었습니다.');
+            void loadRecipes();
+        } catch (e: any) {
+            notify('오류', '저장 중 오류가 발생했습니다.');
         } finally {
             setSaving(false);
         }
@@ -130,17 +177,8 @@ export default function ManageRecipesScreen() {
 
     const [draggingIdx, setDraggingIdx] = useState<number | null>(null);
 
-    if (authLoading || (!user || user.role !== 'admin')) {
-        return (
-            <View style={[styles.guard, { backgroundColor: theme.background }]}>
-                <ActivityIndicator size="large" color={theme.tint} />
-            </View>
-        );
-    }
-
-    const handleDrop = (toIndex: number) => {
-        if (draggingIdx === null || draggingIdx === toIndex) return;
-        const fromIndex = draggingIdx;
+    const moveItemWithinCategory = useCallback((fromIndex: number, toIndex: number) => {
+        if (fromIndex === toIndex) return;
         const itemA = filtered[fromIndex];
         const itemB = filtered[toIndex];
         if (!itemA || !itemB) return;
@@ -151,12 +189,6 @@ export default function ManageRecipesScreen() {
             const realB = next.findIndex((r) => r.id === itemB.id);
             if (realA === -1 || realB === -1) return prev;
 
-            // Move element: remove from realA, insert at realB
-            const [removed] = next.splice(realA, 1);
-
-            // To figure out the new index, we need to know if the target shifted.
-            // Since we are sorting in place among the category, the easiest way 
-            // is to reconstruct the filtered list and merge it back.
             const newFiltered = [...filtered];
             const [fRemoved] = newFiltered.splice(fromIndex, 1);
             newFiltered.splice(toIndex, 0, fRemoved);
@@ -173,8 +205,21 @@ export default function ManageRecipesScreen() {
             }
         });
         setDirty(true);
+    }, [filtered, recipes, selectedCategory]);
+
+    const handleDrop = (toIndex: number) => {
+        if (draggingIdx === null) return;
+        moveItemWithinCategory(draggingIdx, toIndex);
         setDraggingIdx(null);
     };
+
+    if (authLoading || (!user || user.role !== 'admin')) {
+        return (
+            <View style={[styles.guard, { backgroundColor: theme.background }]}>
+                <ActivityIndicator size="large" color={theme.tint} />
+            </View>
+        );
+    }
 
     return (
         <View style={[styles.container, { backgroundColor: theme.background }]}>
@@ -186,7 +231,7 @@ export default function ManageRecipesScreen() {
                     headerShadowVisible: false,
                     headerRight: () => (
                         <TouchableOpacity
-                            onPress={handleSaveOrder}
+                            onPress={handleSaveAll}
                             disabled={saving || !dirty}
                             style={[
                                 styles.saveButton,
@@ -203,7 +248,7 @@ export default function ManageRecipesScreen() {
                                     fontSize: 14,
                                 }}
                             >
-                                {saving ? '저장 중…' : '순서 저장'}
+                                {saving ? '저장 중…' : '저장'}
                             </Text>
                         </TouchableOpacity>
                     ),
@@ -253,6 +298,20 @@ export default function ManageRecipesScreen() {
                 </View>
             ) : (
                 <ScrollView contentContainerStyle={styles.listContent}>
+                    {selectedCategory === 'featured' && (
+                        <TouchableOpacity
+                            style={[
+                                styles.addFeaturedButton,
+                                { backgroundColor: theme.cardBackground, borderColor: theme.tint, borderWidth: 1 }
+                            ]}
+                            onPress={() => setSearchModalVisible(true)}
+                        >
+                            <Ionicons name="add" size={20} color={theme.tint} />
+                            <Text style={{ color: theme.tint, fontWeight: '600', fontSize: 15 }}>
+                                검색해서 추천 레시피 추가하기
+                            </Text>
+                        </TouchableOpacity>
+                    )}
                     {filtered.map((recipe, index) => {
                         const isFeatured = recipe.tags.includes('추천');
                         return (
@@ -266,18 +325,77 @@ export default function ManageRecipesScreen() {
                                 setDraggingIdx={setDraggingIdx}
                                 handleDrop={handleDrop}
                                 toggleFeatured={toggleFeatured}
+                                handleDeleteRecipe={handleDeleteRecipe}
                                 moveRecipe={moveRecipe}
+                                jumpRecipe={moveItemWithinCategory}
                                 numFiltered={filtered.length}
                             />
                         );
                     })}
-                    {filtered.length === 0 ? (
+                    {filtered.length === 0 && (
                         <View style={styles.emptyWrap}>
-                            <Text style={{ color: theme.icon, fontSize: 15 }}>이 카테고리에는 레시피가 없습니다.</Text>
+                            <Text style={{ color: theme.icon }}>해당 카테고리에 레시피가 없습니다.</Text>
                         </View>
-                    ) : null}
+                    )}
                 </ScrollView>
             )}
+
+            {/* Search Modal */}
+            <Modal
+                visible={searchModalVisible}
+                animationType="slide"
+                transparent
+                onRequestClose={() => setSearchModalVisible(false)}
+            >
+                <View style={styles.modalOverlay}>
+                    <View style={[styles.modalCard, { backgroundColor: theme.cardBackground, borderColor: theme.border }]}>
+                        <View style={styles.modalHeader}>
+                            <Text style={[styles.modalTitle, { color: theme.text }]}>추천 레시피로 추가</Text>
+                            <TouchableOpacity onPress={() => setSearchModalVisible(false)}>
+                                <Ionicons name="close" size={24} color={theme.icon} />
+                            </TouchableOpacity>
+                        </View>
+                        <View style={[styles.searchInputRow, { borderColor: theme.border, backgroundColor: theme.background }]}>
+                            <Ionicons name="search" size={20} color={theme.icon} />
+                            <TextInput
+                                style={[styles.modalSearchInput, { color: theme.text }]}
+                                placeholder="레시피 이름 검색..."
+                                placeholderTextColor={theme.icon}
+                                value={searchQuery}
+                                onChangeText={setSearchQuery}
+                                autoFocus={true}
+                            />
+                            {searchQuery.length > 0 && (
+                                <TouchableOpacity onPress={() => setSearchQuery('')}>
+                                    <Ionicons name="close-circle" size={18} color={theme.icon} />
+                                </TouchableOpacity>
+                            )}
+                        </View>
+                        <ScrollView style={styles.modalResList} keyboardShouldPersistTaps="handled">
+                            {searchResults.map((item) => (
+                                <TouchableOpacity
+                                    key={item.id}
+                                    style={[styles.modalSearchItem, { borderBottomColor: theme.border }]}
+                                    onPress={() => {
+                                        toggleFeatured(item);
+                                        setSearchModalVisible(false);
+                                        setSearchQuery('');
+                                    }}
+                                >
+                                    <View>
+                                        <Text style={{ color: theme.text, fontSize: 15, fontWeight: '600' }}>{item.title}</Text>
+                                        <Text style={{ color: theme.icon, fontSize: 13 }}>{item.category.toUpperCase()}</Text>
+                                    </View>
+                                    <Ionicons name="add-circle" size={24} color={theme.tint} />
+                                </TouchableOpacity>
+                            ))}
+                            {searchQuery.trim().length > 0 && searchResults.length === 0 && (
+                                <Text style={{ color: theme.icon, padding: 16, textAlign: 'center' }}>검색 결과가 없습니다.</Text>
+                            )}
+                        </ScrollView>
+                    </View>
+                </View>
+            </Modal>
         </View>
     );
 }
@@ -291,13 +409,29 @@ function RecipeRow({
     setDraggingIdx,
     handleDrop,
     toggleFeatured,
+    handleDeleteRecipe,
     moveRecipe,
+    jumpRecipe,
     numFiltered,
 }: any) {
     const router = useRouter();
     const isDragging = draggingIdx === index;
     const rowRef = useRef<any>(null);
     const handleRef = useRef<any>(null);
+    const [inputValue, setInputValue] = useState(String(index + 1));
+
+    useEffect(() => {
+        setInputValue(String(index + 1));
+    }, [index]);
+
+    const submitJump = () => {
+        const val = parseInt(inputValue, 10);
+        if (isNaN(val) || val < 1 || val > numFiltered || val === index + 1) {
+            setInputValue(String(index + 1));
+            return;
+        }
+        jumpRecipe(index, val - 1);
+    };
 
     useEffect(() => {
         if (Platform.OS === 'web') {
@@ -343,8 +477,17 @@ function RecipeRow({
             </View>
 
             {/* Rank number */}
-            <View style={[styles.rankBadge, { backgroundColor: theme.background }]}>
-                <Text style={[styles.rankText, { color: theme.text }]}>{index + 1}</Text>
+            <View style={[styles.rankBadge, { backgroundColor: theme.background, borderColor: theme.border }]}>
+                <TextInput
+                    style={[styles.rankText, { color: theme.text, padding: 0 }]}
+                    value={inputValue}
+                    onChangeText={setInputValue}
+                    onSubmitEditing={submitJump}
+                    onBlur={submitJump}
+                    keyboardType="number-pad"
+                    returnKeyType="done"
+                    selectTextOnFocus={true}
+                />
             </View>
 
             {/* Recipe info */}
@@ -389,14 +532,23 @@ function RecipeRow({
                 </TouchableOpacity>
             </View>
 
-            {/* Edit button */}
-            <TouchableOpacity
-                onPress={() => router.push(`/admin/edit-recipe?id=${recipe.id}`)}
-                style={styles.actionButton}
-                accessibilityLabel="레시피 편집"
-            >
-                <Ionicons name="create-outline" size={20} color={theme.tint} />
-            </TouchableOpacity>
+            {/* Edit & Delete buttons */}
+            <View style={{ flexDirection: 'row', gap: 4 }}>
+                <TouchableOpacity
+                    onPress={() => router.push(`/admin/edit-recipe?id=${recipe.id}`)}
+                    style={styles.actionButton}
+                    accessibilityLabel="레시피 편집"
+                >
+                    <Ionicons name="create-outline" size={20} color={theme.tint} />
+                </TouchableOpacity>
+                <TouchableOpacity
+                    onPress={() => handleDeleteRecipe(recipe)}
+                    style={styles.actionButton}
+                    accessibilityLabel="레시피 삭제"
+                >
+                    <Ionicons name="trash-outline" size={20} color="#EF4444" />
+                </TouchableOpacity>
+            </View>
         </View>
     );
 }
@@ -461,15 +613,18 @@ const styles = StyleSheet.create({
         gap: 10,
     },
     rankBadge: {
-        width: 32,
-        height: 32,
-        borderRadius: 10,
+        width: 40,
+        height: 34,
+        borderRadius: 8,
+        borderWidth: 1,
         justifyContent: 'center',
         alignItems: 'center',
     },
     rankText: {
         fontSize: 14,
         fontWeight: '700',
+        textAlign: 'center',
+        width: '100%',
     },
     recipeInfo: {
         flex: 1,
@@ -502,5 +657,67 @@ const styles = StyleSheet.create({
     emptyWrap: {
         padding: 40,
         alignItems: 'center',
+    },
+    addFeaturedButton: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingVertical: 14,
+        borderRadius: 16,
+        gap: 8,
+    },
+    modalOverlay: {
+        flex: 1,
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 24,
+    },
+    modalCard: {
+        width: '100%',
+        maxWidth: 480,
+        maxHeight: '80%',
+        borderWidth: 1,
+        borderRadius: 24,
+        overflow: 'hidden',
+    },
+    modalHeader: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: 20,
+    },
+    modalTitle: {
+        fontSize: 18,
+        fontWeight: '700',
+    },
+    searchInputRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginHorizontal: 20,
+        marginBottom: 16,
+        paddingHorizontal: 14,
+        borderWidth: 1,
+        borderRadius: 12,
+        height: 48,
+        gap: 8,
+    },
+    modalSearchInput: {
+        flex: 1,
+        fontSize: 15,
+        height: '100%',
+    },
+    modalResList: {
+        flex: 1,
+        borderTopWidth: StyleSheet.hairlineWidth,
+        borderColor: '#E2E8F0',
+    },
+    modalSearchItem: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        paddingHorizontal: 20,
+        paddingVertical: 14,
+        borderBottomWidth: StyleSheet.hairlineWidth,
     },
 });

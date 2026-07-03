@@ -1,0 +1,499 @@
+{
+  "id": "2a81a39e-eba3-8101-9cf3-c427758281ce",
+  "title": "생바질밀크",
+  "path": [
+    "Gelacream RECIPE 최신  ",
+    "우유베잇",
+    "생바질밀크"
+  ],
+  "page": {
+    "object": "page",
+    "id": "2a81a39e-eba3-8101-9cf3-c427758281ce",
+    "created_time": "2025-11-11T02:27:00.000Z",
+    "last_edited_time": "2025-11-11T02:27:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "2a81a39e-eba3-81e4-8c70-dbae299cb75c"
+    },
+    "in_trash": false,
+    "is_archived": false,
+    "is_locked": false,
+    "properties": {
+      "파일과 미디어 (1)": {
+        "id": "IgR%5D",
+        "type": "files",
+        "files": []
+      },
+      "태그": {
+        "id": "qP%7Dw",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "78ef0864-9a4f-48af-b4b6-863b4478d19a",
+            "name": "믹서",
+            "color": "green"
+          }
+        ]
+      },
+      "우베 100% 파우더": {
+        "id": "qrp%5C",
+        "type": "files",
+        "files": [
+          {
+            "name": "생바질 500g.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/2a81617e-ef1e-4d60-b1d4-88f2e7d1a9e2/%EC%83%9D%EB%B0%94%EC%A7%88_500g.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466Q3ZYEGHN%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151904Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCb3LH%2BYgNzGU%2B34QJk1xIFmtwiRlC24XxCInh%2FfF1dpQIgIM%2FKCBBYJhAq1ySuOwHEVcoFMzkDFapr7gjYk7Tadi8qiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDCaCpJixbwxdQ4YiRyrcAwN227J9P25E3KNNTUcLW82FEZ%2FopCq6BPI%2Bdg5QSyXUUd88CM4OEwQatFNxXkQf8GIam93u74D%2BxTdg1Ud5LkR4VPKSTz78h6eK5AUqOuasqP6aj4AdM4qIWCbKQ%2BJDt4x9CeCWuzK7%2BggU3sDRxTzmmx4%2BFKcvgnOlq8TxKpNNIcxijkg7M88%2Bma%2F%2Bp0VN9qAv848PYN5QwVivQWGR9UhABembuj0UCTRdWeMtZUQ81aVRTr%2BFjFOTlzFom%2BTFlqXD7ZdeGJ%2BtrDffg8bNN0sYgAitGZfVct1QTTLOMTF7MK4RYzrhBXb%2BaJS%2FyP6iBlgKHsLv2xzFPJBa0GRPbNbF8yMB3N3ec40WHT3JYDp0pwsyFdecPwU%2FqjDzS1KTaSdBhxquvWNqXixjnqLCjAv2QAqWhU6nCUaI0L8n2NJXjo5%2Bt019n7W298HCC7wKPimAJVe48u6y7iQt5BPwv4UGYzWpWkHSAC4kMOWrjff7HCPgXmTenvZfxYb%2FHs2wr5mxd7GJPmwXVfG4yrVTD8TdjI8lO91BOArULhtS1fX9k683DzCw8iWTFflYv8MQFiAMkhpBma8JD%2Bmw8ETD92WYZkvrKxeu5ZrxsNmzMReTABbkVPUfnYuHEv55MOe1jtIGOqUBBuM%2BEkImpZSV3i2zCJgurmjRgFXVcWS0Y2D%2FTAkADf6LqzOnrTATH8Sk5WyPpOIUrEM%2Bm66Y5E6umH5L9S2cjz%2F4NpKlLtHLQly7wc9HvoD0jpmu3yC%2Bq20ad0Y0zkxIlYry2rjAMohf7KpVMklYna%2BV6li3ROCUG3u%2FpOUvR3xrlJZjWRw%2Ba4ePiH32%2BHc84OSQMoJBwtPzuauIx3GTvusc0CKf&X-Amz-Signature=52d2873eb23c9872222d1168339aed4067006b819a493db428e8abaac2a88918&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-06-30T16:19:04.267Z"
+            },
+            "local_asset": {
+              "owner_id": "2a81a39e-eba3-8101-9cf3-c427758281ce",
+              "label": "property_우베 100% 파우더",
+              "source_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/2a81617e-ef1e-4d60-b1d4-88f2e7d1a9e2/%EC%83%9D%EB%B0%94%EC%A7%88_500g.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466Q3ZYEGHN%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151904Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCb3LH%2BYgNzGU%2B34QJk1xIFmtwiRlC24XxCInh%2FfF1dpQIgIM%2FKCBBYJhAq1ySuOwHEVcoFMzkDFapr7gjYk7Tadi8qiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDCaCpJixbwxdQ4YiRyrcAwN227J9P25E3KNNTUcLW82FEZ%2FopCq6BPI%2Bdg5QSyXUUd88CM4OEwQatFNxXkQf8GIam93u74D%2BxTdg1Ud5LkR4VPKSTz78h6eK5AUqOuasqP6aj4AdM4qIWCbKQ%2BJDt4x9CeCWuzK7%2BggU3sDRxTzmmx4%2BFKcvgnOlq8TxKpNNIcxijkg7M88%2Bma%2F%2Bp0VN9qAv848PYN5QwVivQWGR9UhABembuj0UCTRdWeMtZUQ81aVRTr%2BFjFOTlzFom%2BTFlqXD7ZdeGJ%2BtrDffg8bNN0sYgAitGZfVct1QTTLOMTF7MK4RYzrhBXb%2BaJS%2FyP6iBlgKHsLv2xzFPJBa0GRPbNbF8yMB3N3ec40WHT3JYDp0pwsyFdecPwU%2FqjDzS1KTaSdBhxquvWNqXixjnqLCjAv2QAqWhU6nCUaI0L8n2NJXjo5%2Bt019n7W298HCC7wKPimAJVe48u6y7iQt5BPwv4UGYzWpWkHSAC4kMOWrjff7HCPgXmTenvZfxYb%2FHs2wr5mxd7GJPmwXVfG4yrVTD8TdjI8lO91BOArULhtS1fX9k683DzCw8iWTFflYv8MQFiAMkhpBma8JD%2Bmw8ETD92WYZkvrKxeu5ZrxsNmzMReTABbkVPUfnYuHEv55MOe1jtIGOqUBBuM%2BEkImpZSV3i2zCJgurmjRgFXVcWS0Y2D%2FTAkADf6LqzOnrTATH8Sk5WyPpOIUrEM%2Bm66Y5E6umH5L9S2cjz%2F4NpKlLtHLQly7wc9HvoD0jpmu3yC%2Bq20ad0Y0zkxIlYry2rjAMohf7KpVMklYna%2BV6li3ROCUG3u%2FpOUvR3xrlJZjWRw%2Ba4ePiH32%2BHc84OSQMoJBwtPzuauIx3GTvusc0CKf&X-Amz-Signature=52d2873eb23c9872222d1168339aed4067006b819a493db428e8abaac2a88918&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "local_path": "assets/2a81a39e-eba3-8101-9cf3-c427758281ce_%EC%83%9D%EB%B0%94%EC%A7%88_500g.png",
+              "content_type": "image/png"
+            }
+          },
+          {
+            "name": "https://smartstore.naver.com/thegreenfarm/products/4750912305",
+            "type": "external",
+            "external": {
+              "url": "https://smartstore.naver.com/thegreenfarm/products/4750912305"
+            },
+            "local_asset": {
+              "owner_id": "2a81a39e-eba3-8101-9cf3-c427758281ce",
+              "label": "property_우베 100% 파우더",
+              "source_url": "https://smartstore.naver.com/thegreenfarm/products/4750912305",
+              "error": "HTTP Error 429: Too Many Requests"
+            }
+          }
+        ]
+      },
+      "코코넛 분말": {
+        "id": "%7Crtk",
+        "type": "files",
+        "files": []
+      },
+      "이름": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "생바질밀크",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "생바질밀크",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://app.notion.com/p/2a81a39eeba381019cf3c427758281ce",
+    "public_url": null,
+    "archived": false,
+    "request_id": "e9c16733-5041-4dff-ab2d-351ae27593e6"
+  },
+  "blocks": [
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81f9-aa77-ea200b2d0e77",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8101-9cf3-c427758281ce"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "머신 경도값: 26",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "머신 경도값: 26",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-818f-a450-d508a4c883c9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8101-9cf3-c427758281ce"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "table",
+      "table": {
+        "table_width": 2,
+        "has_column_header": false,
+        "has_row_header": false
+      },
+      "archived": false,
+      "children": [
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-816f-ba2a-ca3deb506574",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-818f-a450-d508a4c883c9"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "시럽",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "시럽",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,100",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,100",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81cd-ac0f-c3db61bfdd5a",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-818f-a450-d508a4c883c9"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "바질",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "바질",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "80",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "80",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8195-8197-e0d4414d48ed",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-818f-a450-d508a4c883c9"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "우유",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "우유",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "2,500",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "2,500",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-814a-aa63-f3be98babed1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8101-9cf3-c427758281ce"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "블렌더에 시럽과 바질 잎을 넣고 곱게 갈아준다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "블렌더에 시럽과 바질 잎을 넣고 곱게 갈아준다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8137-bd5c-c5fcc44a75b0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8101-9cf3-c427758281ce"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "우유를 넣고 저어준다.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "우유를 넣고 저어준다.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-811f-8074-d705d91052e1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8101-9cf3-c427758281ce"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ]
+}

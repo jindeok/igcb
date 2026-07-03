@@ -243,18 +243,17 @@ export function useRecipe(id: string | string[] | undefined) {
     return { recipe, isLoading, error };
 }
 
-/** 여러 레시피의 sort_order를 일괄 업데이트 */
-export async function updateRecipeSortOrders(
-    items: { id: string; sort_order: number }[],
+/** 여러 레시피의 sort_order와 tags를 일괄 업데이트 */
+export async function updateRecipesBatch(
+    items: { id: string; sort_order: number; tags: string[] }[],
 ): Promise<void> {
     if (!isSupabaseConfigured || items.length === 0) return;
 
     // 배열 순회하며 개별 update를 병렬로 실행 
-    // (upsert 시 누락된 NOT NULL 컬럼 에러 방지)
     const promises = items.map((item) =>
         supabase
             .from('recipes')
-            .update({ sort_order: item.sort_order })
+            .update({ sort_order: item.sort_order, tags: item.tags })
             .eq('id', item.id)
     );
 

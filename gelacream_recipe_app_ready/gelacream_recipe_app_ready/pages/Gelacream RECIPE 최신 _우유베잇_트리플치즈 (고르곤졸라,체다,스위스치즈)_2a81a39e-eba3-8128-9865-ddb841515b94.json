@@ -1,0 +1,644 @@
+{
+  "id": "2a81a39e-eba3-8128-9865-ddb841515b94",
+  "title": "트리플치즈 (고르곤졸라,체다,스위스치즈)",
+  "path": [
+    "Gelacream RECIPE 최신  ",
+    "우유베잇",
+    "트리플치즈 (고르곤졸라,체다,스위스치즈)"
+  ],
+  "page": {
+    "object": "page",
+    "id": "2a81a39e-eba3-8128-9865-ddb841515b94",
+    "created_time": "2025-11-11T02:27:00.000Z",
+    "last_edited_time": "2025-11-11T02:27:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "2a81a39e-eba3-81e4-8c70-dbae299cb75c"
+    },
+    "in_trash": false,
+    "is_archived": false,
+    "is_locked": false,
+    "properties": {
+      "파일과 미디어 (1)": {
+        "id": "IgR%5D",
+        "type": "files",
+        "files": []
+      },
+      "태그": {
+        "id": "qP%7Dw",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "78ef0864-9a4f-48af-b4b6-863b4478d19a",
+            "name": "믹서",
+            "color": "green"
+          }
+        ]
+      },
+      "우베 100% 파우더": {
+        "id": "qrp%5C",
+        "type": "files",
+        "files": [
+          {
+            "name": "코스트코_슈레드채다치즈.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/986e2209-5574-4feb-ac49-effa7082dedb/%EC%BD%94%EC%8A%A4%ED%8A%B8%EC%BD%94_%EC%8A%88%EB%A0%88%EB%93%9C%EC%B1%84%EB%8B%A4%EC%B9%98%EC%A6%88.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664NMTPD6U%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151924Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIHw0%2FPzYLXluxKU1FHtbckBW0XRny8xgxAz%2BbfoJW2t4AiBZfF4%2FuRK%2BAYeJEc%2Bm43TXEpfSnoizxTDkvmBvSDg46CqIBAjE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMYilLmHOEVlJXcH64KtwDR3pKmqJa1yVljn0YpvA%2BprfU3fLFgSA%2FhEzWq9Aqrvj0YUeeLknIrOuWUaCN7zJXKDWcsrXV3LmrGqjQUCUIl2fUpD6CXFTtJpbHe7KAZP7ZGfUcEkwo6HcRxRk15IXCmmYWZJ2av4tBdI2NrdUAFLYmnl37XEIe5Wl%2B7KriZYvl%2BsDN8dFWs7oEicmsI7hkysbu7%2Fal%2B99%2BEWCvO8vmGQNep7GLe50cdo6rtJJd5xWAEPUODtn3xYFyl0z3%2FyHNky16sEWllOS1jQGnGmQ5xUbVd1BlGTMQspiV%2F4nRy6BafuUc0vkwHhoENocYhjM6NmaOCrm8nkWTKNnmKV0J%2Bnp%2BkCZQabhiyawEZeO2cVc%2BVt7x9Wu0kp11cFVygciFZjLjIA3kKdAmlg7D%2FsObWo%2FRvEPNqMqO1W%2FKARcl6oBb02akXVA2G6HRY6fCOU70g4A33BN8XBIISfP%2FlQyMAxaxyLia5MyS4t4zUccKYBlIa1u7FKPUYiHJ7jmpPYMgNGqKSOD8cOs53ikuQfmUHZIRe7%2F%2FzIUsoxg0UxsEyLVmjHuFZKC3phI7ozUlqWhrONahk%2BsUFHl7xWoNOxE2v2TU6aMPD1NOAFUeDWgvildOKss1%2Bw%2F0LAjPsSMwmbWO0gY6pgFEfxk%2F18Z8aayKcH11jpK0UyfaaaAUM9xYTRA0E3UwqvGu1WHC7zxk476hqutoA9SflTYRZdLS7XoNhG7Uv6FLTJN5h7ALvGjcC%2Fl%2BaRYtvFfNUW43XgXpJVrc2QK5mw2JxAgwLctIpx83ISVocNpzPuEfCQ%2Fz99JPsi9mKBIv40h%2FWJFjivtlX5CO1MZVee%2BAQHWNh%2BPMXHvQpQ4TTJYh6GLc2qrC&X-Amz-Signature=72c32d5d3b4f24c6087866903555c71e50c3506e6d39bb135ab2d704c36bc71d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-06-30T16:19:24.526Z"
+            },
+            "local_asset": {
+              "owner_id": "2a81a39e-eba3-8128-9865-ddb841515b94",
+              "label": "property_우베 100% 파우더",
+              "source_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/986e2209-5574-4feb-ac49-effa7082dedb/%EC%BD%94%EC%8A%A4%ED%8A%B8%EC%BD%94_%EC%8A%88%EB%A0%88%EB%93%9C%EC%B1%84%EB%8B%A4%EC%B9%98%EC%A6%88.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664NMTPD6U%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151924Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIHw0%2FPzYLXluxKU1FHtbckBW0XRny8xgxAz%2BbfoJW2t4AiBZfF4%2FuRK%2BAYeJEc%2Bm43TXEpfSnoizxTDkvmBvSDg46CqIBAjE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMYilLmHOEVlJXcH64KtwDR3pKmqJa1yVljn0YpvA%2BprfU3fLFgSA%2FhEzWq9Aqrvj0YUeeLknIrOuWUaCN7zJXKDWcsrXV3LmrGqjQUCUIl2fUpD6CXFTtJpbHe7KAZP7ZGfUcEkwo6HcRxRk15IXCmmYWZJ2av4tBdI2NrdUAFLYmnl37XEIe5Wl%2B7KriZYvl%2BsDN8dFWs7oEicmsI7hkysbu7%2Fal%2B99%2BEWCvO8vmGQNep7GLe50cdo6rtJJd5xWAEPUODtn3xYFyl0z3%2FyHNky16sEWllOS1jQGnGmQ5xUbVd1BlGTMQspiV%2F4nRy6BafuUc0vkwHhoENocYhjM6NmaOCrm8nkWTKNnmKV0J%2Bnp%2BkCZQabhiyawEZeO2cVc%2BVt7x9Wu0kp11cFVygciFZjLjIA3kKdAmlg7D%2FsObWo%2FRvEPNqMqO1W%2FKARcl6oBb02akXVA2G6HRY6fCOU70g4A33BN8XBIISfP%2FlQyMAxaxyLia5MyS4t4zUccKYBlIa1u7FKPUYiHJ7jmpPYMgNGqKSOD8cOs53ikuQfmUHZIRe7%2F%2FzIUsoxg0UxsEyLVmjHuFZKC3phI7ozUlqWhrONahk%2BsUFHl7xWoNOxE2v2TU6aMPD1NOAFUeDWgvildOKss1%2Bw%2F0LAjPsSMwmbWO0gY6pgFEfxk%2F18Z8aayKcH11jpK0UyfaaaAUM9xYTRA0E3UwqvGu1WHC7zxk476hqutoA9SflTYRZdLS7XoNhG7Uv6FLTJN5h7ALvGjcC%2Fl%2BaRYtvFfNUW43XgXpJVrc2QK5mw2JxAgwLctIpx83ISVocNpzPuEfCQ%2Fz99JPsi9mKBIv40h%2FWJFjivtlX5CO1MZVee%2BAQHWNh%2BPMXHvQpQ4TTJYh6GLc2qrC&X-Amz-Signature=72c32d5d3b4f24c6087866903555c71e50c3506e6d39bb135ab2d704c36bc71d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "local_path": "assets/2a81a39e-eba3-8128-9865-ddb841515b94_%EC%BD%94%EC%8A%A4%ED%8A%B8%EC%BD%94_%EC%8A%88%EB%A0%88%EB%93%9C%EC%B1%84%EB%8B%A4%.png",
+              "content_type": "image/png"
+            }
+          },
+          {
+            "name": "코스트코_스위스아메리칸치즈.jpg",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/ced23b98-700a-412a-ab3b-649aa935de3b/%EC%BD%94%EC%8A%A4%ED%8A%B8%EC%BD%94_%EC%8A%A4%EC%9C%84%EC%8A%A4%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B8%EC%B9%98%EC%A6%88.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664NMTPD6U%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151924Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIHw0%2FPzYLXluxKU1FHtbckBW0XRny8xgxAz%2BbfoJW2t4AiBZfF4%2FuRK%2BAYeJEc%2Bm43TXEpfSnoizxTDkvmBvSDg46CqIBAjE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMYilLmHOEVlJXcH64KtwDR3pKmqJa1yVljn0YpvA%2BprfU3fLFgSA%2FhEzWq9Aqrvj0YUeeLknIrOuWUaCN7zJXKDWcsrXV3LmrGqjQUCUIl2fUpD6CXFTtJpbHe7KAZP7ZGfUcEkwo6HcRxRk15IXCmmYWZJ2av4tBdI2NrdUAFLYmnl37XEIe5Wl%2B7KriZYvl%2BsDN8dFWs7oEicmsI7hkysbu7%2Fal%2B99%2BEWCvO8vmGQNep7GLe50cdo6rtJJd5xWAEPUODtn3xYFyl0z3%2FyHNky16sEWllOS1jQGnGmQ5xUbVd1BlGTMQspiV%2F4nRy6BafuUc0vkwHhoENocYhjM6NmaOCrm8nkWTKNnmKV0J%2Bnp%2BkCZQabhiyawEZeO2cVc%2BVt7x9Wu0kp11cFVygciFZjLjIA3kKdAmlg7D%2FsObWo%2FRvEPNqMqO1W%2FKARcl6oBb02akXVA2G6HRY6fCOU70g4A33BN8XBIISfP%2FlQyMAxaxyLia5MyS4t4zUccKYBlIa1u7FKPUYiHJ7jmpPYMgNGqKSOD8cOs53ikuQfmUHZIRe7%2F%2FzIUsoxg0UxsEyLVmjHuFZKC3phI7ozUlqWhrONahk%2BsUFHl7xWoNOxE2v2TU6aMPD1NOAFUeDWgvildOKss1%2Bw%2F0LAjPsSMwmbWO0gY6pgFEfxk%2F18Z8aayKcH11jpK0UyfaaaAUM9xYTRA0E3UwqvGu1WHC7zxk476hqutoA9SflTYRZdLS7XoNhG7Uv6FLTJN5h7ALvGjcC%2Fl%2BaRYtvFfNUW43XgXpJVrc2QK5mw2JxAgwLctIpx83ISVocNpzPuEfCQ%2Fz99JPsi9mKBIv40h%2FWJFjivtlX5CO1MZVee%2BAQHWNh%2BPMXHvQpQ4TTJYh6GLc2qrC&X-Amz-Signature=7724e3e5e9d115cec9403a64b9df773d278b77a9d744fae6116bd241ab706f01&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-06-30T16:19:24.534Z"
+            },
+            "local_asset": {
+              "owner_id": "2a81a39e-eba3-8128-9865-ddb841515b94",
+              "label": "property_우베 100% 파우더",
+              "source_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/ced23b98-700a-412a-ab3b-649aa935de3b/%EC%BD%94%EC%8A%A4%ED%8A%B8%EC%BD%94_%EC%8A%A4%EC%9C%84%EC%8A%A4%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B8%EC%B9%98%EC%A6%88.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664NMTPD6U%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151924Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIHw0%2FPzYLXluxKU1FHtbckBW0XRny8xgxAz%2BbfoJW2t4AiBZfF4%2FuRK%2BAYeJEc%2Bm43TXEpfSnoizxTDkvmBvSDg46CqIBAjE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMYilLmHOEVlJXcH64KtwDR3pKmqJa1yVljn0YpvA%2BprfU3fLFgSA%2FhEzWq9Aqrvj0YUeeLknIrOuWUaCN7zJXKDWcsrXV3LmrGqjQUCUIl2fUpD6CXFTtJpbHe7KAZP7ZGfUcEkwo6HcRxRk15IXCmmYWZJ2av4tBdI2NrdUAFLYmnl37XEIe5Wl%2B7KriZYvl%2BsDN8dFWs7oEicmsI7hkysbu7%2Fal%2B99%2BEWCvO8vmGQNep7GLe50cdo6rtJJd5xWAEPUODtn3xYFyl0z3%2FyHNky16sEWllOS1jQGnGmQ5xUbVd1BlGTMQspiV%2F4nRy6BafuUc0vkwHhoENocYhjM6NmaOCrm8nkWTKNnmKV0J%2Bnp%2BkCZQabhiyawEZeO2cVc%2BVt7x9Wu0kp11cFVygciFZjLjIA3kKdAmlg7D%2FsObWo%2FRvEPNqMqO1W%2FKARcl6oBb02akXVA2G6HRY6fCOU70g4A33BN8XBIISfP%2FlQyMAxaxyLia5MyS4t4zUccKYBlIa1u7FKPUYiHJ7jmpPYMgNGqKSOD8cOs53ikuQfmUHZIRe7%2F%2FzIUsoxg0UxsEyLVmjHuFZKC3phI7ozUlqWhrONahk%2BsUFHl7xWoNOxE2v2TU6aMPD1NOAFUeDWgvildOKss1%2Bw%2F0LAjPsSMwmbWO0gY6pgFEfxk%2F18Z8aayKcH11jpK0UyfaaaAUM9xYTRA0E3UwqvGu1WHC7zxk476hqutoA9SflTYRZdLS7XoNhG7Uv6FLTJN5h7ALvGjcC%2Fl%2BaRYtvFfNUW43XgXpJVrc2QK5mw2JxAgwLctIpx83ISVocNpzPuEfCQ%2Fz99JPsi9mKBIv40h%2FWJFjivtlX5CO1MZVee%2BAQHWNh%2BPMXHvQpQ4TTJYh6GLc2qrC&X-Amz-Signature=7724e3e5e9d115cec9403a64b9df773d278b77a9d744fae6116bd241ab706f01&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "local_path": "assets/2a81a39e-eba3-8128-9865-ddb841515b94_%EC%BD%94%EC%8A%A4%ED%8A%B8%EC%BD%94_%EC%8A%A4%EC%9C%84%EC%8A%A4%EC%95%84%EB%A9%94%.j",
+              "content_type": null
+            }
+          },
+          {
+            "name": "코스트코_고르곤졸라 크럼블치즈.jpg",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/1daf3387-6b8c-46b3-99c7-38040260c371/%EC%BD%94%EC%8A%A4%ED%8A%B8%EC%BD%94_%EA%B3%A0%EB%A5%B4%EA%B3%A4%EC%A1%B8%EB%9D%BC_%ED%81%AC%EB%9F%BC%EB%B8%94%EC%B9%98%EC%A6%88.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664NMTPD6U%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151924Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIHw0%2FPzYLXluxKU1FHtbckBW0XRny8xgxAz%2BbfoJW2t4AiBZfF4%2FuRK%2BAYeJEc%2Bm43TXEpfSnoizxTDkvmBvSDg46CqIBAjE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMYilLmHOEVlJXcH64KtwDR3pKmqJa1yVljn0YpvA%2BprfU3fLFgSA%2FhEzWq9Aqrvj0YUeeLknIrOuWUaCN7zJXKDWcsrXV3LmrGqjQUCUIl2fUpD6CXFTtJpbHe7KAZP7ZGfUcEkwo6HcRxRk15IXCmmYWZJ2av4tBdI2NrdUAFLYmnl37XEIe5Wl%2B7KriZYvl%2BsDN8dFWs7oEicmsI7hkysbu7%2Fal%2B99%2BEWCvO8vmGQNep7GLe50cdo6rtJJd5xWAEPUODtn3xYFyl0z3%2FyHNky16sEWllOS1jQGnGmQ5xUbVd1BlGTMQspiV%2F4nRy6BafuUc0vkwHhoENocYhjM6NmaOCrm8nkWTKNnmKV0J%2Bnp%2BkCZQabhiyawEZeO2cVc%2BVt7x9Wu0kp11cFVygciFZjLjIA3kKdAmlg7D%2FsObWo%2FRvEPNqMqO1W%2FKARcl6oBb02akXVA2G6HRY6fCOU70g4A33BN8XBIISfP%2FlQyMAxaxyLia5MyS4t4zUccKYBlIa1u7FKPUYiHJ7jmpPYMgNGqKSOD8cOs53ikuQfmUHZIRe7%2F%2FzIUsoxg0UxsEyLVmjHuFZKC3phI7ozUlqWhrONahk%2BsUFHl7xWoNOxE2v2TU6aMPD1NOAFUeDWgvildOKss1%2Bw%2F0LAjPsSMwmbWO0gY6pgFEfxk%2F18Z8aayKcH11jpK0UyfaaaAUM9xYTRA0E3UwqvGu1WHC7zxk476hqutoA9SflTYRZdLS7XoNhG7Uv6FLTJN5h7ALvGjcC%2Fl%2BaRYtvFfNUW43XgXpJVrc2QK5mw2JxAgwLctIpx83ISVocNpzPuEfCQ%2Fz99JPsi9mKBIv40h%2FWJFjivtlX5CO1MZVee%2BAQHWNh%2BPMXHvQpQ4TTJYh6GLc2qrC&X-Amz-Signature=3699895b578d9922899c10bd009d40df8218abff9d653e18ef28ac0b4645b0b8&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-06-30T16:19:24.542Z"
+            },
+            "local_asset": {
+              "owner_id": "2a81a39e-eba3-8128-9865-ddb841515b94",
+              "label": "property_우베 100% 파우더",
+              "source_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/1daf3387-6b8c-46b3-99c7-38040260c371/%EC%BD%94%EC%8A%A4%ED%8A%B8%EC%BD%94_%EA%B3%A0%EB%A5%B4%EA%B3%A4%EC%A1%B8%EB%9D%BC_%ED%81%AC%EB%9F%BC%EB%B8%94%EC%B9%98%EC%A6%88.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664NMTPD6U%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151924Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIHw0%2FPzYLXluxKU1FHtbckBW0XRny8xgxAz%2BbfoJW2t4AiBZfF4%2FuRK%2BAYeJEc%2Bm43TXEpfSnoizxTDkvmBvSDg46CqIBAjE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMYilLmHOEVlJXcH64KtwDR3pKmqJa1yVljn0YpvA%2BprfU3fLFgSA%2FhEzWq9Aqrvj0YUeeLknIrOuWUaCN7zJXKDWcsrXV3LmrGqjQUCUIl2fUpD6CXFTtJpbHe7KAZP7ZGfUcEkwo6HcRxRk15IXCmmYWZJ2av4tBdI2NrdUAFLYmnl37XEIe5Wl%2B7KriZYvl%2BsDN8dFWs7oEicmsI7hkysbu7%2Fal%2B99%2BEWCvO8vmGQNep7GLe50cdo6rtJJd5xWAEPUODtn3xYFyl0z3%2FyHNky16sEWllOS1jQGnGmQ5xUbVd1BlGTMQspiV%2F4nRy6BafuUc0vkwHhoENocYhjM6NmaOCrm8nkWTKNnmKV0J%2Bnp%2BkCZQabhiyawEZeO2cVc%2BVt7x9Wu0kp11cFVygciFZjLjIA3kKdAmlg7D%2FsObWo%2FRvEPNqMqO1W%2FKARcl6oBb02akXVA2G6HRY6fCOU70g4A33BN8XBIISfP%2FlQyMAxaxyLia5MyS4t4zUccKYBlIa1u7FKPUYiHJ7jmpPYMgNGqKSOD8cOs53ikuQfmUHZIRe7%2F%2FzIUsoxg0UxsEyLVmjHuFZKC3phI7ozUlqWhrONahk%2BsUFHl7xWoNOxE2v2TU6aMPD1NOAFUeDWgvildOKss1%2Bw%2F0LAjPsSMwmbWO0gY6pgFEfxk%2F18Z8aayKcH11jpK0UyfaaaAUM9xYTRA0E3UwqvGu1WHC7zxk476hqutoA9SflTYRZdLS7XoNhG7Uv6FLTJN5h7ALvGjcC%2Fl%2BaRYtvFfNUW43XgXpJVrc2QK5mw2JxAgwLctIpx83ISVocNpzPuEfCQ%2Fz99JPsi9mKBIv40h%2FWJFjivtlX5CO1MZVee%2BAQHWNh%2BPMXHvQpQ4TTJYh6GLc2qrC&X-Amz-Signature=3699895b578d9922899c10bd009d40df8218abff9d653e18ef28ac0b4645b0b8&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "local_path": "assets/2a81a39e-eba3-8128-9865-ddb841515b94_%EC%BD%94%EC%8A%A4%ED%8A%B8%EC%BD%94_%EA%B3%A0%EB%A5%B4%EA%B3%A4%EC%A1%B8%EB%9D%BC_.jpg",
+              "content_type": "image/jpeg"
+            }
+          }
+        ]
+      },
+      "코코넛 분말": {
+        "id": "%7Crtk",
+        "type": "files",
+        "files": []
+      },
+      "이름": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "트리플치즈 (고르곤졸라,체다,스위스치즈)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "트리플치즈 (고르곤졸라,체다,스위스치즈)",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://app.notion.com/p/2a81a39eeba381289865ddb841515b94",
+    "public_url": null,
+    "archived": false,
+    "request_id": "8e9cf1ab-5be8-4bd7-9aa4-e9bcd2b070b0"
+  },
+  "blocks": [
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8111-88a0-ece62df8bcdb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8128-9865-ddb841515b94"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "머신 경도값: 26",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "머신 경도값: 26",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8160-9985-e1a203dd3964",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8128-9865-ddb841515b94"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "table",
+      "table": {
+        "table_width": 2,
+        "has_column_header": false,
+        "has_row_header": false
+      },
+      "archived": false,
+      "children": [
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-813c-849f-c1223b0d1f5c",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8160-9985-e1a203dd3964"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "체다치즈",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "체다치즈",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "75",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "75",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8186-b31e-cbdd496e4281",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8160-9985-e1a203dd3964"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "스위스치즈",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "스위스치즈",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "100",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "100",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-810a-83f6-ceefdc07d803",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8160-9985-e1a203dd3964"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "고르곤졸라",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "고르곤졸라",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "120",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "120",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81b4-aee1-e8a883432236",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8160-9985-e1a203dd3964"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "시럽",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "시럽",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,300",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,300",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-813c-8166-c4520d1a794a",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8160-9985-e1a203dd3964"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "우유",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "우유",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "3팩 (2,700)",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "3팩 (2,700)",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81ea-862c-fa76bf2825a2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8128-9865-ddb841515b94"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8175-a6db-d8fbef2aa195",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8128-9865-ddb841515b94"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "블렌더에 치즈 3종과 시럽 모두 넣고 곱게 갈아준다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "블렌더에 치즈 3종과 시럽 모두 넣고 곱게 갈아준다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-812d-94ab-e393138827b4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8128-9865-ddb841515b94"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "우유를 넣고 잘 저어준다.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "우유를 넣고 잘 저어준다.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    }
+  ]
+}

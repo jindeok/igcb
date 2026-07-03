@@ -30,13 +30,6 @@ export default function SearchResultScreen() {
                 <Text style={styles.cardEmoji}>🍨</Text>
             </View>
             <View style={styles.cardContent}>
-                <View style={styles.tagRow}>
-                    {item.tags.map((tag, index) => (
-                        <View key={index} style={[styles.tag, { backgroundColor: theme.background, borderColor: theme.border }]}>
-                            <Text style={[styles.tagText, { color: theme.icon }]}>{tag}</Text>
-                        </View>
-                    ))}
-                </View>
                 <Text style={[styles.cardTitle, { color: theme.text }]}>{item.title}</Text>
                 <Text style={[styles.cardSubtitle, { color: theme.icon }]}>{item.hardness != null ? `경도 ${item.hardness} · ` : ''}재료 {item.ingredients.length}개</Text>
             </View>

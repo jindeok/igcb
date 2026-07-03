@@ -1,0 +1,753 @@
+{
+  "id": "2a81a39e-eba3-813a-8119-d76790f5bc0c",
+  "title": "고추장초콜릿 ",
+  "path": [
+    "Gelacream RECIPE 최신  ",
+    "우유베잇",
+    "고추장초콜릿 "
+  ],
+  "page": {
+    "object": "page",
+    "id": "2a81a39e-eba3-813a-8119-d76790f5bc0c",
+    "created_time": "2025-11-11T02:27:00.000Z",
+    "last_edited_time": "2026-06-18T14:30:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "2a81a39e-eba3-81e4-8c70-dbae299cb75c"
+    },
+    "in_trash": false,
+    "is_archived": false,
+    "is_locked": false,
+    "properties": {
+      "파일과 미디어 (1)": {
+        "id": "IgR%5D",
+        "type": "files",
+        "files": []
+      },
+      "태그": {
+        "id": "qP%7Dw",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "78ef0864-9a4f-48af-b4b6-863b4478d19a",
+            "name": "믹서",
+            "color": "green"
+          }
+        ]
+      },
+      "우베 100% 파우더": {
+        "id": "qrp%5C",
+        "type": "files",
+        "files": [
+          {
+            "name": "https://www.coupang.com/vp/products/6135466039?isAddedCart=",
+            "type": "external",
+            "external": {
+              "url": "https://www.coupang.com/vp/products/6135466039?isAddedCart="
+            },
+            "local_asset": {
+              "owner_id": "2a81a39e-eba3-813a-8119-d76790f5bc0c",
+              "label": "property_우베 100% 파우더",
+              "source_url": "https://www.coupang.com/vp/products/6135466039?isAddedCart=",
+              "error": "HTTP Error 403: Forbidden"
+            }
+          },
+          {
+            "name": "스크린샷 2025-04-28 180910.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/c091ce12-6979-4aba-ac82-88dcaed891e6/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-04-28_180910.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TJM2DIUR%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151936Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFq54mYwKJkFhyW7GqJvYCYT5rFJva1Xw3H9%2BXGmu0rSAiEA%2BucCETOX5HegxjNe%2FzptqOxongNNFlDPe12Ctvsm6yAqiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJmxpGeiQ0%2Ffl8KW%2FyrcAyO2lCiIfC51JFh87OPaIMQiaoEF32pWmrnSbxzCOZ6RKSo1%2F4P0Odd41ptOpy1l24p6FUbOS7TJntMIkUgnDpmL3p9k2M4BxG9sMUb5OesVlhGAqmblTaWRxkrzugaQgYbwQDczMpn4NI%2FwVlBP53iODCO9Slc214bqEAlRpLoVNUzp7TVb%2Btk82M5w4gC7qR7PZnOKer0o%2B7uTers3ZJfk3DtKuueG1a8YR3iP0Fh%2BeDa4E3nMR7bMbqWAHnuoZQrnt4kXIrmxzNTa6IQ7bi7AilZh2iyCcaIHhZEWbSkPBLeWd06LSvAs7TK7%2FODNdqLGRe093BJAHJXnGLKWN5wVfZ1MgNfACSAN33Q%2BADd0sAfCcH7fmTvB0rtVpRIUUXmjlqEmH%2FH8dGIm8naChObtn6C3ugEXpHoP7KE22ddVQzqYKe3cOoxV1MvLc9g5eK66hi8es3uJLY%2F%2FB3YkH%2FMxtg52sXPPLh7m5QZoMAT4CNgLlWxqASE%2B1wyCaJifdTOZg%2BBkoSvh2Lc8GQwzyTi2eE72fSAgRTgoYN46eze2MyLp93SJm5XBcPmIR1TOf2nAhUFLbXXEpLAXRo1KC3d97y6OqVK5%2BXysVVsDKdhHRs3mthYmrHwsYSMbMKa3jtIGOqUB%2B4%2FCxGHPvtT%2FpabCka5wlU2wCpmi0eEdbgIF%2FEn9l%2Bl6zU0nOx1aBrJd0WEwubLwBMC0Y9MG%2FCm9hcPqKrZoV3m4T3l1AQCap1XkxRKASrUauMm3VH5T8J%2BUK2xwVGjmm8GftwFLf42qSQIuL8AZrWAzlLhVBbFQT7nWE3t3hcsZ2wxGjZX1K1auxzND3IvKiMTnbOLDeahhnY%2BtKzmMnqjfJv8P&X-Amz-Signature=cbd9ad2f8a7d56d902c008b95ea15ec0c853cca6f8ac788c1e08a4353b46dc75&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-06-30T16:19:36.876Z"
+            },
+            "local_asset": {
+              "owner_id": "2a81a39e-eba3-813a-8119-d76790f5bc0c",
+              "label": "property_우베 100% 파우더",
+              "source_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/c091ce12-6979-4aba-ac82-88dcaed891e6/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-04-28_180910.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TJM2DIUR%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151936Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFq54mYwKJkFhyW7GqJvYCYT5rFJva1Xw3H9%2BXGmu0rSAiEA%2BucCETOX5HegxjNe%2FzptqOxongNNFlDPe12Ctvsm6yAqiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJmxpGeiQ0%2Ffl8KW%2FyrcAyO2lCiIfC51JFh87OPaIMQiaoEF32pWmrnSbxzCOZ6RKSo1%2F4P0Odd41ptOpy1l24p6FUbOS7TJntMIkUgnDpmL3p9k2M4BxG9sMUb5OesVlhGAqmblTaWRxkrzugaQgYbwQDczMpn4NI%2FwVlBP53iODCO9Slc214bqEAlRpLoVNUzp7TVb%2Btk82M5w4gC7qR7PZnOKer0o%2B7uTers3ZJfk3DtKuueG1a8YR3iP0Fh%2BeDa4E3nMR7bMbqWAHnuoZQrnt4kXIrmxzNTa6IQ7bi7AilZh2iyCcaIHhZEWbSkPBLeWd06LSvAs7TK7%2FODNdqLGRe093BJAHJXnGLKWN5wVfZ1MgNfACSAN33Q%2BADd0sAfCcH7fmTvB0rtVpRIUUXmjlqEmH%2FH8dGIm8naChObtn6C3ugEXpHoP7KE22ddVQzqYKe3cOoxV1MvLc9g5eK66hi8es3uJLY%2F%2FB3YkH%2FMxtg52sXPPLh7m5QZoMAT4CNgLlWxqASE%2B1wyCaJifdTOZg%2BBkoSvh2Lc8GQwzyTi2eE72fSAgRTgoYN46eze2MyLp93SJm5XBcPmIR1TOf2nAhUFLbXXEpLAXRo1KC3d97y6OqVK5%2BXysVVsDKdhHRs3mthYmrHwsYSMbMKa3jtIGOqUB%2B4%2FCxGHPvtT%2FpabCka5wlU2wCpmi0eEdbgIF%2FEn9l%2Bl6zU0nOx1aBrJd0WEwubLwBMC0Y9MG%2FCm9hcPqKrZoV3m4T3l1AQCap1XkxRKASrUauMm3VH5T8J%2BUK2xwVGjmm8GftwFLf42qSQIuL8AZrWAzlLhVBbFQT7nWE3t3hcsZ2wxGjZX1K1auxzND3IvKiMTnbOLDeahhnY%2BtKzmMnqjfJv8P&X-Amz-Signature=cbd9ad2f8a7d56d902c008b95ea15ec0c853cca6f8ac788c1e08a4353b46dc75&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "local_path": "assets/2a81a39e-eba3-813a-8119-d76790f5bc0c_%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-04-28_180910.png",
+              "content_type": "image/png"
+            }
+          }
+        ]
+      },
+      "코코넛 분말": {
+        "id": "%7Crtk",
+        "type": "files",
+        "files": []
+      },
+      "이름": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "고추장초콜릿 ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "고추장초콜릿 ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://app.notion.com/p/2a81a39eeba3813a8119d76790f5bc0c",
+    "public_url": null,
+    "archived": false,
+    "request_id": "76557e87-7e02-4c3a-a2ec-458a54ee2838"
+  },
+  "blocks": [
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8141-8707-dce3cf478134",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-813a-8119-d76790f5bc0c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "머신 경도값: 27",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "머신 경도값: 27",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8103-8816-ed6c1604ab1a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-813a-8119-d76790f5bc0c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "table",
+      "table": {
+        "table_width": 2,
+        "has_column_header": false,
+        "has_row_header": false
+      },
+      "archived": false,
+      "children": [
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81fb-a613-e312b5e9ddd9",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8103-8816-ed6c1604ab1a"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "고추장",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "고추장",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "150",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "150",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81e8-a761-e1206673de75",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8103-8816-ed6c1604ab1a"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "시럽",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "시럽",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,400",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,400",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8166-8701-cbe9fd3ac738",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8103-8816-ed6c1604ab1a"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "카카오파우더",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "카카오파우더",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "180",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "180",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-811c-ac50-db6c61b9858e",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8103-8816-ed6c1604ab1a"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "우유",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "우유",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "2,500",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "2,500",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-811d-ba52-c3136a488d1d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-813a-8119-d76790f5bc0c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-810f-ae2d-e1bf370056de",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-813a-8119-d76790f5bc0c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": " 먼저",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " 먼저",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "고추장",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "red"
+            },
+            "plain_text": "고추장",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "과 ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "과 ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "시럽",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "시럽",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "을 먼저 믹서나 거품기로",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "을 먼저 믹서나 거품기로",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "잘 풀어준다.",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": true,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "잘 풀어준다.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81a2-80cb-d2d073ac6a6b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-813a-8119-d76790f5bc0c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "고추장이 다 풀어진 시럽에 파우더를 넣고 잘 풀어준다.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "고추장이 다 풀어진 시럽에 파우더를 넣고 잘 풀어준다.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8138-bad5-e3fac75c0c4a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-813a-8119-d76790f5bc0c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "우유를 마지막에 넣고 저어준다. (생크림은 안들어갑니다)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "우유를 마지막에 넣고 저어준다. (생크림은 안들어갑니다)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8148-9b3c-dc071bf52317",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-813a-8119-d76790f5bc0c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ]
+}

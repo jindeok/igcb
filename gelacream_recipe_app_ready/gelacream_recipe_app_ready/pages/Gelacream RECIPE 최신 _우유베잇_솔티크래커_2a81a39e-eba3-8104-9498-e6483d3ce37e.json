@@ -1,0 +1,504 @@
+{
+  "id": "2a81a39e-eba3-8104-9498-e6483d3ce37e",
+  "title": "솔티크래커",
+  "path": [
+    "Gelacream RECIPE 최신  ",
+    "우유베잇",
+    "솔티크래커"
+  ],
+  "page": {
+    "object": "page",
+    "id": "2a81a39e-eba3-8104-9498-e6483d3ce37e",
+    "created_time": "2025-11-11T02:27:00.000Z",
+    "last_edited_time": "2025-11-14T06:33:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "2a81a39e-eba3-81e4-8c70-dbae299cb75c"
+    },
+    "in_trash": false,
+    "is_archived": false,
+    "is_locked": false,
+    "properties": {
+      "파일과 미디어 (1)": {
+        "id": "IgR%5D",
+        "type": "files",
+        "files": []
+      },
+      "태그": {
+        "id": "qP%7Dw",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "609b1603-c2cb-40f6-b420-3ac5e1ec8442",
+            "name": "시그니처",
+            "color": "purple"
+          }
+        ]
+      },
+      "우베 100% 파우더": {
+        "id": "qrp%5C",
+        "type": "files",
+        "files": [
+          {
+            "name": "코스트코_솔틴크래커.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/1af67904-114a-4d27-9237-c0110d33a015/%EC%BD%94%EC%8A%A4%ED%8A%B8%EC%BD%94_%EC%86%94%ED%8B%B4%ED%81%AC%EB%9E%98%EC%BB%A4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663M4CB7CE%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151941Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDVYsx361N83fGdjBvGTDimaw1MMxwxDR%2B0G0voDwxwcgIhAO5arlo%2B%2B0umgtVP5Fc2%2F9mXaiqPZsTX91YcLoINeWiaKogECMT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgwmCN4k3OUvZbwJxjsq3AMPbsPiqDXbai%2BFZqn%2FjOJ4u5UwI3ivA7OFWLFjoP%2B%2By3wh9mO2HeodEN6QGW6PMphh1%2BXmQegh%2BG8UXZMl8aVcJQQ7hwADGC%2BoW1xf4ey9X5zCvU24HrYs30vx%2BlfL4W4gOfhwUujiKDRpfmNb7L5%2BprD0OLOQnDqavNa9C3LYzIIRVNjyip01FsDBToqsIQwE8SVfF7gJizB4fqZOqKLdXeHjA%2FK9RSlyRZ2NdxglTjyTpv%2BcSpQqr2jEtxRMB1VAGYU%2FcQDgk3Wz84m4syzaO6JBPOfV1eeLolo5rRXVsAJCjJ2kMDGRpZQ9HpilWdJNeZ7FGCgngpCg0OfIfIU%2Brp8tIeaPPSXBIOz9%2F6qOsRMOgXVxDQCL%2FyrmhrWdLLvAx7BezfeRo0tG9V42hyKPJyfEEXbLKB6%2B1lVVZ%2FOil6vFdMzwJnptaOC78vBLSM0AKtBlIrxtg5sFmXwh1A2eVtYBO0H2sg%2BNVgPDoMe%2BDlH2h4%2Bb%2BQGBFZqJF0Jks6k7aW0xBjUha%2Fb4uPwVCZpJw3tv4GcVcwQH2bhq7DJvvKeBjQ69BieFzHa%2FnvLAzVxbqHcfFTpRUsdDELE6znino7rGcgh2H89XebME6opndv9Sh9%2BqJwgEQ%2B2nVTCauI7SBjqkARbkR3EkFZlv7kVd6lPO6U36WiYQCutDtFOkTZEMOI23EnBcEkMLZeDIZEMYu4QKxFZwBtfjrvG7RlveJdVSexvJDfzUFjxQsdOop3pVUVAq59hpDjm%2Fr8mzwrOCEycjxBpvK%2Fhy%2B3U6MFVUlPPT3AyVq1w7Ef0LhMRUqvO6m%2F%2FTELuckNAodE31oK%2BPcedYBjN9PK08mKor4QF8wWhMgB87RN%2FE&X-Amz-Signature=6abe52cb946eb0354a3113ba8378505ad654f6efbed2958908b415b5e9cfd8d1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-06-30T16:19:41.323Z"
+            },
+            "local_asset": {
+              "owner_id": "2a81a39e-eba3-8104-9498-e6483d3ce37e",
+              "label": "property_우베 100% 파우더",
+              "source_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/1af67904-114a-4d27-9237-c0110d33a015/%EC%BD%94%EC%8A%A4%ED%8A%B8%EC%BD%94_%EC%86%94%ED%8B%B4%ED%81%AC%EB%9E%98%EC%BB%A4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663M4CB7CE%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151941Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDVYsx361N83fGdjBvGTDimaw1MMxwxDR%2B0G0voDwxwcgIhAO5arlo%2B%2B0umgtVP5Fc2%2F9mXaiqPZsTX91YcLoINeWiaKogECMT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgwmCN4k3OUvZbwJxjsq3AMPbsPiqDXbai%2BFZqn%2FjOJ4u5UwI3ivA7OFWLFjoP%2B%2By3wh9mO2HeodEN6QGW6PMphh1%2BXmQegh%2BG8UXZMl8aVcJQQ7hwADGC%2BoW1xf4ey9X5zCvU24HrYs30vx%2BlfL4W4gOfhwUujiKDRpfmNb7L5%2BprD0OLOQnDqavNa9C3LYzIIRVNjyip01FsDBToqsIQwE8SVfF7gJizB4fqZOqKLdXeHjA%2FK9RSlyRZ2NdxglTjyTpv%2BcSpQqr2jEtxRMB1VAGYU%2FcQDgk3Wz84m4syzaO6JBPOfV1eeLolo5rRXVsAJCjJ2kMDGRpZQ9HpilWdJNeZ7FGCgngpCg0OfIfIU%2Brp8tIeaPPSXBIOz9%2F6qOsRMOgXVxDQCL%2FyrmhrWdLLvAx7BezfeRo0tG9V42hyKPJyfEEXbLKB6%2B1lVVZ%2FOil6vFdMzwJnptaOC78vBLSM0AKtBlIrxtg5sFmXwh1A2eVtYBO0H2sg%2BNVgPDoMe%2BDlH2h4%2Bb%2BQGBFZqJF0Jks6k7aW0xBjUha%2Fb4uPwVCZpJw3tv4GcVcwQH2bhq7DJvvKeBjQ69BieFzHa%2FnvLAzVxbqHcfFTpRUsdDELE6znino7rGcgh2H89XebME6opndv9Sh9%2BqJwgEQ%2B2nVTCauI7SBjqkARbkR3EkFZlv7kVd6lPO6U36WiYQCutDtFOkTZEMOI23EnBcEkMLZeDIZEMYu4QKxFZwBtfjrvG7RlveJdVSexvJDfzUFjxQsdOop3pVUVAq59hpDjm%2Fr8mzwrOCEycjxBpvK%2Fhy%2B3U6MFVUlPPT3AyVq1w7Ef0LhMRUqvO6m%2F%2FTELuckNAodE31oK%2BPcedYBjN9PK08mKor4QF8wWhMgB87RN%2FE&X-Amz-Signature=6abe52cb946eb0354a3113ba8378505ad654f6efbed2958908b415b5e9cfd8d1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "local_path": "assets/2a81a39e-eba3-8104-9498-e6483d3ce37e_%EC%BD%94%EC%8A%A4%ED%8A%B8%EC%BD%94_%EC%86%94%ED%8B%B4%ED%81%AC%EB%9E%98%EC%BB%A4.png",
+              "content_type": "image/png"
+            }
+          },
+          {
+            "name": "참크래서 (솔틴크래커 대체품).png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/5e29c788-edc4-4054-b1cf-9ba46dff9b50/%EC%B0%B8%ED%81%AC%EB%9E%98%EC%84%9C_%28%EC%86%94%ED%8B%B4%ED%81%AC%EB%9E%98%EC%BB%A4_%EB%8C%80%EC%B2%B4%ED%92%88%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663M4CB7CE%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151941Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDVYsx361N83fGdjBvGTDimaw1MMxwxDR%2B0G0voDwxwcgIhAO5arlo%2B%2B0umgtVP5Fc2%2F9mXaiqPZsTX91YcLoINeWiaKogECMT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgwmCN4k3OUvZbwJxjsq3AMPbsPiqDXbai%2BFZqn%2FjOJ4u5UwI3ivA7OFWLFjoP%2B%2By3wh9mO2HeodEN6QGW6PMphh1%2BXmQegh%2BG8UXZMl8aVcJQQ7hwADGC%2BoW1xf4ey9X5zCvU24HrYs30vx%2BlfL4W4gOfhwUujiKDRpfmNb7L5%2BprD0OLOQnDqavNa9C3LYzIIRVNjyip01FsDBToqsIQwE8SVfF7gJizB4fqZOqKLdXeHjA%2FK9RSlyRZ2NdxglTjyTpv%2BcSpQqr2jEtxRMB1VAGYU%2FcQDgk3Wz84m4syzaO6JBPOfV1eeLolo5rRXVsAJCjJ2kMDGRpZQ9HpilWdJNeZ7FGCgngpCg0OfIfIU%2Brp8tIeaPPSXBIOz9%2F6qOsRMOgXVxDQCL%2FyrmhrWdLLvAx7BezfeRo0tG9V42hyKPJyfEEXbLKB6%2B1lVVZ%2FOil6vFdMzwJnptaOC78vBLSM0AKtBlIrxtg5sFmXwh1A2eVtYBO0H2sg%2BNVgPDoMe%2BDlH2h4%2Bb%2BQGBFZqJF0Jks6k7aW0xBjUha%2Fb4uPwVCZpJw3tv4GcVcwQH2bhq7DJvvKeBjQ69BieFzHa%2FnvLAzVxbqHcfFTpRUsdDELE6znino7rGcgh2H89XebME6opndv9Sh9%2BqJwgEQ%2B2nVTCauI7SBjqkARbkR3EkFZlv7kVd6lPO6U36WiYQCutDtFOkTZEMOI23EnBcEkMLZeDIZEMYu4QKxFZwBtfjrvG7RlveJdVSexvJDfzUFjxQsdOop3pVUVAq59hpDjm%2Fr8mzwrOCEycjxBpvK%2Fhy%2B3U6MFVUlPPT3AyVq1w7Ef0LhMRUqvO6m%2F%2FTELuckNAodE31oK%2BPcedYBjN9PK08mKor4QF8wWhMgB87RN%2FE&X-Amz-Signature=86d0d4a866225283a65885ad747c9832856957b7deb95d99bf3f455b62d16278&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-06-30T16:19:41.332Z"
+            },
+            "local_asset": {
+              "owner_id": "2a81a39e-eba3-8104-9498-e6483d3ce37e",
+              "label": "property_우베 100% 파우더",
+              "source_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/5e29c788-edc4-4054-b1cf-9ba46dff9b50/%EC%B0%B8%ED%81%AC%EB%9E%98%EC%84%9C_%28%EC%86%94%ED%8B%B4%ED%81%AC%EB%9E%98%EC%BB%A4_%EB%8C%80%EC%B2%B4%ED%92%88%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663M4CB7CE%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151941Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDVYsx361N83fGdjBvGTDimaw1MMxwxDR%2B0G0voDwxwcgIhAO5arlo%2B%2B0umgtVP5Fc2%2F9mXaiqPZsTX91YcLoINeWiaKogECMT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgwmCN4k3OUvZbwJxjsq3AMPbsPiqDXbai%2BFZqn%2FjOJ4u5UwI3ivA7OFWLFjoP%2B%2By3wh9mO2HeodEN6QGW6PMphh1%2BXmQegh%2BG8UXZMl8aVcJQQ7hwADGC%2BoW1xf4ey9X5zCvU24HrYs30vx%2BlfL4W4gOfhwUujiKDRpfmNb7L5%2BprD0OLOQnDqavNa9C3LYzIIRVNjyip01FsDBToqsIQwE8SVfF7gJizB4fqZOqKLdXeHjA%2FK9RSlyRZ2NdxglTjyTpv%2BcSpQqr2jEtxRMB1VAGYU%2FcQDgk3Wz84m4syzaO6JBPOfV1eeLolo5rRXVsAJCjJ2kMDGRpZQ9HpilWdJNeZ7FGCgngpCg0OfIfIU%2Brp8tIeaPPSXBIOz9%2F6qOsRMOgXVxDQCL%2FyrmhrWdLLvAx7BezfeRo0tG9V42hyKPJyfEEXbLKB6%2B1lVVZ%2FOil6vFdMzwJnptaOC78vBLSM0AKtBlIrxtg5sFmXwh1A2eVtYBO0H2sg%2BNVgPDoMe%2BDlH2h4%2Bb%2BQGBFZqJF0Jks6k7aW0xBjUha%2Fb4uPwVCZpJw3tv4GcVcwQH2bhq7DJvvKeBjQ69BieFzHa%2FnvLAzVxbqHcfFTpRUsdDELE6znino7rGcgh2H89XebME6opndv9Sh9%2BqJwgEQ%2B2nVTCauI7SBjqkARbkR3EkFZlv7kVd6lPO6U36WiYQCutDtFOkTZEMOI23EnBcEkMLZeDIZEMYu4QKxFZwBtfjrvG7RlveJdVSexvJDfzUFjxQsdOop3pVUVAq59hpDjm%2Fr8mzwrOCEycjxBpvK%2Fhy%2B3U6MFVUlPPT3AyVq1w7Ef0LhMRUqvO6m%2F%2FTELuckNAodE31oK%2BPcedYBjN9PK08mKor4QF8wWhMgB87RN%2FE&X-Amz-Signature=86d0d4a866225283a65885ad747c9832856957b7deb95d99bf3f455b62d16278&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "local_path": "assets/2a81a39e-eba3-8104-9498-e6483d3ce37e_%EC%B0%B8%ED%81%AC%EB%9E%98%EC%84%9C_%28%EC%86%94%ED%8B%B4%ED%81%AC%EB%9E%98%EC%BB%.png",
+              "content_type": "image/png"
+            }
+          }
+        ]
+      },
+      "코코넛 분말": {
+        "id": "%7Crtk",
+        "type": "files",
+        "files": []
+      },
+      "이름": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "솔티크래커",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "솔티크래커",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://app.notion.com/p/2a81a39eeba381049498e6483d3ce37e",
+    "public_url": null,
+    "archived": false,
+    "request_id": "e6b3f1f9-50b5-4e6d-b292-73fc91308082"
+  },
+  "blocks": [
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-813f-a791-d7e43cb517dc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8104-9498-e6483d3ce37e"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "머신 경도값: 28",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "머신 경도값: 28",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81d6-a612-c7d71d67f206",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8104-9498-e6483d3ce37e"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8160-be0c-ebaeba1b3e83",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8104-9498-e6483d3ce37e"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "table",
+      "table": {
+        "table_width": 2,
+        "has_column_header": false,
+        "has_row_header": false
+      },
+      "archived": false,
+      "children": [
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81da-baf3-ecdcf57ef2e5",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8160-be0c-ebaeba1b3e83"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-14T06:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "시럽",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": true,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "시럽",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,300",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": true,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,300",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8134-adc5-dc0c7505d7b1",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8160-be0c-ebaeba1b3e83"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-14T06:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "소금",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": true,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "소금",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "25",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": true,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "25",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81bf-8006-f7dc67fad7fd",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8160-be0c-ebaeba1b3e83"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-14T06:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "생크림",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": true,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "생크림",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "200",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": true,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "200",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81cd-98a9-d9d23cd1585b",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-8160-be0c-ebaeba1b3e83"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-14T06:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "우유",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": true,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "우유",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "3팩 (2,700)",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": true,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "3팩 (2,700)",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81d2-ba32-cfb123c756a7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8104-9498-e6483d3ce37e"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ]
+}

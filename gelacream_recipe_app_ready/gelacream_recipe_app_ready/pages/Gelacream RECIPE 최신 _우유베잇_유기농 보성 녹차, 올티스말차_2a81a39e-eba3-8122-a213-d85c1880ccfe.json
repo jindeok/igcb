@@ -1,0 +1,995 @@
+{
+  "id": "2a81a39e-eba3-8122-a213-d85c1880ccfe",
+  "title": "유기농 보성 녹차, 올티스말차",
+  "path": [
+    "Gelacream RECIPE 최신  ",
+    "우유베잇",
+    "유기농 보성 녹차, 올티스말차"
+  ],
+  "page": {
+    "object": "page",
+    "id": "2a81a39e-eba3-8122-a213-d85c1880ccfe",
+    "created_time": "2025-11-11T02:27:00.000Z",
+    "last_edited_time": "2026-06-15T04:11:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "2a81a39e-eba3-81e4-8c70-dbae299cb75c"
+    },
+    "in_trash": false,
+    "is_archived": false,
+    "is_locked": false,
+    "properties": {
+      "파일과 미디어 (1)": {
+        "id": "IgR%5D",
+        "type": "files",
+        "files": []
+      },
+      "태그": {
+        "id": "qP%7Dw",
+        "type": "multi_select",
+        "multi_select": []
+      },
+      "우베 100% 파우더": {
+        "id": "qrp%5C",
+        "type": "files",
+        "files": [
+          {
+            "name": "유기농 가루 녹차 & 말차.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/68185e6c-5c70-42c6-a941-0865a7ac4669/%EC%9C%A0%EA%B8%B0%EB%86%8D_%EA%B0%80%EB%A3%A8_%EB%85%B9%EC%B0%A8__%EB%A7%90%EC%B0%A8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466RTRVQNKL%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151819Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIBdWu6TwZF3F508qpZFPy2l5OHPlySxJ6vw8Ju8S8tH3AiEAqKI4%2BlBzkZoEIqyamInr%2FhTtr9innl1%2FesGO6IP2opwqiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDI7f8sECHgfq%2F%2BKFeSrcA3JpMkF0CvB1ditlxawynN0ReZGJ6eKh%2Btfsg%2FwjiLgUCzKTU4GW1VOwW38EYbA%2B3eCDyrzOlpaqZ7Mh93tZRACUequhCdpD%2Fk0lMtY40P%2FheRf0JckTx7pOZk2N7C1YqJYWtgTE9OrSzUY6Tk%2Biyd9La3P7IX%2FeFtjyuffeRJ17Pe4dv4uwlXjiqCU9wAX8G5TY%2F4Qe%2FdVj9ixdtnAduTPpLdZ2%2BzO2nOIA6UQPy8zf9mZBBOlDPfzfFApg5XMAt8fVjEdmdiaQISNw5BkZvH7vDOCA3N869p8k4pOiuiO9LCaHNUA7i2Xzx9GpupeNvYKvuFyP8xMvoZ2dK4%2BZ74vEdOSlngYXqvRWwdWo7ul%2BC0POsa69emL7FPDdKa9RzTNMimGcnK6vRwFF16zVuWFkvUkryM7bUjqX0tmvAv%2BjKz6YWF6RgemAnYxRRED2nr71mDrJepX5%2F0g6Q7PcHA7MfUooa8SSeaWQtAw14r8exVdWjFumfJZY2XhExGEVxgv91vBnbb63ynCTIZ8LvuDC9K1X0xrXjmfSrjbU2s5yyyA0Hc%2B2nvecvxuO8Mcr8eUNc44Vq0nW7pfB39uNpV9mVL0%2FQ8AB5n0uLVEUybFoFHgZGhSXp%2FfyHL4aMOi1jtIGOqUBzbkPPDB2EoRxrP74JPrPliDx0DnW%2FV6IPaS9yn9Us2nnRfQ9YtSINQ0xHEZtwC9Fqlmp6caKyKOz%2FQbZT%2FAmoOTxqxRlOOeGnftrUh6c73TBz0M7VeQvYocYCWhMUXTeoMcp1zYwUWpyI5ViMRMWgxTNOxWBZ5QrjXTao04IwKxo8MjS2YW1HsWpeijMAPTBjfeqU%2FtDLkcv93C5Lh7aohEG%2FfUK&X-Amz-Signature=83a5ac9f6840839723b1e384cc49cfe65103828957577d4f6d0b316c326cf014&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-06-30T16:18:19.936Z"
+            },
+            "local_asset": {
+              "owner_id": "2a81a39e-eba3-8122-a213-d85c1880ccfe",
+              "label": "property_우베 100% 파우더",
+              "source_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/68185e6c-5c70-42c6-a941-0865a7ac4669/%EC%9C%A0%EA%B8%B0%EB%86%8D_%EA%B0%80%EB%A3%A8_%EB%85%B9%EC%B0%A8__%EB%A7%90%EC%B0%A8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466RTRVQNKL%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T151819Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIBdWu6TwZF3F508qpZFPy2l5OHPlySxJ6vw8Ju8S8tH3AiEAqKI4%2BlBzkZoEIqyamInr%2FhTtr9innl1%2FesGO6IP2opwqiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDI7f8sECHgfq%2F%2BKFeSrcA3JpMkF0CvB1ditlxawynN0ReZGJ6eKh%2Btfsg%2FwjiLgUCzKTU4GW1VOwW38EYbA%2B3eCDyrzOlpaqZ7Mh93tZRACUequhCdpD%2Fk0lMtY40P%2FheRf0JckTx7pOZk2N7C1YqJYWtgTE9OrSzUY6Tk%2Biyd9La3P7IX%2FeFtjyuffeRJ17Pe4dv4uwlXjiqCU9wAX8G5TY%2F4Qe%2FdVj9ixdtnAduTPpLdZ2%2BzO2nOIA6UQPy8zf9mZBBOlDPfzfFApg5XMAt8fVjEdmdiaQISNw5BkZvH7vDOCA3N869p8k4pOiuiO9LCaHNUA7i2Xzx9GpupeNvYKvuFyP8xMvoZ2dK4%2BZ74vEdOSlngYXqvRWwdWo7ul%2BC0POsa69emL7FPDdKa9RzTNMimGcnK6vRwFF16zVuWFkvUkryM7bUjqX0tmvAv%2BjKz6YWF6RgemAnYxRRED2nr71mDrJepX5%2F0g6Q7PcHA7MfUooa8SSeaWQtAw14r8exVdWjFumfJZY2XhExGEVxgv91vBnbb63ynCTIZ8LvuDC9K1X0xrXjmfSrjbU2s5yyyA0Hc%2B2nvecvxuO8Mcr8eUNc44Vq0nW7pfB39uNpV9mVL0%2FQ8AB5n0uLVEUybFoFHgZGhSXp%2FfyHL4aMOi1jtIGOqUBzbkPPDB2EoRxrP74JPrPliDx0DnW%2FV6IPaS9yn9Us2nnRfQ9YtSINQ0xHEZtwC9Fqlmp6caKyKOz%2FQbZT%2FAmoOTxqxRlOOeGnftrUh6c73TBz0M7VeQvYocYCWhMUXTeoMcp1zYwUWpyI5ViMRMWgxTNOxWBZ5QrjXTao04IwKxo8MjS2YW1HsWpeijMAPTBjfeqU%2FtDLkcv93C5Lh7aohEG%2FfUK&X-Amz-Signature=83a5ac9f6840839723b1e384cc49cfe65103828957577d4f6d0b316c326cf014&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "local_path": "assets/2a81a39e-eba3-8122-a213-d85c1880ccfe_%EC%9C%A0%EA%B8%B0%EB%86%8D_%EA%B0%80%EB%A3%A8_%EB%85%B9%EC%B0%A8__%EB%A7%90%EC%B0%.png",
+              "content_type": "image/png"
+            }
+          }
+        ]
+      },
+      "코코넛 분말": {
+        "id": "%7Crtk",
+        "type": "files",
+        "files": []
+      },
+      "이름": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "유기농 보성 녹차, 올티스말차",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "유기농 보성 녹차, 올티스말차",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://app.notion.com/p/2a81a39eeba38122a213d85c1880ccfe",
+    "public_url": null,
+    "archived": false,
+    "request_id": "0b73c647-f205-4cfd-8b90-2fb409c4403b"
+  },
+  "blocks": [
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8110-8a6f-ebd8e8079f41",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8122-a213-d85c1880ccfe"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "머신 경도값: 26",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "머신 경도값: 26",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8116-8a4e-ddcc763f92dc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8122-a213-d85c1880ccfe"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2026-06-15T04:11:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": ">보성 녹차 / 올티스 녹차",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ">보성 녹차 / 올티스 녹차",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81d2-ab1f-d2407bb7811f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8122-a213-d85c1880ccfe"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "table",
+      "table": {
+        "table_width": 2,
+        "has_column_header": false,
+        "has_row_header": false
+      },
+      "archived": false,
+      "children": [
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-817e-9520-c46bad4dac15",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-81d2-ab1f-d2407bb7811f"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "시럽",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "시럽",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,400",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,400",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-817d-923e-f2c0ed8b6ffe",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-81d2-ab1f-d2407bb7811f"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "녹차 가루",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "녹차 가루",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "100",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "100",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81a0-9248-cb7d300c7d95",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-81d2-ab1f-d2407bb7811f"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "생크림",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "생크림",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "300",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "300",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81e5-9c1a-e0073c45e1ca",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-81d2-ab1f-d2407bb7811f"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "우유",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "우유",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "3팩 (2,700)",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "3팩 (2,700)",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8104-a79a-e69365970c8a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8122-a213-d85c1880ccfe"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": ">올티스 말차",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ">올티스 말차",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-814b-b9e9-ed68b12c9e32",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8122-a213-d85c1880ccfe"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "table",
+      "table": {
+        "table_width": 3,
+        "has_column_header": false,
+        "has_row_header": false
+      },
+      "archived": false,
+      "children": [
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8120-a54a-eb0131c0a9f6",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-814b-b9e9-ed68b12c9e32"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "시럽",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "시럽",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,500",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,500",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,200",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,200",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81ac-acc3-c811666971df",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-814b-b9e9-ed68b12c9e32"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2026-03-13T13:32:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "말차 가루",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "말차 가루",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "80",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "80",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "68",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "68",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-815c-a704-d78eac6c0842",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-814b-b9e9-ed68b12c9e32"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "생크림",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "생크림",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "300",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "300",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "240",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "240",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8116-a9ee-c6c211aeaf2c",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-814b-b9e9-ed68b12c9e32"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "우유",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "우유",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "3팩 (2,700)",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "3팩 (2,700)",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "2,200",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "2,200",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81ce-905c-dc0444ac0b8f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8122-a213-d85c1880ccfe"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "시럽에 가루를 넣고 잘 풀어준다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "시럽에 가루를 넣고 잘 풀어준다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8129-a85e-fa708cadced8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8122-a213-d85c1880ccfe"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1번에 생크림, 우유를 차례로 넣고 섞어준다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "1번에 생크림, 우유를 차례로 넣고 섞어준다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8196-b7dd-f5002cf42e3b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8122-a213-d85c1880ccfe"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ]
+}

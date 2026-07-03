@@ -1,0 +1,587 @@
+{
+  "id": "2a81a39e-eba3-8173-9269-d354920a246c",
+  "title": "트리플베리",
+  "path": [
+    "Gelacream RECIPE 최신  ",
+    "우유베잇 (1)",
+    "트리플베리"
+  ],
+  "page": {
+    "object": "page",
+    "id": "2a81a39e-eba3-8173-9269-d354920a246c",
+    "created_time": "2025-11-11T02:27:00.000Z",
+    "last_edited_time": "2025-11-11T02:27:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "2a81a39e-eba3-81a3-9484-e70833e4b397"
+    },
+    "in_trash": false,
+    "is_archived": false,
+    "is_locked": false,
+    "properties": {
+      "파일과 미디어": {
+        "id": "a%5C%5Bm",
+        "type": "files",
+        "files": [
+          {
+            "name": "스크린샷 2025-08-21 172439.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/08e0298e-ca41-40a1-9500-a8d987474008/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-08-21_172439.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QJKE7YI4%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T152053Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIG%2Bw4Nm1YNzvkAyOwHvb2%2FQ0I%2FVMlPyCt0NvOAm4H7BLAiEA0OiA%2FeTsMqS2NXF20U7NKoNuCd%2F8wpsRkNJSiw0h%2FpYqiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDFoJr4YT8jcJ0ysvUyrcA69iK72KgFKOx%2FvNjWbqzQOJ1Hp6NxPCVHJbI8rakPRhlMvNP2I6GUpZcroGKJGwGf07Ci%2FzHuWqd35as5nWl7JRe6ycDkgdXiWZ2wh74YY2hoNg23oI3koKcPFSwTcxvrOPu908kQRkG5DNBaoRbcIlQtO0NpRXWFCu1obEZw5qSrhQnWEB5FIkOXfz61zB9f15BgYyAx24PlB4UhA%2BNIh2D9BQ9TBN0kLHQpsmoponLDQGHd4DViOYjI8rMLLG3amjH3bQ0gblM0tnBwHANdyPLoQ%2Fez0S4y3%2B2jONIX7yqGhZu4aZfhHL6BiLabwBmjVurWFqEmgPATW%2B17T8hzYtG3SWMSX8vJblorLrV0wer1EGYOB1rqL9%2BUbebMKtJgheoTH8UYYqDZXf2dO34PpP%2FejHV138CX7bLAsqAiDYPU4S25pjFf7CPttKXHh11Ynhxe0z509bwKsV1ONFnLCxYByL8w9cGVmea8yS%2Ffa79GsvEaGyzGh6%2F2zHvfqCpMfp7rb9orBVqMQzL0iQyPCxlE9OzKGrysJo73KbrWhTuddzvNkdtG70uBakrJhVpMpfpkC4N7O8Bvq8O8FkuEdD%2F0WLJrcydJgiq0gZId4QPOSe8WNMl7iKu593MNW4jtIGOqUBUj377op6Kul6k3lmmx%2FKxtf1921PVTvy87lVkup1LpketqQaABXJeGwPXW1CG1DRvtX8680o%2FdPB7jPWeLMhIMQrmA38xwAME2j%2B9ZvntQ0JWOKYv%2Fp%2FsQ0Ytg70eGXTwTKxSSicf9eT6F%2BKYzJqPw67d3%2Fbtl6%2Fjwro0RNddPdn1YchVQ6YrQjuWiLEI6sLg%2FHCdLyrMmaQMKfs4X%2FnRN71nq7r&X-Amz-Signature=a8b9ef6aba28307313be1a3160d4a9d125727a9284c164d1aa220dfd1367ee69&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-06-30T16:20:53.236Z"
+            },
+            "local_asset": {
+              "owner_id": "2a81a39e-eba3-8173-9269-d354920a246c",
+              "label": "property_파일과 미디어",
+              "source_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/d21c43e0-d99a-4325-a736-bf57a4e5dccd/08e0298e-ca41-40a1-9500-a8d987474008/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-08-21_172439.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QJKE7YI4%2F20260630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260630T152053Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIG%2Bw4Nm1YNzvkAyOwHvb2%2FQ0I%2FVMlPyCt0NvOAm4H7BLAiEA0OiA%2FeTsMqS2NXF20U7NKoNuCd%2F8wpsRkNJSiw0h%2FpYqiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDFoJr4YT8jcJ0ysvUyrcA69iK72KgFKOx%2FvNjWbqzQOJ1Hp6NxPCVHJbI8rakPRhlMvNP2I6GUpZcroGKJGwGf07Ci%2FzHuWqd35as5nWl7JRe6ycDkgdXiWZ2wh74YY2hoNg23oI3koKcPFSwTcxvrOPu908kQRkG5DNBaoRbcIlQtO0NpRXWFCu1obEZw5qSrhQnWEB5FIkOXfz61zB9f15BgYyAx24PlB4UhA%2BNIh2D9BQ9TBN0kLHQpsmoponLDQGHd4DViOYjI8rMLLG3amjH3bQ0gblM0tnBwHANdyPLoQ%2Fez0S4y3%2B2jONIX7yqGhZu4aZfhHL6BiLabwBmjVurWFqEmgPATW%2B17T8hzYtG3SWMSX8vJblorLrV0wer1EGYOB1rqL9%2BUbebMKtJgheoTH8UYYqDZXf2dO34PpP%2FejHV138CX7bLAsqAiDYPU4S25pjFf7CPttKXHh11Ynhxe0z509bwKsV1ONFnLCxYByL8w9cGVmea8yS%2Ffa79GsvEaGyzGh6%2F2zHvfqCpMfp7rb9orBVqMQzL0iQyPCxlE9OzKGrysJo73KbrWhTuddzvNkdtG70uBakrJhVpMpfpkC4N7O8Bvq8O8FkuEdD%2F0WLJrcydJgiq0gZId4QPOSe8WNMl7iKu593MNW4jtIGOqUBUj377op6Kul6k3lmmx%2FKxtf1921PVTvy87lVkup1LpketqQaABXJeGwPXW1CG1DRvtX8680o%2FdPB7jPWeLMhIMQrmA38xwAME2j%2B9ZvntQ0JWOKYv%2Fp%2FsQ0Ytg70eGXTwTKxSSicf9eT6F%2BKYzJqPw67d3%2Fbtl6%2Fjwro0RNddPdn1YchVQ6YrQjuWiLEI6sLg%2FHCdLyrMmaQMKfs4X%2FnRN71nq7r&X-Amz-Signature=a8b9ef6aba28307313be1a3160d4a9d125727a9284c164d1aa220dfd1367ee69&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "local_path": "assets/2a81a39e-eba3-8173-9269-d354920a246c_%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-08-21_172439.png",
+              "content_type": "image/png"
+            }
+          }
+        ]
+      },
+      "태그": {
+        "id": "qP%7Dw",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "]d`C",
+            "name": "믹서",
+            "color": "green"
+          },
+          {
+            "id": "sQ`l",
+            "name": "냉동",
+            "color": "brown"
+          }
+        ]
+      },
+      "이름": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "트리플베리",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "트리플베리",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://app.notion.com/p/2a81a39eeba381739269d354920a246c",
+    "public_url": null,
+    "archived": false,
+    "request_id": "cd2f162d-4fcf-42c3-b866-527a83a48afe"
+  },
+  "blocks": [
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-814f-9f82-f6d6389cb0af",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8173-9269-d354920a246c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "머신 경도값: 26",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "머신 경도값: 26",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8160-97c3-d91d945e2a90",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8173-9269-d354920a246c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81b0-b684-c0d3a90f5040",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8173-9269-d354920a246c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "table",
+      "table": {
+        "table_width": 3,
+        "has_column_header": false,
+        "has_row_header": false
+      },
+      "archived": false,
+      "children": [
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-8196-9857-dd99f063bcda",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-81b0-b684-c0d3a90f5040"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "트리플베리(냉동)",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "트리플베리(냉동)",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,200",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,200",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,000",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,000",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81fc-ab23-da6cad50e3f9",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-81b0-b684-c0d3a90f5040"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "시럽",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "시럽",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,350",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,350",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,125",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,125",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81b7-9b41-dd8b9da5b6c7",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-81b0-b684-c0d3a90f5040"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "레몬즙",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "레몬즙",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "150",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "150",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "125",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "125",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "2a81a39e-eba3-81a0-b171-c696ca915633",
+          "parent": {
+            "type": "block_id",
+            "block_id": "2a81a39e-eba3-81b0-b684-c0d3a90f5040"
+          },
+          "created_time": "2025-11-11T02:27:00.000Z",
+          "last_edited_time": "2025-11-11T02:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "우유",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "우유",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,500",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,500",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "1,250",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "1,250",
+                  "href": null
+                }
+              ]
+            ]
+          },
+          "archived": false
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-8141-95db-d097972bcbb0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8173-9269-d354920a246c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a81a39e-eba3-81fa-bdd9-e3d1e91e2ea9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2a81a39e-eba3-8173-9269-d354920a246c"
+      },
+      "created_time": "2025-11-11T02:27:00.000Z",
+      "last_edited_time": "2025-11-11T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "acc9b03e-5237-4840-b8a0-2a1ada36a955"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ]
+}

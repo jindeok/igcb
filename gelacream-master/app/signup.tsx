@@ -17,6 +17,7 @@ import {
 import { useRouter } from 'expo-router';
 import { Colors } from '../constants/Colors';
 import { useAuth } from '../context/AuthContext';
+import * as Linking from 'expo-linking';
 import { supabase, isSupabaseConfigured } from '../lib/supabase';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -88,6 +89,8 @@ export default function SignupScreen() {
 
         setBusy(true);
         try {
+            const redirectUrl = Linking.createURL('/');
+
             const { data, error } = await supabase.auth.signUp({
                 email: id.trim(),
                 password,
@@ -95,6 +98,7 @@ export default function SignupScreen() {
                     data: {
                         full_name: name.trim(),
                     },
+                    emailRedirectTo: redirectUrl,
                 },
             });
 

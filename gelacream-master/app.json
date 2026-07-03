@@ -4,7 +4,7 @@
     "plugins": [
       "expo-router"
     ],
-    "name": "gelacream-master",
+    "name": "IGCB 젤라크림 레시피",
     "slug": "gelacream-master",
     "extra": {
       "supabaseUrl": "https://hlxsmohqgymreihllnsq.supabase.co",
