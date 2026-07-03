@@ -130,6 +130,13 @@ export function AuthProvider({ children }: PropsWithChildren) {
             password,
         });
         if (error) {
+            const raw = (error.message || '').toLowerCase();
+            if (raw.includes('email not confirmed') || raw.includes('email_not_confirmed')) {
+                throw new Error('이메일 인증이 완료되지 않았습니다. 가입한 이메일에서 인증 링크를 먼저 눌러주세요.');
+            }
+            if (raw.includes('invalid login credentials')) {
+                throw new Error('이메일 또는 비밀번호가 올바르지 않습니다.');
+            }
             throw new Error(error.message);
         }
         if (data.session) {

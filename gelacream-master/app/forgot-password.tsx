@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import {
     StyleSheet,
     Text,
@@ -10,45 +10,58 @@ import {
     KeyboardAvoidingView,
     Platform,
     ScrollView,
+    Alert,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Colors } from '../constants/Colors';
-import { useAuth } from '../context/AuthContext';
+import { supabase, isSupabaseConfigured } from '../lib/supabase';
 
-function leaveLoginScreen(router: ReturnType<typeof useRouter>) {
-    if (router.canDismiss()) {
-        router.dismiss();
-    } else {
-        router.replace('/');
-    }
-}
-
-export default function LoginScreen() {
+export default function ForgotPasswordScreen() {
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
     const [busy, setBusy] = useState(false);
     const [formError, setFormError] = useState<string | null>(null);
-    const { login, isLoading, user } = useAuth();
+    const [sent, setSent] = useState(false);
     const router = useRouter();
     const colorScheme = useColorScheme();
     const theme = Colors[colorScheme ?? 'light'];
 
-    useEffect(() => {
-        if (user) {
-            leaveLoginScreen(router);
-        }
-    }, [user, router]);
-
-    const handleLogin = async () => {
-        setFormError(null);
-        if (!email.trim() || !password) {
-            setFormError('이메일과 비밀번호를 입력해 주세요.');
+    const showNotice = (title: string, message: string, onConfirm?: () => void) => {
+        if (Platform.OS === 'web') {
+            window.alert(`${title}\n\n${message}`);
+            onConfirm?.();
             return;
         }
+        Alert.alert(title, message, onConfirm ? [{ text: '확인', onPress: onConfirm }] : [{ text: '확인' }]);
+    };
+
+    const handleReset = async () => {
+        setFormError(null);
+
+        if (!email.trim()) {
+            setFormError('이메일을 입력해 주세요.');
+            return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email.trim())) {
+            setFormError('올바른 이메일 형식을 입력해 주세요. (예: you@example.com)');
+            return;
+        }
+
+        if (!isSupabaseConfigured) {
+            setFormError('Supabase 설정이 되어 있지 않습니다. .env에 Supabase 정보를 먼저 넣어주세요.');
+            return;
+        }
+
         setBusy(true);
         try {
-            await login(email, password);
-            leaveLoginScreen(router);
+            const { error } = await supabase.auth.resetPasswordForEmail(email.trim());
+            if (error) {
+                setFormError(error.message || '비밀번호 재설정 요청 중 오류가 발생했습니다.');
+                return;
+            }
+            setSent(true);
+            showNotice('이메일 전송 완료', '비밀번호 재설정 링크를 이메일로 보냈습니다. 이메일을 확인해 주세요.');
         } catch (e: unknown) {
             const message = e instanceof Error ? e.message : '다시 시도해 주세요.';
             setFormError(message);
@@ -66,37 +79,26 @@ export default function LoginScreen() {
                 <View style={[styles.frame, { backgroundColor: theme.cardBackground, borderColor: theme.border }]}>
                     <View style={styles.headerContainer}>
                         <View style={[styles.brandPill, { borderColor: theme.border, backgroundColor: theme.background }]}>
-                            <Text style={[styles.brandPillText, { color: theme.icon }]}>(주)로미요</Text>
+                            <Text style={[styles.brandPillText, { color: theme.icon }]}>ICE GIRL CREAM BOY</Text>
                         </View>
-                        <Text style={[styles.brandTitle, { color: theme.text }]}>ICE GIRL CREAM BOY</Text>
+                        <Text style={[styles.title, { color: theme.text }]}>비밀번호 재설정</Text>
                         <Text style={[styles.subtitle, { color: theme.icon }]}>
-                            아이스걸 크림보이 메뉴와 레시피 관리 시스템입니다.
+                            가입 시 사용한 이메일 주소를 입력하시면 비밀번호 재설정 링크를 보내드립니다.
                         </Text>
                     </View>
 
                     <View style={styles.formContainer}>
                         <View style={styles.inputGroup}>
-                            <Text style={[styles.label, { color: theme.text }]}>Email</Text>
+                            <Text style={[styles.label, { color: theme.text }]}>이메일</Text>
                             <TextInput
                                 style={[styles.input, { color: theme.text, backgroundColor: theme.background, borderColor: theme.border }]}
-                                placeholder="staff@gelacream.com"
+                                placeholder="you@example.com"
                                 placeholderTextColor={theme.icon}
                                 value={email}
                                 onChangeText={setEmail}
                                 autoCapitalize="none"
                                 keyboardType="email-address"
-                            />
-                        </View>
-
-                        <View style={styles.inputGroup}>
-                            <Text style={[styles.label, { color: theme.text }]}>Password</Text>
-                            <TextInput
-                                style={[styles.input, { color: theme.text, backgroundColor: theme.background, borderColor: theme.border }]}
-                                placeholder="비밀번호를 입력하세요"
-                                placeholderTextColor={theme.icon}
-                                value={password}
-                                onChangeText={setPassword}
-                                secureTextEntry
+                                editable={!sent}
                             />
                         </View>
 
@@ -106,36 +108,29 @@ export default function LoginScreen() {
                             </View>
                         ) : null}
 
+                        {sent ? (
+                            <View style={[styles.successBox, { backgroundColor: theme.background, borderColor: theme.tint }]}>
+                                <Text style={[styles.successText, { color: theme.tint }]}>
+                                    ✉️ 비밀번호 재설정 링크를 이메일로 보냈습니다. 이메일을 확인해 주세요.
+                                </Text>
+                            </View>
+                        ) : null}
+
                         <TouchableOpacity
-                            style={[styles.button, { backgroundColor: theme.tint, opacity: busy || isLoading ? 0.7 : 1 }]}
-                            onPress={handleLogin}
-                            disabled={busy || isLoading}
+                            style={[styles.button, { backgroundColor: theme.tint, opacity: busy || sent ? 0.7 : 1 }]}
+                            onPress={handleReset}
+                            disabled={busy || sent}
                         >
-                            {busy || isLoading ? <ActivityIndicator color="#FFF" /> : <Text style={styles.buttonText}>로그인</Text>}
+                            {busy ? <ActivityIndicator color="#FFF" /> : <Text style={styles.buttonText}>{sent ? '전송 완료' : '재설정 링크 보내기'}</Text>}
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             style={[styles.secondaryButton, { borderColor: theme.border, backgroundColor: theme.background }]}
-                            onPress={() => router.push('/signup')}
-                            disabled={busy || isLoading}
+                            onPress={() => router.replace('/login')}
+                            disabled={busy}
                         >
-                            <Text style={[styles.secondaryButtonText, { color: theme.text }]}>회원가입</Text>
+                            <Text style={[styles.secondaryButtonText, { color: theme.text }]}>로그인 화면으로 돌아가기</Text>
                         </TouchableOpacity>
-
-                        <TouchableOpacity
-                            onPress={() => router.push('/forgot-password')}
-                            disabled={busy || isLoading}
-                            style={styles.forgotPasswordLink}
-                        >
-                            <Text style={[styles.forgotPasswordText, { color: theme.tint }]}>비밀번호를 잊으셨나요?</Text>
-                        </TouchableOpacity>
-
-                        <View style={styles.divider}>
-                            <Text style={[styles.helperText, { color: theme.icon }]}>
-
-                            </Text>
-                            <Text style={[styles.contactText, { color: theme.icon }]}>문의 mail: joannadaye@naver.com</Text>
-                        </View>
                     </View>
                 </View>
             </ScrollView>
@@ -177,7 +172,7 @@ const styles = StyleSheet.create({
         fontWeight: '600',
         letterSpacing: 1.2,
     },
-    brandTitle: {
+    title: {
         fontSize: 32,
         fontWeight: '700',
         lineHeight: 40,
@@ -210,6 +205,12 @@ const styles = StyleSheet.create({
         paddingHorizontal: 14,
         paddingVertical: 12,
     },
+    successBox: {
+        borderWidth: 1,
+        borderRadius: 16,
+        paddingHorizontal: 14,
+        paddingVertical: 12,
+    },
     button: {
         minHeight: 52,
         borderRadius: 16,
@@ -221,13 +222,14 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: '700',
     },
-    divider: {
-        gap: 8,
-        paddingTop: 8,
-    },
     errorText: {
         fontSize: 14,
         fontWeight: '600',
+    },
+    successText: {
+        fontSize: 14,
+        fontWeight: '600',
+        lineHeight: 20,
     },
     secondaryButton: {
         minHeight: 52,
@@ -238,21 +240,6 @@ const styles = StyleSheet.create({
     },
     secondaryButtonText: {
         fontSize: 16,
-        fontWeight: '600',
-    },
-    helperText: {
-        fontSize: 12,
-        lineHeight: 18,
-    },
-    contactText: {
-        fontSize: 12,
-    },
-    forgotPasswordLink: {
-        alignItems: 'center',
-        paddingVertical: 4,
-    },
-    forgotPasswordText: {
-        fontSize: 14,
         fontWeight: '600',
     },
 });

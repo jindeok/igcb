@@ -1,6 +1,8 @@
+import 'react-native-gesture-handler';
 import { DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { Redirect, Stack, useSegments } from 'expo-router';
 import { ActivityIndicator, useColorScheme, View } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Colors } from '../constants/Colors';
 import { AuthProvider, useAuth } from '../context/AuthContext';
 
@@ -26,7 +28,7 @@ function AppShell() {
     }
 
     const currentRoot = segments[0];
-    const isAuthScreen = currentRoot === 'login' || currentRoot === 'signup';
+    const isAuthScreen = currentRoot === 'login' || currentRoot === 'signup' || currentRoot === 'forgot-password';
 
     if (!user && !isAuthScreen) {
         return <Redirect href="/login" />;
@@ -42,6 +44,7 @@ function AppShell() {
                 <Stack.Screen name="index" options={{ headerShown: false }} />
                 <Stack.Screen name="login" options={{ headerShown: false }} />
                 <Stack.Screen name="signup" options={{ headerShown: false }} />
+                <Stack.Screen name="forgot-password" options={{ headerShown: false }} />
                 <Stack.Screen name="+not-found" />
             </Stack>
         </ThemeProvider>
@@ -50,8 +53,10 @@ function AppShell() {
 
 export default function RootLayout() {
     return (
-        <AuthProvider>
-            <AppShell />
-        </AuthProvider>
+        <GestureHandlerRootView style={{ flex: 1 }}>
+            <AuthProvider>
+                <AppShell />
+            </AuthProvider>
+        </GestureHandlerRootView>
     );
 }

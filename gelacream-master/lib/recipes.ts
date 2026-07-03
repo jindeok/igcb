@@ -242,3 +242,41 @@ export function useRecipe(id: string | string[] | undefined) {
 
     return { recipe, isLoading, error };
 }
+
+/** 여러 레시피의 sort_order를 일괄 업데이트 */
+export async function updateRecipeSortOrders(
+    items: { id: string; sort_order: number }[],
+): Promise<void> {
+    if (!isSupabaseConfigured || items.length === 0) return;
+
+    // 배열 순회하며 개별 update를 병렬로 실행 
+    // (upsert 시 누락된 NOT NULL 컬럼 에러 방지)
+    const promises = items.map((item) =>
+        supabase
+            .from('recipes')
+            .update({ sort_order: item.sort_order })
+            .eq('id', item.id)
+    );
+
+    const results = await Promise.all(promises);
+
+    // 첫 번째 에러 반환
+    const firstError = results.find((res) => res.error)?.error;
+    if (firstError) throw firstError;
+}
+
+/** 특정 레시피의 추천(featured) 상태를 토글 */
+export async function updateRecipeFeatured(
+    id: string,
+    featured: boolean,
+    currentTags: string[],
+): Promise<void> {
+    if (!isSupabaseConfigured) return;
+    const withoutFeatured = currentTags.filter((t) => t !== '추천');
+    const newTags = featured ? [...withoutFeatured, '추천'] : withoutFeatured;
+    const { error } = await supabase
+        .from('recipes')
+        .update({ tags: newTags })
+        .eq('id', id);
+    if (error) throw error;
+}

@@ -45,12 +45,12 @@ export default function HomeScreen() {
     const searchResults =
         normalizedQuery.length > 0
             ? recipes
-                  .filter(
-                      (recipe) =>
-                          recipe.title.toLowerCase().includes(normalizedQuery) ||
-                          recipe.ingredients.some((ingredient) => ingredient.name.toLowerCase().includes(normalizedQuery)),
-                  )
-                  .slice(0, 5)
+                .filter(
+                    (recipe) =>
+                        recipe.title.toLowerCase().includes(normalizedQuery) ||
+                        recipe.ingredients.some((ingredient) => ingredient.name.toLowerCase().includes(normalizedQuery)),
+                )
+                .slice(0, 5)
             : [];
 
     const handleSubmitSearch = () => {
@@ -66,8 +66,8 @@ export default function HomeScreen() {
         featuredRecipes.length > 0
             ? featuredRecipes
             : categoryRepresentatives.length > 0
-              ? categoryRepresentatives
-              : recipes.slice(0, 4);
+                ? categoryRepresentatives
+                : recipes.slice(0, 4);
 
     const recipeSummary = (recipe: Recipe) => {
         const parts: string[] = [];
@@ -90,13 +90,24 @@ export default function HomeScreen() {
                         <Text style={[styles.kicker, { color: theme.icon }]}>ICE GIRL CREAM BOY</Text>
                         <Text style={[styles.pageTitle, { color: theme.text }]}>Recipe</Text>
                     </View>
-                    <TouchableOpacity
-                        accessibilityLabel="로그아웃"
-                        style={[styles.iconButton, { borderColor: theme.border, backgroundColor: theme.cardBackground }]}
-                        onPress={() => logout()}
-                    >
-                        <Ionicons name="log-out-outline" size={18} color={theme.text} />
-                    </TouchableOpacity>
+                    <View style={styles.topBarActions}>
+                        {isAdmin ? (
+                            <TouchableOpacity
+                                accessibilityLabel="레시피 관리"
+                                style={[styles.iconButton, { borderColor: theme.border, backgroundColor: theme.cardBackground }]}
+                                onPress={() => router.push('/admin/manage-recipes')}
+                            >
+                                <Ionicons name="settings-outline" size={18} color={theme.tint} />
+                            </TouchableOpacity>
+                        ) : null}
+                        <TouchableOpacity
+                            accessibilityLabel="로그아웃"
+                            style={[styles.iconButton, { borderColor: theme.border, backgroundColor: theme.cardBackground }]}
+                            onPress={() => logout()}
+                        >
+                            <Ionicons name="log-out-outline" size={18} color={theme.text} />
+                        </TouchableOpacity>
+                    </View>
                 </View>
 
                 <View style={[styles.heroCard, { backgroundColor: theme.cardBackground, borderColor: theme.border }]}>
@@ -129,8 +140,8 @@ export default function HomeScreen() {
 
                 <View style={styles.section}>
                     <Text style={[styles.sectionEyebrow, { color: theme.icon }]}>SEARCH</Text>
-                    <View style={[styles.searchContainer, { backgroundColor: theme.cardBackground, borderColor: theme.border }]}>
-                        <Ionicons name="search-outline" size={18} color={theme.icon} />
+                    <View style={[styles.searchContainer, { backgroundColor: theme.cardBackground, borderColor: theme.tint }]}>
+                        <Ionicons name="search" size={22} color={theme.tint} />
                         <TextInput
                             style={[styles.searchInput, { color: theme.text }]}
                             placeholder="맛 이름이나 재료를 검색하세요"
@@ -178,6 +189,31 @@ export default function HomeScreen() {
                 </View>
 
                 <View style={styles.section}>
+                    <Text style={[styles.sectionEyebrow, { color: theme.icon }]}>CATEGORIES</Text>
+                    <Text style={[styles.sectionTitle, { color: theme.text }]}>카테고리별로 탐색</Text>
+                    <View style={styles.categoryGrid}>
+                        {CATEGORIES.map((category) => (
+                            <TouchableOpacity
+                                key={category.id}
+                                style={[
+                                    styles.categoryCard,
+                                    {
+                                        backgroundColor: theme[CATEGORY_COLOR_KEYS[category.id]],
+                                        borderColor: theme.border,
+                                    },
+                                ]}
+                                onPress={() => router.push(`/category/${category.id}`)}
+                            >
+                                <Text style={styles.categoryIcon}>{category.icon}</Text>
+                                <Text style={[styles.categoryName, { color: theme.text }]}>{category.name}</Text>
+                                <Text style={[styles.categorySub, { color: theme.icon }]}>{category.dbName}</Text>
+                                <Text style={[styles.categoryDescription, { color: theme.icon }]}>{category.description}</Text>
+                            </TouchableOpacity>
+                        ))}
+                    </View>
+                </View>
+
+                <View style={styles.section}>
                     <View style={styles.sectionHeader}>
                         <View>
                             <Text style={[styles.sectionEyebrow, { color: theme.icon }]}>OVERVIEW</Text>
@@ -217,31 +253,6 @@ export default function HomeScreen() {
                     )}
 
                     {error ? <Text style={[styles.helperText, { color: theme.icon }]}>{error}</Text> : null}
-                </View>
-
-                <View style={styles.section}>
-                    <Text style={[styles.sectionEyebrow, { color: theme.icon }]}>CATEGORIES</Text>
-                    <Text style={[styles.sectionTitle, { color: theme.text }]}>카테고리별로 탐색</Text>
-                    <View style={styles.categoryGrid}>
-                        {CATEGORIES.map((category) => (
-                            <TouchableOpacity
-                                key={category.id}
-                                style={[
-                                    styles.categoryCard,
-                                    {
-                                        backgroundColor: theme[CATEGORY_COLOR_KEYS[category.id]],
-                                        borderColor: theme.border,
-                                    },
-                                ]}
-                                onPress={() => router.push(`/category/${category.id}`)}
-                            >
-                                <Text style={styles.categoryIcon}>{category.icon}</Text>
-                                <Text style={[styles.categoryName, { color: theme.text }]}>{category.name}</Text>
-                                <Text style={[styles.categorySub, { color: theme.icon }]}>{category.dbName}</Text>
-                                <Text style={[styles.categoryDescription, { color: theme.icon }]}>{category.description}</Text>
-                            </TouchableOpacity>
-                        ))}
-                    </View>
                 </View>
             </ScrollView>
         </SafeAreaView>
@@ -362,9 +373,13 @@ const styles = StyleSheet.create({
         fontSize: 14,
         fontWeight: '600',
     },
+    topBarActions: {
+        flexDirection: 'row',
+        gap: 8,
+    },
     searchContainer: {
-        minHeight: 56,
-        borderWidth: 1,
+        minHeight: 60,
+        borderWidth: 2,
         borderRadius: 18,
         flexDirection: 'row',
         alignItems: 'center',
@@ -373,7 +388,7 @@ const styles = StyleSheet.create({
     },
     searchInput: {
         flex: 1,
-        minHeight: 56,
+        minHeight: 60,
         fontSize: 16,
     },
     searchResultsCard: {
