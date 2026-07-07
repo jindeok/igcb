@@ -23,8 +23,8 @@ const AuthContext = createContext<AuthContextType>({
     user: null,
     isLoading: true,
     isAdmin: false,
-    login: async () => {},
-    logout: async () => {},
+    login: async () => { },
+    logout: async () => { },
 });
 
 // Supabase 미설정 상태의 로컬 개발 프리뷰용 계정 (프로덕션 번들에서는 활성화되지 않음).
@@ -114,6 +114,35 @@ export function AuthProvider({ children }: PropsWithChildren) {
             subscription.unsubscribe();
         };
     }, []);
+
+    // 5분마다 profiles 테이블을 확인하여 삭제된 계정의 세션을 강제 로그아웃
+    useEffect(() => {
+        if (!isSupabaseConfigured || !user || user.id === 'local-preview') return;
+
+        const INTERVAL_MS = 5 * 60 * 1000; // 5분
+
+        const checkProfile = async () => {
+            try {
+                const { data, error } = await supabase
+                    .from('profiles')
+                    .select('id')
+                    .eq('id', user.id)
+                    .maybeSingle();
+
+                if (error || !data) {
+                    // 프로필이 삭제됨 → 강제 로그아웃
+                    await supabase.auth.signOut();
+                    setUser(null);
+                }
+            } catch {
+                // 네트워크 오류 등은 무시 (다음 주기에 재시도)
+            }
+        };
+
+        const intervalId = setInterval(checkProfile, INTERVAL_MS);
+
+        return () => clearInterval(intervalId);
+    }, [user?.id]);
 
     const login = async (email: string, password: string) => {
         if (!isSupabaseConfigured) {
