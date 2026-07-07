@@ -89,7 +89,9 @@ export default function SignupScreen() {
 
         setBusy(true);
         try {
-            const redirectUrl = Linking.createURL('/');
+            const redirectUrl = Platform.OS === 'web'
+                ? 'https://igcbrcp.netlify.app/'
+                : Linking.createURL('/');
 
             const { data, error } = await supabase.auth.signUp({
                 email: id.trim(),
