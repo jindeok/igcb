@@ -8,13 +8,6 @@
 [build.environment]
   NODE_VERSION = "22"
 
-[functions]
-  directory = "netlify/functions"
-  node_bundler = "esbuild"
-
-[functions."approval-mail"]
-  schedule = "*/5 * * * *"
-
 # Expo Router(클라이언트 라우팅): /recipe/1 등 직접 접속 시 404 방지
 [[redirects]]
   from = "/*"
