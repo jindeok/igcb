@@ -11,19 +11,12 @@ import {
     Platform,
     ScrollView,
 } from 'react-native';
-import { useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Colors } from '../constants/Colors';
 import { useAuth } from '../context/AuthContext';
 
-function leaveLoginScreen(router: ReturnType<typeof useRouter>) {
-    if (router.canDismiss()) {
-        router.dismiss();
-    } else {
-        router.replace('/');
-    }
-}
-
 export default function LoginScreen() {
+    const { next } = useLocalSearchParams<{ next?: string }>();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [busy, setBusy] = useState(false);
@@ -35,9 +28,10 @@ export default function LoginScreen() {
 
     useEffect(() => {
         if (user) {
-            leaveLoginScreen(router);
+            router.replace(user.approvalStatus !== 'approved' ? '/approval-pending'
+                : next === 'members' && user.role === 'admin' ? '/admin/members' : '/');
         }
-    }, [user, router]);
+    }, [user, router, next]);
 
     const handleLogin = async () => {
         setFormError(null);
@@ -48,7 +42,6 @@ export default function LoginScreen() {
         setBusy(true);
         try {
             await login(email, password);
-            leaveLoginScreen(router);
         } catch (e: unknown) {
             const message = e instanceof Error ? e.message : '다시 시도해 주세요.';
             setFormError(message);

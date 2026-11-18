@@ -244,7 +244,7 @@ export default function SignupScreen() {
 
                             <View style={styles.divider}>
                                 <Text style={[styles.helperText, { color: theme.icon }]}>
-                                    가입 후 권한이 필요하면 관리자에게 role 설정을 요청해 주세요.
+                                    이메일 인증 후 관리자 승인이 완료되면 이용할 수 있습니다.
                                 </Text>
                                 <Text style={[styles.contactText, { color: theme.icon }]}>문의 mail: joannadaye@naver.com</Text>
                             </View>
@@ -284,7 +284,7 @@ export default function SignupScreen() {
                                 "Confirm Your Signup"
                             </Text>
                             {' '}제목의 인증 메일이 전송되었습니다.{"\n\n"}
-                            메일함에서 인증 링크를 클릭하시면 회원가입이 완료됩니다.
+                            메일함에서 인증 링크를 클릭해 주세요. 이메일 인증 후 관리자 승인을 기다리게 되며, 승인 완료 후 레시피를 이용할 수 있습니다.
                         </Text>
 
                         <TouchableOpacity

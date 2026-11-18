@@ -5,3 +5,11 @@ Thumbs.db
 # Netlify manual deploy artifact
 gelacream-master/gelacream-netlify.zip
 node_modules/
+.env
+.env.*
+!.env.example
+.netlify/
+dist/
+dist-ui*/
+.expo/
+verification/

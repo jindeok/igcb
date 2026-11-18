@@ -1,14 +1,16 @@
-import React, { createContext, useContext, useEffect, useState, PropsWithChildren } from 'react';
+import React, { createContext, useCallback, useContext, useEffect, useState, PropsWithChildren } from 'react';
 import type { Session } from '@supabase/supabase-js';
 import { isSupabaseConfigured, supabase } from '../lib/supabase';
 
 export type UserRole = 'admin' | 'staff';
+export type ApprovalStatus = 'pending' | 'approved' | 'rejected';
 
 export interface User {
     id: string;
     email: string;
     name: string;
     role: UserRole;
+    approvalStatus: ApprovalStatus;
 }
 
 interface AuthContextType {
@@ -17,6 +19,7 @@ interface AuthContextType {
     isAdmin: boolean;
     login: (email: string, password: string) => Promise<void>;
     logout: () => Promise<void>;
+    refreshUser: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType>({
@@ -25,6 +28,7 @@ const AuthContext = createContext<AuthContextType>({
     isAdmin: false,
     login: async () => { },
     logout: async () => { },
+    refreshUser: async () => { },
 });
 
 // Supabase 미설정 상태의 로컬 개발 프리뷰용 계정 (프로덕션 번들에서는 활성화되지 않음).
@@ -36,6 +40,7 @@ const PREVIEW_USER: User = {
     email: 'preview@local.dev',
     name: '로컬 미리보기',
     role: 'admin',
+    approvalStatus: 'approved',
 };
 
 async function userFromSession(session: Session): Promise<User> {
@@ -44,13 +49,14 @@ async function userFromSession(session: Session): Promise<User> {
 
     const { data, error } = await supabase
         .from('profiles')
-        .select('full_name, role')
+        .select('full_name, role, approval_status')
         .eq('id', u.id)
         .maybeSingle();
 
     if (error) {
         throw error;
     }
+    if (!data) throw new Error('계정 정보를 확인할 수 없습니다. 다시 로그인해 주세요.');
 
     const role: UserRole = data?.role === 'admin' ? 'admin' : 'staff';
     const name =
@@ -58,7 +64,9 @@ async function userFromSession(session: Session): Promise<User> {
         email.split('@')[0] ||
         'User';
 
-    return { id: u.id, email, name, role };
+    const approvalStatus: ApprovalStatus = data.approval_status === 'approved' ? 'approved'
+        : data.approval_status === 'rejected' ? 'rejected' : 'pending';
+    return { id: u.id, email, name, role, approvalStatus };
 }
 
 export function useAuth() {
@@ -68,6 +76,16 @@ export function useAuth() {
 export function AuthProvider({ children }: PropsWithChildren) {
     const [user, setUser] = useState<User | null>(null);
     const [isLoading, setIsLoading] = useState(true);
+
+    const refreshUser = useCallback(async () => {
+        if (!isSupabaseConfigured) return;
+        const { data, error } = await supabase.auth.getSession();
+        if (error) throw error;
+        if (!data.session) { setUser(null); return; }
+        const next = await userFromSession(data.session);
+        // An in-flight refresh must never restore a user after logout/account switching.
+        setUser(current => current?.id === next.id ? next : current);
+    }, []);
 
     useEffect(() => {
         if (!isSupabaseConfigured) {
@@ -103,10 +121,11 @@ export function AuthProvider({ children }: PropsWithChildren) {
         const {
             data: { subscription },
         } = supabase.auth.onAuthStateChange((_event, session) => {
-            void (async () => {
+            // Defer Supabase calls until the auth callback releases its session lock.
+            setTimeout(() => { void (async () => {
                 await applySession(session);
                 if (!cancelled) setIsLoading(false);
-            })();
+            })(); }, 0);
         });
 
         return () => {
@@ -115,11 +134,11 @@ export function AuthProvider({ children }: PropsWithChildren) {
         };
     }, []);
 
-    // 5분마다 profiles 테이블을 확인하여 삭제된 계정의 세션을 강제 로그아웃
+    // Pending users pick up approvals without logging out. Existing accounts refresh every 5 minutes.
     useEffect(() => {
         if (!isSupabaseConfigured || !user || user.id === 'local-preview') return;
 
-        const INTERVAL_MS = 5 * 60 * 1000; // 5분
+        const INTERVAL_MS = user.approvalStatus === 'pending' ? 15_000 : 5 * 60 * 1000;
 
         const checkProfile = async () => {
             try {
@@ -129,10 +148,13 @@ export function AuthProvider({ children }: PropsWithChildren) {
                     .eq('id', user.id)
                     .maybeSingle();
 
-                if (error || !data) {
+                if (error) return; // A transient network error must not log out a valid member.
+                if (!data) {
                     // 프로필이 삭제됨 → 강제 로그아웃
                     await supabase.auth.signOut();
                     setUser(null);
+                } else {
+                    await refreshUser();
                 }
             } catch {
                 // 네트워크 오류 등은 무시 (다음 주기에 재시도)
@@ -142,7 +164,7 @@ export function AuthProvider({ children }: PropsWithChildren) {
         const intervalId = setInterval(checkProfile, INTERVAL_MS);
 
         return () => clearInterval(intervalId);
-    }, [user?.id]);
+    }, [user?.id, user?.approvalStatus, refreshUser]);
 
     const login = async (email: string, password: string) => {
         if (!isSupabaseConfigured) {
@@ -182,10 +204,10 @@ export function AuthProvider({ children }: PropsWithChildren) {
         setUser(null);
     };
 
-    const isAdmin = user?.role === 'admin';
+    const isAdmin = user?.role === 'admin' && user.approvalStatus === 'approved';
 
     return (
-        <AuthContext.Provider value={{ user, isLoading, isAdmin, login, logout }}>
+        <AuthContext.Provider value={{ user, isLoading, isAdmin, login, logout, refreshUser }}>
             {children}
         </AuthContext.Provider>
     );

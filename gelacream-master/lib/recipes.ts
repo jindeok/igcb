@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
 import {
-    RECIPES,
     type Ingredient,
     type IngredientGroup,
     type PurchaseLink,
@@ -119,7 +118,7 @@ function normalizeRecipe(row: RecipeRow): Recipe {
 
 export async function fetchRecipes(): Promise<Recipe[]> {
     if (!isSupabaseConfigured) {
-        return RECIPES;
+        return [];
     }
 
     const { data, error } = await supabase
@@ -132,7 +131,7 @@ export async function fetchRecipes(): Promise<Recipe[]> {
     }
 
     if (!data || data.length === 0) {
-        return RECIPES;
+        return [];
     }
 
     return data.map((row) => normalizeRecipe(row as RecipeRow));
@@ -140,7 +139,7 @@ export async function fetchRecipes(): Promise<Recipe[]> {
 
 export async function fetchRecipeById(id: string): Promise<Recipe | null> {
     if (!isSupabaseConfigured) {
-        return RECIPES.find((recipe) => recipe.id === id) ?? null;
+        return null;
     }
 
     const { data, error } = await supabase
@@ -154,7 +153,7 @@ export async function fetchRecipeById(id: string): Promise<Recipe | null> {
     }
 
     if (!data) {
-        return RECIPES.find((recipe) => recipe.id === id) ?? null;
+        return null;
     }
 
     return normalizeRecipe(data as RecipeRow);
@@ -178,7 +177,7 @@ export function useRecipes() {
                 }
             } catch (e: unknown) {
                 if (!cancelled) {
-                    setRecipes(RECIPES);
+                    setRecipes([]);
                     setError(e instanceof Error ? e.message : '레시피를 불러오지 못했습니다.');
                 }
             } finally {
@@ -223,7 +222,7 @@ export function useRecipe(id: string | string[] | undefined) {
                 }
             } catch (e: unknown) {
                 if (!cancelled) {
-                    setRecipe(RECIPES.find((item) => item.id === recipeId) ?? null);
+                    setRecipe(null);
                     setError(e instanceof Error ? e.message : '레시피를 불러오지 못했습니다.');
                 }
             } finally {

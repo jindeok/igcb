@@ -9,7 +9,7 @@ import { AuthProvider, useAuth } from '../context/AuthContext';
 function AppShell() {
     const colorScheme = useColorScheme();
     const theme = Colors[colorScheme ?? 'light'];
-    const segments = useSegments();
+    const segments: string[] = useSegments();
     const { user, isLoading } = useAuth();
 
     if (isLoading) {
@@ -30,12 +30,23 @@ function AppShell() {
     const currentRoot = segments[0];
     const isAuthScreen = currentRoot === 'login' || currentRoot === 'signup' || currentRoot === 'forgot-password';
 
+    // Keep the requested admin page through login without accepting arbitrary redirect URLs.
+    if (!user && currentRoot === 'admin' && segments[1] === 'members') {
+        return <Redirect href="/login?next=members" />;
+    }
     if (!user && !isAuthScreen) {
         return <Redirect href="/login" />;
     }
 
-    if (user && isAuthScreen) {
+    if (user && user.approvalStatus !== 'approved' && currentRoot !== 'approval-pending') {
+        return <Redirect href="/approval-pending" />;
+    }
+    if (user?.approvalStatus === 'approved' && currentRoot === 'approval-pending') {
         return <Redirect href="/" />;
+    }
+    if (user && isAuthScreen) {
+        // The login screen handles its fixed, allowlisted destination.
+        if (currentRoot !== 'login') return <Redirect href="/" />;
     }
 
     return (
@@ -45,6 +56,7 @@ function AppShell() {
                 <Stack.Screen name="login" options={{ headerShown: false }} />
                 <Stack.Screen name="signup" options={{ headerShown: false }} />
                 <Stack.Screen name="forgot-password" options={{ headerShown: false }} />
+                <Stack.Screen name="approval-pending" options={{ headerShown: false }} />
                 <Stack.Screen name="+not-found" />
             </Stack>
         </ThemeProvider>

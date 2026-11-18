@@ -1,11 +1,9 @@
 # Gelacream 백엔드(Supabase) 설정
 
-레시피 데이터의 **소스 오브 트루스는 Supabase DB**입니다. 앱은 DB에 레시피가 있으면 그것을,
-비어 있으면 `constants/MockData.ts`(오프라인 폴백)를 보여줍니다.
+레시피 데이터의 **소스 오브 트루스는 Supabase DB**입니다. 승인 전 조회나 네트워크 오류 시
+레시피가 우회 노출되지 않도록 번들 MockData 폴백을 사용하지 않습니다.
 
-> ⚠️ 중요: DB `recipes` 테이블이 **비어 있을 때만** MockData가 표시됩니다. 관리자가 레시피를
-> 하나라도 저장하면 그때부터 DB만 보이므로, **반드시 아래 시드를 먼저 넣어** 125개를 채운 뒤
-> 편집을 시작하세요. (그렇지 않으면 저장한 1개만 남고 나머지가 사라진 것처럼 보입니다.)
+회원 가입 승인 운영/배포는 [MEMBERSHIP_APPROVAL.md](MEMBERSHIP_APPROVAL.md)를 참고하세요.
 
 ## 파일
 
@@ -65,7 +63,7 @@ where id = (select id from auth.users where email = '본인이메일@example.com
 
 - **관리자 추가/수정/삭제**: 앱 로그인(admin) → 각 화면의 Edit/삭제/＋ 버튼. DB에 바로 반영됩니다.
   이미지도 편집 화면에서 업로드/삭제하면 Storage에 반영됩니다.
-- **RLS**: 로그인 사용자는 읽기만, 쓰기(추가·수정·삭제)는 admin 역할만 가능.
+- **RLS**: 이메일 인증 및 가입 승인을 마친 사용자만 읽기, 쓰기(추가·수정·삭제)는 승인된 admin만 가능.
 - **Notion 원본을 대량 갱신**했을 때만 `scripts/convert_notion_export.py`를 재실행해 `MockData.ts`·
   `seed_recipes.sql`을 다시 만들고, 시드를 재주입하세요. (관리자가 앱에서 직접 고친 내용은 시드
   재주입 시 덮어써지므로 주의 — 평상시 운영은 앱 편집으로만 하면 됩니다.)

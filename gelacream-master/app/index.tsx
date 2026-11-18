@@ -18,6 +18,7 @@ import { Colors } from '../constants/Colors';
 import { type Recipe } from '../constants/MockData';
 import { useAuth } from '../context/AuthContext';
 import { useRecipes } from '../lib/recipes';
+import { useMembershipRequests } from '../lib/membership';
 
 const CATEGORIES = [
     { id: 'milk', name: 'Milk Base', dbName: '우유 베이스', icon: '🥛', description: '부드럽고 클래식한 베이스' },
@@ -39,6 +40,8 @@ export default function HomeScreen() {
     const router = useRouter();
     const { logout, isAdmin } = useAuth();
     const { recipes, isLoading, error } = useRecipes();
+    const { requests: membershipRequests, error: membershipError } = useMembershipRequests(isAdmin);
+    const pendingMembers = membershipRequests.filter(request => request.approval_status === 'pending').length;
     const [searchQuery, setSearchQuery] = useState('');
 
     const normalizedQuery = searchQuery.trim().toLowerCase();
@@ -101,6 +104,11 @@ export default function HomeScreen() {
                         </TouchableOpacity>
                     </View>
                 </View>
+
+                {isAdmin && <TouchableOpacity accessibilityRole="button" onPress={() => router.push('/admin/members')}
+                    style={[styles.heroCard, { backgroundColor: theme.cardBackground, borderColor: theme.border, marginBottom: 16 }]}>
+                    <Text style={{ color: theme.tint, fontSize: 17, fontWeight: '700' }}>회원 가입 승인 {membershipError ? '· 확인 필요' : `· 대기 ${pendingMembers}건`} →</Text>
+                </TouchableOpacity>}
 
                 <View style={[styles.heroCard, { backgroundColor: theme.cardBackground, borderColor: theme.border }]}>
                     <View style={styles.heroHeader}>
